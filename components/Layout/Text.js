@@ -19,13 +19,12 @@ export default function Text({
   gridStyle = {},
 }) {
   const classes = useStyles();
-  const {isMobile} = useContext(SystemContext);
+  const { isMobile } = useContext(SystemContext);
   return (
     <Grid
       item
       className={classes.gridPanel}
       style={{
-        display: "contents",
         alignItems: (!icon || isMobile) && "center",
         alignSelf: "start",
         flexDirection: (!icon || isMobile) && "column",
@@ -35,7 +34,7 @@ export default function Text({
       xs={xs}
       {...gridProps}>
       {title && (
-        <Typography
+        <Typography gutterBottom
           className={classes.textPanelTitle}
           style={{
             textAlign: textAlignTitle,

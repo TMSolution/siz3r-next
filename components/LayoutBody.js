@@ -11,7 +11,8 @@ export default function LayoutBody({ children, dictionary }) {
   return (
     <body
       className={inter.className}
-      style={{ background: theme.palette.background.default }}>
+      style={{ background: "black" }}
+      >
       <AppRouterCacheProvider options={{ enableCssLayer: true }}>
         <SystemContextProvider theme={theme}>
           <TranslationContextProvider dictionary={dictionary}>

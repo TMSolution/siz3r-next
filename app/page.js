@@ -6,102 +6,61 @@ import Carousel from "@/components/Layout/NewCarousel";
 import Component from "@/components/Layout/Component";
 import { useContext } from "react";
 import SystemContext from "@/context/SystemContext";
-import { Grid } from "@mui/material";
+import { Button } from "@mui/material";
+
 export default function Home() {
   const { isMobile, theme } = useContext(SystemContext);
   return (
     <main style={{ display: "flex", flexDirection: "column" }}>
-      <Block background={theme.palette.primary.main} color="#fff" style={{}}>
+      <Block
+        background="transparent"
+        style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}
+        gridProps={{
+          justifyContent: "space-between",
+          alignItems: "stretch",
+          style: {
+            minHeight: "80vh",
+          },
+        }}>
         <Component
-          md={4}
+          md={6}
           xs={12}
-          gridProps={{}}
-          gridStyle={{ padding: 24 }}
-          customTop={"Element górny"}
-          customBottom={"Element dolny"}>
+          gridProps={{ justifyContent: "space-between", alignItems: "stretch" }}
+          gridStyle={{ alignSelf: "center" }}
+          customBottom={
+            <div style={{ display: "flex", gap: 16, width: "100%" }}>
+              <Button variant="contained">Get started</Button>
+              <Button
+                style={{ color: "lightgray", borderColor: "lightgray" }}
+                variant="outlined">
+                Learn more
+              </Button>
+            </div>
+          }>
           <Text
-            title={"Tytuł"}
-            text={"Tekst"}
-            subtitle={"Podtytuł"}
-            textAlign="center"
-            textAlignTitle="center"
-            textAlignSubtitle="center"
-            titleSize={30}
-            subtitleSize={24}
-            textSize={16}
-            gridStyle={{}}
-            gridProps={{}}
-            icon={false}
+            title={"Discover the Power of 3D Modeling in Our "}
+            text={
+              "Transform your digital self into a captivating 3D model with our cutting-edge app. Explore a dynamic world of possibilities and unleash your creativity like never "
+            }
+            titleSize={58}
+            textSize={20}
             md={12}
-            xs={12}
+            gridStyle={{ paddingTop: 48, paddingBottom: 48 }}
+            textAlign="left"
+            textAlignTitle="left"
           />
         </Component>
-        <Component
-          md={4}
-          customTop={"Element górny"}
-          customBottom={"Element dolny"}>
+        <Component md={6} xs={0} gridStyle={{ alignSelf: "center" }}>
           <Image
             src="https://new.tmsolution.pl/wp-content/uploads/2016/11/saving-money.png"
             alt=""
-            height="100%"
-            maxWidth="100%"
-            width={"100%"}
-            gridProps={{}}
+            gridStyle={{ alignSelf: "end" }}
+            //height="100%"
+            //maxWidth="100%"
+            // width={"100%"}
             md={12}
             xs={12}
           />
-        </Component>
-      </Block>
-      <Block background={theme.palette.secondary.main} color="#fff" style={{}}>
-        <Component
-          md={4}
-          customTop={"Element górny"}
-          customBottom={"Element dolny"}>
-          <Text title={"Tytuł"} text={"Tekst"} subtitle={"Podtytuł"} />
-        </Component>
-        <Component
-          md={4}
-          customTop={"Element górny"}
-          customBottom={"Element dolny"}>
-          <Text title={"Tytuł"} text={"Tekst"} subtitle={"Podtytuł"} />
-        </Component>{" "}
-        <Component
-          md={4}
-          customTop={"Element górny"}
-          customBottom={"Element dolny"}>
-          <Text title={"Tytuł"} text={"Tekst"} subtitle={"Podtytuł"} />
-        </Component>
-      </Block>
-      <Block style={{}}>
-        <Component
-          md={4}
-          customTop={"Element górny"}
-          customBottom={"Element dolny"}>
-          <Image
-            src="https://new.tmsolution.pl/wp-content/uploads/2016/11/saving-money.png"
-            alt=""
-            height="100%"
-            maxWidth="100%"
-            width={"100%"}
-            gridProps={{}}
-            md={12}
-            xs={12}
-          />
-        </Component>
-        <Grid md={4} />
-        <Component
-          md={4}
-          customTop={"Element górny"}
-          customBottom={"Element dolny"}>
-          <div>
-            <Carousel autoPlay md={8} steps={10}>
-              {[...Array(10)].map((item, index) => (
-                <div style={{ height: 100, width: 100 }}>
-                  <Text text={`Karuzela slajd ${index + 1}`} md={12} />
-                </div>
-              ))}
-            </Carousel>
-          </div>
         </Component>
       </Block>
     </main>

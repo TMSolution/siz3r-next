@@ -12,6 +12,7 @@ export default function Image({
   maxWidth = "100%",
   width,
   gridProps = {},
+  gridStyle = {},
 }) {
   const classes = useStyles();
   const isMobile = useContext(SystemContext);
@@ -23,11 +24,11 @@ export default function Image({
         alignItems: "center",
         alignSelf: "center",
         flexDirection: isMobile && "column",
+        ...gridStyle,
       }}
       md={md}
       xs={xs}
-      {...gridProps}
-    >
+      {...gridProps}>
       <img
         loading="eager"
         src={src}
