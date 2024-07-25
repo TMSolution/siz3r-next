@@ -12,7 +12,7 @@ export default function LayoutBody({ children, dictionary }) {
   return (
     <body
       className={inter.className}
-      style={{ background: "black", padding: "0 7% 0 7%" }}>
+      style={{ background: "black", padding: "0 10% 0 10%" }}>
       <AppRouterCacheProvider options={{ enableCssLayer: true }}>
         <SystemContextProvider theme={theme}>
           <TranslationContextProvider dictionary={dictionary}>
