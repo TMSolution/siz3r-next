@@ -12,13 +12,14 @@ export default function Block(props) {
       className={clsx(classes.heroPanel, props.className && props.className)}
       style={{
         backgroundColor: props.background || theme.palette.background.paper,
-        borderRadius:0,
+        borderRadius: 0,
+        backgroundImage: "unset",
         // color: props.color || theme.palette.primary.contrastText,
         ...(props.style || {}),
       }}>
       <Grid
         container
-       // spacing={2}
+        // spacing={2}
         justifyContent={"center"}
         alignItems={"flex-start"}
         className={classes.systemWidth}

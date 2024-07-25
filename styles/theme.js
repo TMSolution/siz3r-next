@@ -1,7 +1,16 @@
-'use client';
+"use client";
 import { createTheme } from "@mui/material/styles";
 
 let theme = createTheme({
+  typography: {
+    fontFamily: [
+      "Work Sans",
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+    ].join(","),
+  },
   palette: {
     mode: "dark",
     primary: {

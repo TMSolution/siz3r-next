@@ -34,11 +34,13 @@ export default function Text({
       xs={xs}
       {...gridProps}>
       {title && (
-        <Typography gutterBottom
+        <Typography
+          gutterBottom
           className={classes.textPanelTitle}
           style={{
             textAlign: textAlignTitle,
             fontSize: titleSize,
+            fontFamily: "Nunito",
           }}>
           {title}
         </Typography>

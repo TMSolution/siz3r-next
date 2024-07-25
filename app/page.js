@@ -7,6 +7,7 @@ import Component from "@/components/Layout/Component";
 import { useContext } from "react";
 import SystemContext from "@/context/SystemContext";
 import { Button } from "@mui/material";
+import { Height } from "@mui/icons-material";
 
 export default function Home() {
   const { isMobile, theme } = useContext(SystemContext);
@@ -31,16 +32,17 @@ export default function Home() {
             <div style={{ display: "flex", gap: 16, width: "100%" }}>
               <Button variant="contained">Get started</Button>
               <Button
-                style={{ color: "lightgray", borderColor: "lightgray" }}
+                color="secondary"
+                // style={{ color: "lightgray", borderColor: "lightgray" }}
                 variant="outlined">
                 Learn more
               </Button>
             </div>
           }>
           <Text
-            title={"Discover the Power of 3D Modeling in Our "}
+            title={"In your size"}
             text={
-              "Transform your digital self into a captivating 3D model with our cutting-edge app. Explore a dynamic world of possibilities and unleash your creativity like never "
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             }
             titleSize={58}
             textSize={20}
@@ -50,12 +52,22 @@ export default function Home() {
             textAlignTitle="left"
           />
         </Component>
-        <Component md={6} xs={0} gridStyle={{ alignSelf: "center" }}>
+        <Component
+          md={6}
+          xs={0}
+          gridStyle={{
+            height: "40vh",
+            alignSelf: "center",
+          }}>
           <Image
             src="https://new.tmsolution.pl/wp-content/uploads/2016/11/saving-money.png"
             alt=""
-            gridStyle={{ alignSelf: "end" }}
-            //height="100%"
+            gridStyle={{
+              alignSelf: "end",
+              justifyContent: "center",
+              display: "flex",
+            }}
+            height="100%"
             //maxWidth="100%"
             // width={"100%"}
             md={12}

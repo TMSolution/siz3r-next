@@ -37,6 +37,7 @@ export default function Image({
           maxHeight: height,
           maxWidth: !width && maxWidth,
           width: width && width,
+          height:'100%'
         }}
       />
     </Grid>
