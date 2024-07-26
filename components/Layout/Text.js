@@ -41,6 +41,7 @@ export default function Text({
             textAlign: textAlignTitle,
             fontSize: titleSize,
             fontFamily: "Nunito",
+            fontWeight: "600",
           }}>
           {title}
         </Typography>
@@ -66,6 +67,7 @@ export default function Text({
                 textAlign: textAlign,
                 fontSize: textSize,
                 //width: "100%",
+                color: "#BDBDBC",
               }}>
               {textItem}
             </Typography>
@@ -73,7 +75,11 @@ export default function Text({
         ) : (
           <Typography
             className={classes.textPanelContent}
-            style={{ textAlign: textAlign, fontSize: textSize }}>
+            style={{
+              textAlign: textAlign,
+              fontSize: textSize,
+              color: "#BDBDBC",
+            }}>
             {text}
           </Typography>
         ))}

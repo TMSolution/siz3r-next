@@ -4,14 +4,14 @@ import Hexagon from "./Hexagon";
 function hexToHexa(hex, alpha = 255) {
   return hex + alpha.toString(16);
 }
-export default function HexagonBackground() {
+export default function HexagonBackground({ isMobile }) {
   const size = 50;
-  const height = parseInt(1080 / size);
-  const width = parseInt(1920 / size);
+  const height = parseInt((isMobile ? 500 : 1080) / size);
+  const width = parseInt((isMobile ? 1000 : 1920) / size);
   const margin = 0.03;
   const color = "#000000";
   const fillColor = "#74368C";
-  const lightPos="30%"
+  const lightPos = !isMobile && "30%";
   return (
     <Paper
       sx={{
@@ -21,7 +21,7 @@ export default function HexagonBackground() {
         height: "100vh",
         width: "100vw",
         backgroundColor: color,
-        transition: "all 1s ease-in-out 0s",
+        //transition: "all 1s ease-in-out 0s",
         flexDirection: "column",
         overflow: "hidden",
         position: "absolute",
@@ -88,7 +88,10 @@ export default function HexagonBackground() {
           background: `radial-gradient(circle at center, ${hexToHexa(
             fillColor,
             255
-          )},${hexToHexa(fillColor, 124)}, transparent,transparent)`,
+          )},${hexToHexa(fillColor, 255)},${hexToHexa(
+            fillColor,
+            64
+          )}, transparent,transparent,transparent)`,
           height: "100vh",
           width: "100vw",
           overflow: "hidden",

@@ -8,7 +8,8 @@ export default function Image({
   xs = 12,
   src = "",
   alt = "",
-  height = "100%",
+  height,
+  maxHeight = "100%",
   maxWidth = "100%",
   width,
   gridProps = {},
@@ -34,10 +35,10 @@ export default function Image({
         src={src}
         alt={alt}
         style={{
-          maxHeight: height,
+          maxHeight: maxHeight,
           maxWidth: !width && maxWidth,
           width: width && width,
-          height:'100%'
+          height: height && height,//opacity:0.1
         }}
       />
     </Grid>
