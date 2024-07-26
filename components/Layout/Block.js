@@ -14,6 +14,7 @@ export default function Block(props) {
         backgroundColor: props.background || theme.palette.background.paper,
         borderRadius: 0,
         backgroundImage: "unset",
+       // border:"1px solid gray",
         // color: props.color || theme.palette.primary.contrastText,
         ...(props.style || {}),
       }}>

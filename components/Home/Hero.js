@@ -6,6 +6,8 @@ import Component from "../Layout/Component";
 import Image from "../Layout/Image";
 import Text from "../Layout/Text";
 import SystemContext from "@/context/SystemContext";
+import { Android, PhoneAndroid } from "@mui/icons-material";
+import { Play } from "lucide-react";
 
 export default function Hero() {
   const { isMobile, theme } = useContext(SystemContext);
@@ -30,7 +32,7 @@ export default function Hero() {
         customBottom={
           <div style={{ display: "flex", gap: 16, width: "100%" }}>
             <Button size={1.3} variant="contained">
-              Get started
+              Pobierz aplikację 
             </Button>
             <Button size={1.3} color="secondary" variant="outlined">
               Learn more

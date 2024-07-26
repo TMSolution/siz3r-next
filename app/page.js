@@ -24,16 +24,16 @@ export default function Home() {
         gridProps={{
           justifyContent: "center",
           alignItems: "stretch",
-          paddingTop: 10,
-          paddingBottom: 10,
+          paddingTop: 15,
+          paddingBottom: 15,
         }}>
         <Text
           md={6}
-          titleSize={62}
-          textSize={20}
+          titleSize={isMobile ? 45 : 60}
+          textSize={23}
           title={"Branże i zastosowania"}
           text={
-            "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów."
+            "Siz3r znajduje zastosowanie w różnych branżach, takich jak \ne-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów."
           }
         />
       </Block>
@@ -43,7 +43,8 @@ export default function Home() {
         gridProps={{
           justifyContent: "space-between",
           alignItems: "stretch",
-          paddingBottom: 10,
+          paddingTop: 15,
+          paddingBottom: 15,
         }}>
         <Text
           titleSize={30}
@@ -69,6 +70,205 @@ export default function Home() {
             display: "flex",
           }}
         />
+      </Block>
+      <Block
+        background="transparent"
+        style={{ display: "flex", alignItems: "center" }}
+        gridProps={{
+          justifyContent: "center",
+          alignItems: "stretch",
+
+          spacing: 12,
+          paddingTop: 15,
+          paddingBottom: 15,
+        }}>
+        <Text
+          titleSize={30}
+          textSize={20}
+          textAlign="center"
+          textAlignTitle="center"
+          title={"Produkty Siz3r i główne możliwości produktu"}
+          text={`Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. `}
+          md={9}
+        />
+        <Component md={4}>
+          <Image
+            md={12}
+            src={"https://picsum.photos/500/300"}
+            // height={"40vh"}
+            width={"100%"}
+            gridStyle={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+            }}
+          />
+          <Text
+            textSize={20}
+            textAlign="left"
+            textAlignSubtitle="left"
+            subtitle={"Zbieranie wymiarów"}
+            text={`Przekształcanie zdjęć w wirtualne sylwetki 3D.`}
+            md={12}
+          />
+        </Component>
+        <Component md={4}>
+          <Image
+            md={12}
+            src={"https://picsum.photos/500/300"}
+            // height={"40vh"}
+            width={"100%"}
+            gridStyle={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+            }}
+          />
+          <Text
+            textSize={20}
+            textAlign="left"
+            textAlignSubtitle="left"
+            subtitle={"Ubieranie modeli"}
+            text={`Wirtualna przymierzalnia umożliwiająca wizualizację klienta w różnych strojach.`}
+            md={12}
+          />
+        </Component>
+        <Component md={4}>
+          <Image
+            md={12}
+            src={"https://picsum.photos/500/300"}
+            // height={"40vh"}
+            width={"100%"}
+            gridStyle={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+            }}
+          />
+          <Text
+            textSize={20}
+            textAlign="left"
+            textAlignSubtitle="left"
+            subtitle={"Skanowanie ubrań"}
+            text={`Dodawanie odzieży do systemu i prezentacja na modelach 3D.`}
+            md={12}
+          />
+        </Component>
+      </Block>
+      <Block
+        background="transparent"
+        style={{ display: "flex", alignItems: "center" }}
+        gridProps={{
+          justifyContent: "center",
+          alignItems: "stretch",
+
+          spacing: 12,
+          paddingTop: 15,
+          paddingBottom: 15,
+        }}>
+        <Text
+          titleSize={30}
+          textSize={20}
+          textAlign="center"
+          textAlignTitle="center"
+          title={"Branże i zastosowania"}
+          text={
+            "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów."
+          }
+          
+          md={9}
+        />
+        <Component md={6}>
+          <Image
+            md={12}
+            src={"https://picsum.photos/550/300"}
+            // height={"40vh"}
+            width={"100%"}
+            gridStyle={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+            }}
+          />
+          <Text
+            textSize={20}
+            textAlign="left"
+            textAlignSubtitle="left"
+            subtitle={"E-commerce"}
+            text={`Lepsze dopasowanie ubrań, zmniejszenie liczby zwrotów.`}
+            md={12}
+          />
+        </Component>
+        <Component md={6}>
+          <Image
+            md={12}
+            src={"https://picsum.photos/550/300"}
+            // height={"40vh"}
+            width={"100%"}
+            gridStyle={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+            }}
+          />
+          <Text
+            textSize={20}
+            textAlign="left"
+            textAlignSubtitle="left"
+            subtitle={"Sklepy tradycyjne"}
+            text={`Umożliwienie klientom przymierzania ubrań bez konieczności fizycznego kontaktu.`}
+            md={12}
+          />
+        </Component>
+        <Component md={6}>
+          <Image
+            md={12}
+            src={"https://picsum.photos/550/300"}
+            // height={"40vh"}
+            width={"100%"}
+            gridStyle={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+            }}
+          />
+          <Text
+            textSize={20}
+            textAlign="left"
+            textAlignSubtitle="left"
+            subtitle={"Fitness i dietetyka"}
+            text={`Monitorowanie zmian sylwetki w czasie.`}
+            md={12}
+          />
+        </Component>
+        <Component md={6}>
+          <Image
+            md={12}
+            src={"https://picsum.photos/550/300"}
+            // height={"40vh"}
+            width={"100%"}
+            gridStyle={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+            }}
+          />
+          <Text
+            textSize={20}
+            textAlign="left"
+            textAlignSubtitle="left"
+            subtitle={"Rozrywka"}
+            text={`Personalizacja awatarów w grach i wirtualnych światach.`}
+            md={12}
+          />
+        </Component>
       </Block>
     </main>
   );

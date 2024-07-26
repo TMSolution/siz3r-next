@@ -1,6 +1,6 @@
 import { Button as MuiButton } from "@mui/material";
 
-export default function Button({ children, color, variant, size }) {
+export default function Button({ children, color, variant, size, nowrap }) {
   return (
     <MuiButton
       color={color}
@@ -10,7 +10,8 @@ export default function Button({ children, color, variant, size }) {
         py: size,
         px: size * 2.5,
         fontSize: size * 8 * 1.6,
-        borderRadius:2
+        borderRadius: 2,
+        whiteSpace: "nowrap",
       }}>
       {children}
     </MuiButton>

@@ -15,7 +15,8 @@ export default function Component({
   const isMobile = useContext(mobileContext);
   return (
     <Grid
-      item
+      
+      container item
       className={classes.gridPanel}
       style={{
         display: "flex",
