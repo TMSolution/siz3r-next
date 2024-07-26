@@ -16,9 +16,11 @@ export default function Header() {
         }}>
         <Toolbar
           style={{ padding: isMobile ? "0 12px 0 12px" : "0 10% 0 10%" }}>
-          <IconButton size="large" style={{ marginRight: 12 }}>
-            <Menu />
-          </IconButton>
+          {isMobile && (
+            <IconButton size="large" style={{ marginRight: 12 }}>
+              <Menu />
+            </IconButton>
+          )}
           <img src={"/logo.png"} height={24} style={{ marginRight: "auto" }} />
           {!isMobile && (
             <div style={{ display: "flex", gap: 16 }}>

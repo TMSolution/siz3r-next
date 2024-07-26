@@ -47,33 +47,22 @@ export default function Home() {
         }}>
         <Text
           titleSize={30}
+          textSize={20}
           textAlign="left"
           textAlignTitle="left"
           title={"Cutting-Edge Features"}
-          text={
-            <dir
-              style={{
-                width: "100%",
-                padding: 0,
-                display: "flex",
-                gap: 16,
-                flexDirection: "column",
-              }}>
-              <Typography style={{ fontSize: 20 }} gutterBottom>
-                Aliquam sit amet accumsan justo. Proin mauris tortor, eleifend
-                eu vehicula eu, porttitor ut est.
-              </Typography>{" "}
-              <Typography style={{ fontSize: 20 }} gutterBottom>
-                Pellentesque auctor porta nunc, sit amet fringilla metus
-                bibendum sed.
-              </Typography>
-            </dir>
-          }
+          text={` Aliquam sit amet accumsan justo. Proin mauris tortor, eleifend
+                eu vehicula eu, porttitor ut est. \n\nPellentesque auctor porta nunc, sit amet fringilla metus
+                bibendum sed. `}
           md={3}
         />
         <Image
           md={8.5}
-          src={isMobile?"https://picsum.photos/400":"https://picsum.photos/1000/500"}
+          src={
+            isMobile
+              ? "https://picsum.photos/400"
+              : "https://picsum.photos/1000/500"
+          }
           height={"40vh"}
           //width={"100%"}
           gridStyle={{

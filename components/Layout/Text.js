@@ -66,6 +66,7 @@ export default function Text({
               style={{
                 textAlign: textAlign,
                 fontSize: textSize,
+                whiteSpace: "pre-line",
                 //width: "100%",
                 color: "#BDBDBC",
               }}>
@@ -78,6 +79,7 @@ export default function Text({
             style={{
               textAlign: textAlign,
               fontSize: textSize,
+              whiteSpace: "pre-line",
               color: "#BDBDBC",
             }}>
             {text}
