@@ -61,10 +61,10 @@ export default function Home() {
           src={
             isMobile
               ? "https://picsum.photos/400"
-              : "https://picsum.photos/1000/500"
+              : "https://picsum.photos/1600/600"
           }
-          height={"40vh"}
-          //width={"100%"}
+          // height={"40vh"}
+          width={"100%"}
           gridStyle={{
             alignItems: "center",
             justifyContent: "center",
