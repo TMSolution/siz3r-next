@@ -31,9 +31,9 @@ export default function Home() {
           md={6}
           titleSize={62}
           textSize={20}
-          title={"Unlock the Potential of 3D Modeling"}
+          title={"Branże i zastosowania"}
           text={
-            "Immerse yourself in the boundless realm of 3D modeling with our revolutionary app"
+            "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów."
           }
         />
       </Block>
@@ -50,10 +50,8 @@ export default function Home() {
           textSize={20}
           textAlign="left"
           textAlignTitle="left"
-          title={"Cutting-Edge Features"}
-          text={` Aliquam sit amet accumsan justo. Proin mauris tortor, eleifend
-                eu vehicula eu, porttitor ut est. \n\nPellentesque auctor porta nunc, sit amet fringilla metus
-                bibendum sed. `}
+          title={"Innowacyjne rozwiązania"}
+          text={`Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. \n\nNasza platforma umożliwia również wizualizację klienta w wybranych strojach w formie trójwymiarowych modeli, co pomaga w dokonaniu trafnego wyboru`}
           md={3}
         />
         <Image

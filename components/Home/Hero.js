@@ -40,7 +40,7 @@ export default function Hero() {
         <Text
           title={"In your size"}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "Siz3r to innowacyjna platforma technologiczna wspierająca zakupy odzieżowe na platformach e-commerce."
           }
           titleSize={isMobile ? 50 : 70}
           textSize={23}
