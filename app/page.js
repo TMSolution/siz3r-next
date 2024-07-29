@@ -12,6 +12,7 @@ import HexagonBackground from "@/components/Background/HexagonBackground";
 import Hero from "@/components/Home/Hero";
 import { Container } from "postcss";
 import { Typography } from "@mui/material";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const { isMobile, theme } = useContext(SystemContext);
@@ -178,7 +179,6 @@ export default function Home() {
           text={
             "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów."
           }
-          
           md={9}
         />
         <Component md={6}>
