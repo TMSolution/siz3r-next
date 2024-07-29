@@ -59,8 +59,8 @@ export default function Footer({ isMobile }) {
         //margin: isMobile ? "0 24px 0 24px" : "0 10% 0 10%",
         position: "relative",
         left: !isMobile ? "-10vw" : "-24px",
-        width: isMobile ? "calc(100vw - 48px)" : "calc(100vw - (20% + 48px))",
-        padding: isMobile ? "24px" : "24px calc(10% + 24px)",
+        width: isMobile ? "calc(100vw - 48px)" : "calc(100vw - (20% + 36px + 36px))",
+        padding: isMobile ? "24px" : "24px calc(10% + 36px)",
       }}
       gridProps={{ spacing: 2 }}>
       <Grid
