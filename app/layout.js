@@ -11,7 +11,7 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const headerList = headers();
-  const pathname = headerList.get("x-current-path") || "/";
+  const pathname = headerList.get("x-current-path");
   let { dictionary, lang } = await getDictionary(pathname);
   return (
     <html lang="en" className="dark">
