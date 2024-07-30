@@ -52,7 +52,7 @@ export default function Hero({ dictionary }) {
           titleSize={{ xs: 50, md: 70 }}
           textSize={23}
           md={12}
-          gridStyle={{ paddingTop: 48, paddingBottom: 48 }}
+          gridStyle={{ paddingTop: "48px", paddingBottom: "48px" }}
           textAlign="left"
           textAlignTitle="left"
         />
@@ -69,11 +69,11 @@ export default function Hero({ dictionary }) {
           src="/phone.png"
           alt=""
           gridStyle={{
-            alignSelf: "end",
+            alignSelf: { xs: "center", md: "end" },
             justifyContent: "center",
             display: "flex",
             height: "70vh",
-            padding: 48,
+            padding: "48px",
             filter: "drop-shadow(1px 1px 60px rgba(255,255,255,0.5))",
           }}
           // height="80vh"

@@ -59,13 +59,13 @@ export default function Footer({ isMobile }) {
         display: "flex",
         alignItems: "flex-start",
 
-        //margin: isMobile ? "0 24px 0 24px" : "0 10% 0 10%",
         position: "relative",
-        left: !isMobile ? "-10vw" : "-24px",
-        width: isMobile
-          ? "calc(100vw - 48px)"
-          : "calc(100vw - (20% + 36px + 36px))",
-        padding: isMobile ? "24px" : "24px calc(10% + 36px)",
+        left: { xs: "-24px", md: "-10vw" },
+        width: {
+          xs: "calc(100vw - 48px)",
+          md: "calc(100vw - (20% + 36px + 36px))",
+        },
+        padding: { xs: "24px", md: "24px calc(10% + 36px)" },
       }}
       gridProps={{ spacing: 2 }}>
       <Grid
@@ -73,21 +73,24 @@ export default function Footer({ isMobile }) {
         xs={12}
         container
         item
-        justifyContent={isMobile && "center"}
+        //justifyContent={{ xs: "center", md: undefined }}
         spacing={2}>
         <Image
           src="/logo.png"
           xs={12}
           md={6}
           height={"32px"}
-          gridStyle={{ display: isMobile && "flex" }}
+          gridStyle={{
+            display: { xs: "flex", md: undefined },
+          }}
+          style={{ alignSelf: { xs: undefined, md: "baseline" } }}
         />
 
         <Text
           text={dictionary.footer.description}
           xs={12}
           md={10}
-          textAlign={isMobile ? "justify" : "left"}
+          textAlign={{ xs: "justify", md: "left" }}
         />
 
         <Grid
@@ -124,7 +127,7 @@ export default function Footer({ isMobile }) {
           xs={12}
           justifyContent={"center"}
           alignItems={"center"}
-          style={{ display: isMobile && "flex", paddingTop: 12 }}>
+          sx={{ display: { xs: "flex", md: "unset" }, paddingTop: 12 }}>
           <Button
             variant="contained"
             style={{
@@ -143,13 +146,13 @@ export default function Footer({ isMobile }) {
                 window.location.replace(window.location.href)
               );
             }}
-            fullWidth={isMobile}
             value={lang}
             size="small"
             sx={{
+              width: { xs: "100%", md: "unset" },
               ".MuiSelect-select": {
-                paddingLeft: isMobile ? undefined : 1,
-                paddingRight: isMobile ? undefined : 1,
+                paddingLeft: { xs: undefined, md: 1 },
+                paddingRight: { xs: undefined, md: 1 },
               },
             }}
             renderValue={(value) => (
@@ -172,29 +175,6 @@ export default function Footer({ isMobile }) {
             ))}
           </Select>
         </Grid>
-
-        {/* <Grid
-          xs={12}
-          md={6}
-          direction={"column"}
-          style={{ display: "flex", paddingTop: !isMobile && 16 }}
-          justifyContent={"center"}
-          alignItems={"center"}>
-          <Image
-            src="/qr-code.png"
-            xs={12}
-            md={6}
-            width={"100%"}
-            maxWidth="200px"
-            gridStyle={{ display: isMobile && "flex" }}
-          />
-          <Text
-            gridStyle={{ alignSelf: "center" }}
-            xs={12}
-            md={6}
-            text="Zeskanuj kod by pobrać aplikację!"
-          />
-        </Grid> */}
       </Grid>
 
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>

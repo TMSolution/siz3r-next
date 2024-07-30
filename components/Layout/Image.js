@@ -1,6 +1,6 @@
 import { useStyles } from "../../styles";
 import { useContext } from "react";
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import SystemContext from "../../context/SystemContext";
 
 export default function Image({
@@ -14,6 +14,7 @@ export default function Image({
   width,
   gridProps = {},
   gridStyle = {},
+  style = {},
 }) {
   const classes = useStyles();
   const isMobile = useContext(SystemContext);
@@ -21,7 +22,7 @@ export default function Image({
     <Grid
       item
       className={classes.gridPanel}
-      style={{
+      sx={{
         alignItems: "center",
         alignSelf: "center",
         flexDirection: isMobile && "column",
@@ -30,15 +31,17 @@ export default function Image({
       md={md}
       xs={xs}
       {...gridProps}>
-      <img
+      <Box
+        component="img"
         loading="eager"
         src={src}
         alt={alt}
-        style={{
+        sx={{
           maxHeight: maxHeight,
-          maxWidth: !width && maxWidth,
+          //maxWidth: !width && maxWidth,
           width: width && width,
-          height: height && height,//opacity:0.1
+          height: height && height,
+          ...style, //opacity:0.1
         }}
       />
     </Grid>

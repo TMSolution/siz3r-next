@@ -39,7 +39,7 @@ export default function Header() {
       <AppBar
         style={{
           background: "linear-gradient(black,black,transparent)",
-
+          width: "100vw",
           boxShadow: "none",
         }}>
         <Toolbar sx={{ padding: { md: "0 10% 0 10%", xs: "0 12px 0 12px" } }}>

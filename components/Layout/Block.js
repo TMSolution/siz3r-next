@@ -9,7 +9,7 @@ export default function Block(props) {
   return (
     <Paper
       className={clsx(classes.heroPanel, props.className && props.className)}
-      style={{
+      sx={{
         backgroundColor: props.background || theme.palette.background.paper,
         borderRadius: 0,
         backgroundImage: "unset",
