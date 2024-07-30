@@ -49,5 +49,20 @@
       "title": "Entertainment",
       "description": "Avatar personalization in games and virtual worlds."
     }
+  },
+  "footer": {
+    "description": "Siz3r is an innovative technological platform supporting clothing purchases on e-commerce platforms.",
+    "technology": "Technology",
+    "business": "Business",
+    "products": "Products",
+    "terms": "Terms and Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "googleButton": ""
+  },
+  "header": {
+    "home": "Home",
+    "business": "Business",
+    "contact": "Contact",
+    "downloadApp": "Download app"
   }
 }
