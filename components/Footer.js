@@ -87,7 +87,7 @@ export default function Footer({ isMobile }) {
         />
 
         <Text
-          text={dictionary.footer.description}
+          text={dictionary.general.footer.description}
           xs={12}
           md={10}
           textAlign={{ xs: "justify", md: "left" }}
@@ -142,9 +142,9 @@ export default function Footer({ isMobile }) {
           <Select
             onChange={(e) => {
               console.log(e.target.value);
-              changeLanguage(e.target.value).then(() =>
-                window.location.replace(window.location.href)
-              );
+              changeLanguage(e.target.value).then(() => {
+                // window.location.replace(window.location.href);
+              });
             }}
             value={lang}
             size="small"
@@ -178,7 +178,7 @@ export default function Footer({ isMobile }) {
       </Grid>
 
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.footer.technology}>
+        <LinkList title={dictionary.general.footer.technology}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link
@@ -195,7 +195,7 @@ export default function Footer({ isMobile }) {
         </LinkList>
       </Grid>
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.footer.business}>
+        <LinkList title={dictionary.general.footer.business}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link
@@ -208,7 +208,7 @@ export default function Footer({ isMobile }) {
         </LinkList>
       </Grid>
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.footer.products}>
+        <LinkList title={dictionary.general.footer.products}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link
@@ -232,10 +232,10 @@ export default function Footer({ isMobile }) {
             opacity: 0.7,
           }}>
           <Link style={{ color: "unset", textDecoration: "none" }} href={"/"}>
-            {dictionary.footer.terms}
+            {dictionary.general.footer.terms}
           </Link>
           <Link style={{ color: "unset", textDecoration: "none" }} href={"/"}>
-            {dictionary.footer.privacyPolicy}
+            {dictionary.general.footer.privacyPolicy}
           </Link>
         </div>
       </Grid>

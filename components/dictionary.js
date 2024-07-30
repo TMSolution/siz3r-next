@@ -4,13 +4,36 @@ const dictionaries = {
     await import("../translations/en.json").then((module) => module.default),
   pl: async () =>
     await import("../translations/pl.json").then((module) => module.default),
+  "/business": {
+    en: async () =>
+      await import("../translations/business/en.json").then(
+        (module) => module.default
+      ),
+    pl: async () =>
+      await import("../translations/business/pl.json").then(
+        (module) => module.default
+      ),
+  },
+  "/": {
+    en: async () =>
+      await import("../translations/home/en.json").then(
+        (module) => module.default
+      ),
+    pl: async () =>
+      await import("../translations/home/pl.json").then(
+        (module) => module.default
+      ),
+  },
 };
-
-export default async function getDictionary() {
+async function loadDictionaries(lang, path) {
+  let main = await dictionaries[lang]();
+  if (!path) return { general: main };
+  let page = await dictionaries[path][lang]();
+  return { general: main, ...page };
+}
+export default async function getDictionary(path) {
   const cookieStore = cookies();
   const lang = cookieStore.get("lang") || { value: "pl" };
   console.debug("lang", lang.value);
-  return dictionaries[lang]
-    ? { dictionary: await dictionaries[lang.value](), lang: lang }
-    : { dictionary: await dictionaries[lang.value](), lang: lang };
+  return { dictionary: await loadDictionaries(lang.value, path), lang: lang };
 }

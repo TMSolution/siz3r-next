@@ -24,12 +24,12 @@ export default function Header() {
 
   const [open, setOpen] = useState(false);
   const paths = [
-    { path: "/", name: dictionary.header.home },
-    { path: "/business", name: dictionary.header.business },
-    { path: "/contact", name: dictionary.header.contact },
+    { path: "/", name: dictionary.general.header.home },
+    { path: "/business", name: dictionary.general.header.business },
+    { path: "/contact", name: dictionary.general.header.contact },
     {
       path: "https://play.google.com/store",
-      name: dictionary.header.downloadApp,
+      name: dictionary.general.header.downloadApp,
       variant: "contained",
       color: "primary",
     },

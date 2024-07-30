@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "title": "In your size",
+    "description": "Siz3r to innowacyjna platforma technologiczna wspierająca zakupy odzieżowe na platformach e-commerce.",
+    "button": "Pobierz aplikację",
+    "button2": "Dowiedz się więcej"
+  },
+  "block1": {
+    "title": "Branże i zastosowania",
+    "description": "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów."
+  },
+  "block2": {
+    "title": "Innowacyjne rozwiązania",
+    "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. \n\nNasza platforma umożliwia również wizualizację klienta w wybranych strojach w formie trójwymiarowych modeli, co pomaga w dokonaniu trafnego wyboru"
+  },
+  "block3": {
+    "title": "Produkty Siz3r i główne możliwości produktu",
+    "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców.",
+
+    "image1": {
+      "title": "Zbieranie wymiarów",
+      "description": "Przekształcanie zdjęć w wirtualne sylwetki 3D."
+    },
+    "image2": {
+      "title": "Ubieranie modeli",
+      "description": "Wirtualna przymierzalnia umożliwiająca wizualizację klienta w różnych strojach."
+    },
+    "image3": {
+      "title": "Skanowanie ubrań",
+      "description": "Dodawanie odzieży do systemu i prezentacja na modelach 3D."
+    }
+  },
+  "block4": {
+    "title": "Branże i zastosowania",
+    "description": "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów.",
+    "image1": {
+      "title": "E-commerce",
+      "description": "Lepsze dopasowanie ubrań, zmniejszenie liczby zwrotów."
+    },
+    "image2": {
+      "title": "Sklepy tradycyjne",
+      "description": "Umożliwienie klientom przymierzania ubrań bez konieczności fizycznego kontaktu."
+    },
+    "image3": {
+      "title": "Fitness i dietetyka",
+      "description": "Monitorowanie zmian sylwetki w czasie."
+    },
+    "image4": {
+      "title": "Rozrywka",
+      "description": "Personalizacja awatarów w grach i wirtualnych światach."
+    }
+  }
+}

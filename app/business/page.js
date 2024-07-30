@@ -5,7 +5,6 @@ import Image from "@/components/Layout/Image";
 import Component from "@/components/Layout/Component";
 import { useContext } from "react";
 import SystemContext from "@/context/SystemContext";
-import Hero from "@/components/Home/Hero";
 import TranslationContext from "@/context/TranslationContext";
 export default function Business(props) {
   const { dictionary, lang } = useContext(TranslationContext);
@@ -23,7 +22,7 @@ export default function Business(props) {
         }}>
         <Text
           md={6}
-          titleSize={isMobile ? 45 : 60}
+          titleSize={{ xs: 45, md: 60 }}
           textSize={23}
           title={dictionary.block1.title}
           text={dictionary.block1.description}
