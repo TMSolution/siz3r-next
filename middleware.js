@@ -3,12 +3,12 @@ import { NextResponse } from "next/server";
 // This function can be marked `async` if using `await` inside
 
 export function middleware(request) {
-  console.debug("MIDDLEWARE")
+  console.debug("MIDDLEWARE");
   const response = NextResponse.next();
   const requestCookies = request.cookies;
 
   console.log("Current path:", request.nextUrl.pathname);
-  response.headers.set("x-current-path", request.nextUrl.pathname);
+
   // response.headers.set("x-device-type", "desktop");
   let cookieLang = requestCookies.get("lang");
   if (cookieLang && cookieLang.value) {

@@ -87,7 +87,7 @@ export default function Footer({ isMobile }) {
         />
 
         <Text
-          text={dictionary.general.footer.description}
+          text={dictionary.footer.description}
           xs={12}
           md={10}
           textAlign={{ xs: "justify", md: "left" }}
@@ -178,7 +178,7 @@ export default function Footer({ isMobile }) {
       </Grid>
 
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.general.footer.technology}>
+        <LinkList title={dictionary.footer.technology}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link
@@ -196,7 +196,7 @@ export default function Footer({ isMobile }) {
         </LinkList>
       </Grid>
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.general.footer.business}>
+        <LinkList title={dictionary.footer.business}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link
@@ -210,7 +210,7 @@ export default function Footer({ isMobile }) {
         </LinkList>
       </Grid>
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.general.footer.products}>
+        <LinkList title={dictionary.footer.products}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link
@@ -235,13 +235,13 @@ export default function Footer({ isMobile }) {
             opacity: 0.7,
           }}>
           <Link style={{ color: "unset", textDecoration: "none" }} href={"/"}>
-            {dictionary.general.footer.terms}
+            {dictionary.footer.terms}
           </Link>
           <Link
             prefetch={false}
             style={{ color: "unset", textDecoration: "none" }}
             href={"/"}>
-            {dictionary.general.footer.privacyPolicy}
+            {dictionary.footer.privacyPolicy}
           </Link>
         </div>
       </Grid>
