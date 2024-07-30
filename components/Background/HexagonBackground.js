@@ -1,4 +1,4 @@
-import { Paper } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 
 import Hexagon from "./Hexagon";
 function hexToHexa(hex, alpha = 255) {
@@ -11,7 +11,7 @@ export default function HexagonBackground({ isMobile }) {
   const margin = 0.03;
   const color = "#000000";
   const fillColor = "#74368C";
-  const lightPos = !isMobile && "30%";
+  const lightPos = "-30%";
   return (
     <Paper
       sx={{
@@ -39,9 +39,9 @@ export default function HexagonBackground({ isMobile }) {
           background: "black",
         }}
       />
-      <div
-        style={{
-          left: lightPos,
+      <Box
+        sx={{
+          left: { xs: undefined, md: lightPos },
           position: "absolute",
           //background: `radial-gradient(closest-side, rgba(100,200,100,0.1), rgba(100,100,100,0.05), transparent)`,
           background: `radial-gradient(circle at center, ${hexToHexa(
@@ -81,9 +81,9 @@ export default function HexagonBackground({ isMobile }) {
           </div>
         ))}
       </div>
-      <div
-        style={{
-          left: lightPos,
+      <Box
+        sx={{
+          left: { xs: undefined, md: lightPos },
           position: "absolute",
           background: `radial-gradient(circle at center, ${hexToHexa(
             fillColor,

@@ -16,10 +16,10 @@ export default function Hero({ dictionary }) {
       background="transparent"
       style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}
       gridProps={{
-        justifyContent: isMobile ? "center" : "space-between",
+        justifyContent: { xs: "center", md: "space-between" },
         alignItems: "stretch",
-        style: {
-          paddingTop: isMobile && "50px",
+        sx: {
+          paddingTop: { xs: "50px", md: undefined },
           minHeight: "80vh",
         },
       }}>
@@ -49,7 +49,7 @@ export default function Hero({ dictionary }) {
         <Text
           title={dictionary.hero.title}
           text={dictionary.hero.description}
-          titleSize={isMobile ? 50 : 70}
+          titleSize={{ xs: 50, md: 70 }}
           textSize={23}
           md={12}
           gridStyle={{ paddingTop: 48, paddingBottom: 48 }}

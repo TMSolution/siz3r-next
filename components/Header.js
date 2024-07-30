@@ -19,7 +19,7 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const path = usePathname();
-  console.debug(path);
+
   const { dictionary } = useContext(TranslationContext);
 
   const [open, setOpen] = useState(false);
@@ -59,7 +59,7 @@ export default function Header() {
             height={24}
             sx={{
               marginRight: "auto",
-              marginLeft: { md: undefined, xs: "auto" },
+              marginLeft: { md: "0px", xs: "auto" },
             }}
           />
 

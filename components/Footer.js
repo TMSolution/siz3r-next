@@ -26,9 +26,9 @@ import Link from "next/link";
 import Button from "./Interface/Button";
 import TranslationContext from "@/context/TranslationContext";
 import { useContext } from "react";
-const languages = { pl: "Polski" };
+const languages = { pl: "Polski", en: "English" };
 export default function Footer({ isMobile }) {
-  const { dictionary, lang } = useContext(TranslationContext);
+  const { dictionary, lang, changeLanguage } = useContext(TranslationContext);
   const LinkList = ({ children, title }) => {
     return (
       <Accordion
@@ -137,8 +137,14 @@ export default function Footer({ isMobile }) {
         </Grid>
         <Grid item xs={12} md={12}>
           <Select
+            onChange={(e) => {
+              console.log(e.target.value);
+              changeLanguage(e.target.value).then(() =>
+                window.location.replace(window.location.href)
+              );
+            }}
             fullWidth={isMobile}
-            value="pl"
+            value={lang}
             size="small"
             sx={{
               ".MuiSelect-select": {
@@ -159,8 +165,10 @@ export default function Footer({ isMobile }) {
                 </Typography>
               </div>
             )}>
-            {Object.keys(languages).map((item) => (
-              <MenuItem value={item}>Polski</MenuItem>
+            {Object.entries(languages).map((item) => (
+              <MenuItem key={item[0]} value={item[0]}>
+                {item[1]}
+              </MenuItem>
             ))}
           </Select>
         </Grid>
@@ -192,7 +200,7 @@ export default function Footer({ isMobile }) {
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
         <LinkList title={dictionary.footer.technology}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
-            <Grid item>
+            <Grid item key={item}>
               <Link
                 style={{
                   color: "unset",
@@ -209,7 +217,7 @@ export default function Footer({ isMobile }) {
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
         <LinkList title={dictionary.footer.business}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
-            <Grid item>
+            <Grid item key={item}>
               <Link
                 style={{ color: "unset", textDecoration: "none", opacity: 0.7 }}
                 href={"/"}>
@@ -222,7 +230,7 @@ export default function Footer({ isMobile }) {
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
         <LinkList title={dictionary.footer.products}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
-            <Grid item>
+            <Grid item key={item}>
               <Link
                 style={{ color: "unset", textDecoration: "none", opacity: 0.7 }}
                 href={"/"}>

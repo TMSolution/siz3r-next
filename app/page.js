@@ -16,8 +16,9 @@ import Footer from "@/components/Footer";
 import TranslationContext from "@/context/TranslationContext";
 
 export default function Home(props) {
-  console.debug(props);
+
   const { dictionary, lang } = useContext(TranslationContext);
+  
   const { isMobile, theme } = useContext(SystemContext);
   return (
     <main style={{ display: "flex", flexDirection: "column" }}>
@@ -33,7 +34,7 @@ export default function Home(props) {
         }}>
         <Text
           md={6}
-          titleSize={isMobile ? 45 : 60}
+          titleSize={{ xs: 45, md: 60 }}
           textSize={23}
           title={dictionary.block1.title}
           text={dictionary.block1.description}

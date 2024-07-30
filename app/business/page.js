@@ -8,12 +8,10 @@ import SystemContext from "@/context/SystemContext";
 import Hero from "@/components/Home/Hero";
 import TranslationContext from "@/context/TranslationContext";
 export default function Business(props) {
-  console.debug(props);
   const { dictionary, lang } = useContext(TranslationContext);
   const { isMobile, theme } = useContext(SystemContext);
   return (
     <main style={{ display: "flex", flexDirection: "column" }}>
-      <Hero dictionary={dictionary} />
       <Block
         background="transparent"
         style={{ display: "flex", alignItems: "center", minHeight: "60vh" }}

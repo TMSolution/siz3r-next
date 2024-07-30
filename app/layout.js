@@ -23,7 +23,7 @@ export default async function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <LayoutBody dictionary={dictionary} lang={lang} pathname={pathname}>
+      <LayoutBody dictionary={dictionary} lang={lang.value} pathname={pathname}>
         {children}
       </LayoutBody>
     </html>
