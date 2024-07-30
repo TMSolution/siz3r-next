@@ -11,7 +11,6 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  console.debug("deviceType", deviceType);
   const path = pathname();
 
   let { dictionary, lang } = await getDictionary(path);
