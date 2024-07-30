@@ -9,7 +9,7 @@ export function middleware(request) {
 
   console.log("Current path:", request.nextUrl.pathname);
   response.headers.set("x-current-path", request.nextUrl.pathname);
-  response.headers.set("x-device-type", "desktop");
+  // response.headers.set("x-device-type", "desktop");
   let cookieLang = requestCookies.get("lang");
   if (cookieLang && cookieLang.value) {
     response.cookies.set("lang", cookieLang.value);
