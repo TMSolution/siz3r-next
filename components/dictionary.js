@@ -14,6 +14,16 @@ const dictionaries = {
         (module) => module.default
       ),
   },
+  "/contact": {
+    en: async () =>
+      await import("../translations/contact/en.json").then(
+        (module) => module.default
+      ),
+    pl: async () =>
+      await import("../translations/contact/pl.json").then(
+        (module) => module.default
+      ),
+  },
   "/": {
     en: async () =>
       await import("../translations/home/en.json").then(
