@@ -66,6 +66,7 @@ export default function Header() {
           <Box sx={{ display: { xs: "none", md: "flex", gap: 8 } }}>
             {paths.map((item, index) => (
               <Link
+                prefetch={false}
                 key={index}
                 href={item.path}
                 style={{ color: "inherit", textDecoration: "none" }}>
@@ -95,6 +96,7 @@ export default function Header() {
         <List style={{ minWidth: 250, maxWidth: "100vw" }}>
           {paths.map((item, index) => (
             <Link
+              prefetch={false}
               key={index}
               href={item.path}
               style={{ color: "inherit", textDecoration: "none" }}>

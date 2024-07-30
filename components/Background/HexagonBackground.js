@@ -11,7 +11,7 @@ export default function HexagonBackground({ isMobile }) {
   const margin = 0.03;
   const color = "#000000";
   const fillColor = "#74368C";
-  const lightPos = "-30%";
+  const lightPos = "30%";
   return (
     <Paper
       sx={{

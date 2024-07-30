@@ -182,6 +182,7 @@ export default function Footer({ isMobile }) {
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link
+                prefetch={false}
                 style={{
                   color: "unset",
                   textDecoration: "none",
@@ -199,6 +200,7 @@ export default function Footer({ isMobile }) {
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link
+                prefetch={false}
                 style={{ color: "unset", textDecoration: "none", opacity: 0.7 }}
                 href={"/"}>
                 {item}
@@ -212,6 +214,7 @@ export default function Footer({ isMobile }) {
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link
+                prefetch={false}
                 style={{ color: "unset", textDecoration: "none", opacity: 0.7 }}
                 href={"/"}>
                 {item}
@@ -234,7 +237,10 @@ export default function Footer({ isMobile }) {
           <Link style={{ color: "unset", textDecoration: "none" }} href={"/"}>
             {dictionary.general.footer.terms}
           </Link>
-          <Link style={{ color: "unset", textDecoration: "none" }} href={"/"}>
+          <Link
+            prefetch={false}
+            style={{ color: "unset", textDecoration: "none" }}
+            href={"/"}>
             {dictionary.general.footer.privacyPolicy}
           </Link>
         </div>
