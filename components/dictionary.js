@@ -10,6 +10,6 @@ export default async function getDictionary() {
   const cookieStore = cookies();
   const lang = cookieStore.get("lang") || "pl";
   return dictionaries[lang]
-    ? await dictionaries[lang]()
-    : await dictionaries["pl"]();
+    ? { dictionary: await dictionaries[lang](), lang }
+    : { dictionary: await dictionaries["pl"](), lang };
 }

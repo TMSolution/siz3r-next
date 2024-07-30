@@ -37,7 +37,7 @@ export default function Text({
         <Typography
           gutterBottom
           className={classes.textPanelTitle}
-          style={{
+          sx={{
             textAlign: textAlignTitle,
             fontSize: titleSize,
             fontFamily: "Nunito",
@@ -49,7 +49,7 @@ export default function Text({
       {subtitle && (
         <Typography
           className={classes.textPanelSubtitle}
-          style={{
+          sx={{
             textAlign: textAlignSubtitle,
             fontSize: subtitleSize,
           }}>
@@ -63,7 +63,7 @@ export default function Text({
             <Typography
               key={textItemIndex}
               className={classes.textPanelContent}
-              style={{
+              sx={{
                 textAlign: textAlign,
                 fontSize: textSize,
                 whiteSpace: "pre-line",
@@ -76,7 +76,7 @@ export default function Text({
         ) : (
           <Typography
             className={classes.textPanelContent}
-            style={{
+            sx={{
               textAlign: textAlign,
               fontSize: textSize,
               whiteSpace: "pre-line",

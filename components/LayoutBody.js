@@ -8,9 +8,10 @@ import { TranslationContextProvider } from "@/context/TranslationContext";
 import Header from "./Header.js";
 import { useMediaQuery } from "@mui/material";
 import Footer from "./Footer.js";
+import { useRouter } from "next/router.js";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function LayoutBody({ children, dictionary }) {
+export default function LayoutBody({ children, dictionary, pathname }) {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <body
@@ -21,7 +22,7 @@ export default function LayoutBody({ children, dictionary }) {
         width: isMobile ? "calc(100% - 48px)" : "80%",
       }}>
       <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-        <SystemContextProvider theme={theme}>
+        <SystemContextProvider theme={theme} pathname={pathname}>
           <TranslationContextProvider dictionary={dictionary}>
             <ThemeProvider theme={theme}>
               <Header />

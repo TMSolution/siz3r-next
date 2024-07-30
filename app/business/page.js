@@ -2,20 +2,12 @@
 import Block from "@/components/Layout/Block";
 import Text from "@/components/Layout/Text";
 import Image from "@/components/Layout/Image";
-
 import Component from "@/components/Layout/Component";
-import { use, useContext } from "react";
+import { useContext } from "react";
 import SystemContext from "@/context/SystemContext";
-import Button from "@/components/Interface/Button";
-
-import HexagonBackground from "@/components/Background/HexagonBackground";
 import Hero from "@/components/Home/Hero";
-import { Container } from "postcss";
-import { Typography } from "@mui/material";
-import Footer from "@/components/Footer";
 import TranslationContext from "@/context/TranslationContext";
-
-export default function Home(props) {
+export default function Business(props) {
   console.debug(props);
   const { dictionary, lang } = useContext(TranslationContext);
   const { isMobile, theme } = useContext(SystemContext);

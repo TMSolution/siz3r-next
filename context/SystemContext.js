@@ -6,9 +6,10 @@ const SystemContext = createContext();
 
 export const SystemContextProvider = (props) => {
   const isMobile = useMediaQuery(props.theme.breakpoints.down("md"));
-  console.debug(isMobile);
+
   return (
-    <SystemContext.Provider value={{ isMobile, theme: props.theme }}>
+    <SystemContext.Provider
+      value={{ isMobile, theme: props.theme, pathname: props.pathname }}>
       {props.children}
     </SystemContext.Provider>
   );

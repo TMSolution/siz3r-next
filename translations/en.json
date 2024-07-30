@@ -1,1 +1,69 @@
-{ "hello": "Hello!" }
+{
+  "hello": "Hello!",
+  "hero": {
+    "title": "In your size",
+    "description": "Siz3r is an innovative technological platform supporting clothing purchases on e-commerce platforms.",
+    "button": "Download app",
+    "button2": "Learn more"
+  },
+  "block1": {
+    "title": "Industries and applications",
+    "description": "Siz3r is used in various industries, such as e-commerce, traditional stores, fitness, dietetics and entertainment. Our solutions help increase competitiveness, reduce costs and reduce the number of product returns."
+  },
+  "block2": {
+    "title": "Innovative solutions",
+    "description": "By creating a dimensioned 3D model of the customer's body, Siz3r recommends the best-fitting clothes from the sellers' offer. \n\nOur platform also allows you to visualize the customer in selected outfits in the form of three-dimensional models, which helps you make the right choice"
+  },
+  "block3": {
+    "title": "Siz3r products and main product capabilities",
+    "description": "By creating a 3D model of the customer's body, Siz3r recommends the best-fitting clothes from sellers.",
+
+    "image1": {
+      "title": "Collecting dimensions",
+      "description": "Transform photos into virtual 3D silhouettes."
+    },
+    "image2": {
+      "title": "Dressing models",
+      "description": "A virtual fitting room that allows you to visualize the customer in various outfits."
+    },
+    "image3": {
+      "title": "Clothes Scanning",
+      "description": "Adding clothing to the system and presenting it on 3D models."
+    }
+  },
+  "block4": {
+    "title": "Industries and applications",
+    "description": "Siz3r is used in various industries, such as e-commerce, traditional stores, fitness, dietetics and entertainment. Our solutions help increase competitiveness, reduce costs and reduce the number of product returns.",
+    "image1": {
+      "title": "E-commerce",
+      "description": "Better fit of clothes, reduce returns."
+    },
+    "image2": {
+      "title": "Traditional stores",
+      "description": "Allowing customers to try on clothes without the need for physical contact."
+    },
+    "image3": {
+      "title": "Fitness and dietetics",
+      "description": "Monitoring body shape changes over time."
+    },
+    "image4": {
+      "title": "Entertainment",
+      "description": "Avatar personalization in games and virtual worlds."
+    }
+  },
+  "footer": {
+    "description": "Siz3r is an innovative technological platform supporting clothing purchases on e-commerce platforms.",
+    "technology": "Technology",
+    "business": "Business",
+    "products": "Products",
+    "terms": "Terms and Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "googleButton": ""
+  },
+  "header": {
+    "home": "Home",
+    "business": "Business",
+    "contact": "Contact",
+    "downloadApp": "Download app"
+  }
+}

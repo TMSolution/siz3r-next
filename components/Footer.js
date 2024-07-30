@@ -24,8 +24,11 @@ import {
 import { ArrowDown, ChevronDown, Linkedin, Play } from "lucide-react";
 import Link from "next/link";
 import Button from "./Interface/Button";
+import TranslationContext from "@/context/TranslationContext";
+import { useContext } from "react";
 const languages = { pl: "Polski" };
 export default function Footer({ isMobile }) {
+  const { dictionary, lang } = useContext(TranslationContext);
   const LinkList = ({ children, title }) => {
     return (
       <Accordion
@@ -59,7 +62,9 @@ export default function Footer({ isMobile }) {
         //margin: isMobile ? "0 24px 0 24px" : "0 10% 0 10%",
         position: "relative",
         left: !isMobile ? "-10vw" : "-24px",
-        width: isMobile ? "calc(100vw - 48px)" : "calc(100vw - (20% + 36px + 36px))",
+        width: isMobile
+          ? "calc(100vw - 48px)"
+          : "calc(100vw - (20% + 36px + 36px))",
         padding: isMobile ? "24px" : "24px calc(10% + 36px)",
       }}
       gridProps={{ spacing: 2 }}>
@@ -79,10 +84,8 @@ export default function Footer({ isMobile }) {
         />
 
         <Text
-          text={
-            "Siz3r to innowacyjna platforma technologiczna wspierająca zakupy odzieżowe na platformach e-commerce."
-          }
-          xs={11}
+          text={dictionary.footer.description}
+          xs={12}
           md={10}
           textAlign={isMobile ? "justify" : "left"}
         />
@@ -121,14 +124,14 @@ export default function Footer({ isMobile }) {
           xs={12}
           justifyContent={"center"}
           alignItems={"center"}
-          style={{ display: isMobile && "flex" }}>
+          style={{ display: isMobile && "flex", paddingTop: 12 }}>
           <Button
             variant="contained"
             style={{
               padding: 0,
               margin: "auto",
             }}>
-            <img height={52} src="/google-play-badge.png" />
+            <img height={58} src="/google-play-badge.png" />
             {/* Pobierz z google store */}
           </Button>
         </Grid>
@@ -187,7 +190,7 @@ export default function Footer({ isMobile }) {
       </Grid>
 
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={"Technologia"}>
+        <LinkList title={dictionary.footer.technology}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item>
               <Link
@@ -204,7 +207,7 @@ export default function Footer({ isMobile }) {
         </LinkList>
       </Grid>
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={"Business"}>
+        <LinkList title={dictionary.footer.business}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item>
               <Link
@@ -217,7 +220,7 @@ export default function Footer({ isMobile }) {
         </LinkList>
       </Grid>
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={"Products"}>
+        <LinkList title={dictionary.footer.products}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item>
               <Link
@@ -241,10 +244,10 @@ export default function Footer({ isMobile }) {
             opacity: 0.7,
           }}>
           <Link style={{ color: "unset", textDecoration: "none" }} href={"/"}>
-            Regulamin
+            {dictionary.footer.terms}
           </Link>
           <Link style={{ color: "unset", textDecoration: "none" }} href={"/"}>
-            Polityka prywatności
+            {dictionary.footer.privacyPolicy}
           </Link>
         </div>
       </Grid>

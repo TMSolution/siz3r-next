@@ -9,7 +9,7 @@ import SystemContext from "@/context/SystemContext";
 import { Android, PhoneAndroid } from "@mui/icons-material";
 import { Play } from "lucide-react";
 
-export default function Hero() {
+export default function Hero({ dictionary }) {
   const { isMobile, theme } = useContext(SystemContext);
   return (
     <Block
@@ -31,19 +31,24 @@ export default function Hero() {
         gridStyle={{ alignSelf: "center" }}
         customBottom={
           <div style={{ display: "flex", gap: 16, width: "100%" }}>
-            <Button size={1.3} variant="contained">
-              Pobierz aplikację 
+            <Button
+              size={1.3}
+              variant="contained"
+              style={{ whiteSpace: "unset" }}>
+              {dictionary.hero.button}
             </Button>
-            <Button size={1.3} color="secondary" variant="outlined">
-              Learn more
+            <Button
+              size={1.3}
+              color="secondary"
+              variant="outlined"
+              style={{ whiteSpace: "unset" }}>
+              {dictionary.hero.button2}
             </Button>
           </div>
         }>
         <Text
-          title={"In your size"}
-          text={
-            "Siz3r to innowacyjna platforma technologiczna wspierająca zakupy odzieżowe na platformach e-commerce."
-          }
+          title={dictionary.hero.title}
+          text={dictionary.hero.description}
           titleSize={isMobile ? 50 : 70}
           textSize={23}
           md={12}

@@ -6,7 +6,6 @@ import { useContext } from "react";
 export default function Block(props) {
   const classes = useStyles();
   const { theme } = useContext(SystemContext);
-  console.debug(theme.palette.primary.main);
   return (
     <Paper
       className={clsx(classes.heroPanel, props.className && props.className)}
