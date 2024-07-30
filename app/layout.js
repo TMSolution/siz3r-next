@@ -11,9 +11,16 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const headerList = headers();
-  console.debug("LOADED");
-  const pathname = headerList.get("x-current-path");
-  console.debug(pathname);
+  function getPathname() {
+    let host = headerList.get("host");
+    let url = headerList.get("referer");
+    console.debug("url", url);
+    console.debug("host", host);
+    return url.replace("https://", "").replace("http://", "").replace(host, "");
+  }
+  console.debug("getPathname()", getPathname());
+  const pathname = getPathname();
+
   let { dictionary, lang } = await getDictionary(pathname);
   return (
     <html lang="en" className="dark">
