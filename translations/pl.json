@@ -35,3 +35,23 @@
     "title": "Status produktu",
     "description": "Siz3r jest w fazie beta. Obecnie produkt jest dostępny dla testerów. 'Coming soon' - pracujemy nad pełną wersją."
   },
+  "footer": {
+    "description": "Siz3r to innowacyjna platforma technologiczna wspierająca zakupy odzieżowe na platformach e-commerce.",
+    "socials": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "links": {
+      "terms": "Regulamin",
+      "privacyPolicy": "Polityka prywatności",
+      "contact": "Kontakt"
+    }
+  },
+  "header": {
+    "home": "Home",
+    "business": "Dla biznesu",
+    "contact": "Kontakt",
+    "downloadApp": "Pobierz aplikację"
+  }
+}
