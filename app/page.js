@@ -89,7 +89,7 @@ export default function Home(props) {
           text={dictionary.block3.description}
           md={9}
         />
-        <Component md={4}>
+        {/* <Component md={4}>
           <Image
             md={12}
             src={"https://picsum.photos/500/300"}
@@ -154,7 +154,7 @@ export default function Home(props) {
             text={dictionary.block3.image3.description}
             md={12}
           />
-        </Component>
+        </Component> */}
       </Block>
       <Block
         background="transparent"
@@ -176,7 +176,7 @@ export default function Home(props) {
           text={dictionary.block4.description}
           md={9}
         />
-        <Component md={6}>
+        {/* <Component md={6}>
           <Image
             md={12}
             src={"https://picsum.photos/550/300"}
@@ -263,7 +263,7 @@ export default function Home(props) {
             text={dictionary.block4.image4.description}
             md={12}
           />
-        </Component>
+        </Component> */}
       </Block>
     </main>
   );
