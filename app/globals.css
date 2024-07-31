@@ -76,3 +76,6 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+.grecaptcha-badge {
+  display: none;
+}

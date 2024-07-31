@@ -1,27 +1,20 @@
 import { Button as MuiButton } from "@mui/material";
 
-export default function Button({
-  children,
-  color,
-  variant,
-  size,
-  nowrap,
-  style = {},
-}) {
+export default function Button(props) {
   return (
     <MuiButton
-      color={color}
-      variant={variant}
+      {...props}
+      size="large"
       sx={{
         textTransform: "unset",
-        py: size,
-        px: size * 2.5,
-        fontSize: size * 8 * 1.6,
+        py: props?.size || undefined,
+        px: props?.size ? props.size * 2.5 : undefined,
+        fontSize: props?.size ? props.size * 8 * 1.6 : undefined,
         borderRadius: 2,
         whiteSpace: "nowrap",
-        ...style,
+        ...(props?.style || {}),
       }}>
-      {children}
+      {props?.children}
     </MuiButton>
   );
 }

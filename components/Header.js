@@ -48,6 +48,7 @@ export default function Header() {
             size="large"
             sx={{
               position: "absolute",
+              left: 24,
               display: { md: "none", xs: "flex" },
             }}>
             <Menu />
