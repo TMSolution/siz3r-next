@@ -55,7 +55,7 @@ export default function Header() {
 
           <Box
             component={"img"}
-            src={"/logo.png"}
+            //src={"/logo.png"}
             height={24}
             sx={{
               marginRight: "auto",

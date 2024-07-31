@@ -8,6 +8,7 @@ import Text from "../Layout/Text";
 import SystemContext from "@/context/SystemContext";
 import { Android, PhoneAndroid } from "@mui/icons-material";
 import { Play } from "lucide-react";
+import { Box } from "@mui/material";
 
 export default function Hero({ dictionary }) {
   const { isMobile, theme } = useContext(SystemContext);
@@ -29,6 +30,17 @@ export default function Hero({ dictionary }) {
         xs={12}
         gridProps={{ justifyContent: "space-between", alignItems: "stretch" }}
         gridStyle={{ alignSelf: "center" }}
+        customTop={
+          <Box
+            component={"img"}
+            src={"/logo.png"}
+            height={120}
+            sx={{
+              marginRight: "auto",
+              marginLeft: { md: "0px", xs: "auto" },
+            }}
+          />
+        }
         customBottom={
           <div style={{ display: "flex", gap: 16, width: "100%" }}>
             <Button
@@ -47,13 +59,20 @@ export default function Hero({ dictionary }) {
           </div>
         }>
         <Text
-          title={dictionary.hero.title}
+          // subtitle={
+          //   <span style={{fontFamily:"Nunito",color:"#00D278"}}>
+          //     <span style={{}}>in</span> <span style={{}}>your</span>{" "}
+          //     <span style={{}}>size</span>
+          //   </span>
+          // }
           text={dictionary.hero.description}
-          titleSize={{ xs: 50, md: 70 }}
-          textSize={23}
+          titleSize={{ xs: 50, md: 100 }}
+          subtitleSize={70}
+          textSize={26}
           md={12}
           gridStyle={{ paddingTop: "48px", paddingBottom: "48px" }}
           textAlign="left"
+          textAlignSubtitle="left"
           textAlignTitle="left"
         />
       </Component>
@@ -66,14 +85,14 @@ export default function Hero({ dictionary }) {
           height: "80vh",
         }}>
         <Image
-          src="/phone.png"
+          src="/phone_left.png"
           alt=""
           gridStyle={{
             alignSelf: { xs: "center", md: "end" },
             justifyContent: "center",
             display: "flex",
             height: "70vh",
-            padding: "48px",
+            //padding: "48px",
             filter: "drop-shadow(1px 1px 60px rgba(255,255,255,0.5))",
           }}
           // height="80vh"

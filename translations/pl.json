@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "In your size",
-    "description": "Przenieś swoją sylwetkę do wirtualnej przestrzeni.",
+    "description": "Przenieś swoją sylwetkę do wirtualnej przestrzeni i przymierzaj ubrania bez wychodzenia z domu",
     "button": "Pobierz aplikację",
     "button2": "Dowiedz się więcej"
   },
@@ -13,13 +13,14 @@
     "title": "Wirtualna Przymierzalnia",
     "description": "Ubieranie modeli w różne stroje."
   },
+
   "block3": {
-    "title": "Skanowanie Ubrań",
-    "description": "Dodawanie odzieży do systemu i prezentacja na modelach 3D."
-  },
-  "block4": {
     "title": "Jak Zacząć",
     "description": "Pobierz aplikację. Skanuj siebie. Przymierz i kupuj.",
+    "image1": { "title": "Pobierz aplikację.", "description": "Lorem ipsum" },
+    "image2": { "title": "Zrób zdjęcie.", "description": "Lorem ipsum" },
+    "image3": { "title": "Przymierz i kupuj.", "description": "Lorem ipsum" },
+
     "instruction": {
       "step1": "Pobierz aplikację.",
       "step2": "Skanuj siebie.",

@@ -41,13 +41,15 @@ export default function Text({
             textAlign: textAlignTitle,
             fontSize: titleSize,
             fontFamily: "Nunito",
-            fontWeight: "600",
+            fontWeight: "700",
+            whiteSpace: "nowrap",
           }}>
           {title}
         </Typography>
       )}
       {subtitle && (
         <Typography
+          gutterBottom
           className={classes.textPanelSubtitle}
           sx={{
             textAlign: textAlignSubtitle,
@@ -68,7 +70,7 @@ export default function Text({
                 fontSize: textSize,
                 whiteSpace: "pre-line",
                 //width: "100%",
-                color: "#BDBDBC",
+               color: "#BDBDBC",
               }}>
               {textItem}
             </Typography>
@@ -80,7 +82,7 @@ export default function Text({
               textAlign: textAlign,
               fontSize: textSize,
               whiteSpace: "pre-line",
-              color: "#BDBDBC",
+             // color: "#BDBDBC",
             }}>
             {text}
           </Typography>

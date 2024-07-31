@@ -55,7 +55,7 @@ export default function HexagonBackground({ isMobile }) {
           //filter: "blur(20px)",
         }}
       />
-      <div
+      {/* <div
         style={{
           position: "relative",
           overflow: "visible",
@@ -80,7 +80,7 @@ export default function HexagonBackground({ isMobile }) {
             ))}
           </div>
         ))}
-      </div>
+      </div> */}
       <Box
         sx={{
           left: { xs: undefined, md: lightPos },
