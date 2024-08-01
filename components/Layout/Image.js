@@ -37,6 +37,7 @@ export default function Image({
         src={src}
         alt={alt}
         sx={{
+          borderRadius: 4,
           maxHeight: maxHeight,
           //maxWidth: !width && maxWidth,
           width: width && width,

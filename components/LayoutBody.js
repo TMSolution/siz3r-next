@@ -19,7 +19,7 @@ export default function LayoutBody({ children, dictionary, pathname, lang }) {
       component="body"
       className={inter.className}
       sx={{
-        background: "linear-gradient(45deg,#00D278, black, #00D278)",
+        background: "linear-gradient(45deg,#00D278, #3C1992, #00D278)",
         margin: "0px",
         // margin: { xs: "0 24px 0 24px", md: "0 10% 0 10%" },
         // width: { xs: "calc(100% - 48px)", md: "80%" },

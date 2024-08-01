@@ -32,7 +32,7 @@ export default function Header() {
       path: "https://play.google.com/store",
       name: dictionary.header.downloadApp,
       variant: "contained",
-      color: "primary",
+      color: "secondary",
     },
   ];
   useEffect(() => {
@@ -48,7 +48,9 @@ export default function Header() {
     <>
       <AppBar
         style={{
-          background: "linear-gradient(#3C1992,#3C1992,transparent)",
+          background: visible
+            ? "linear-gradient(rgba(0,0,0,0.7), transparent)"
+            : "transparent",
           width: "100vw",
           boxShadow: "none",
           flexDirection: "row",
