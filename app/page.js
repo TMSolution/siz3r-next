@@ -19,13 +19,12 @@ export default function Home(props) {
     <main style={{ display: "flex", flexDirection: "column" }}>
       <Hero dictionary={dictionary} />
       <Block
-        background="transparent"
+        //color="black"
+       // background="linear-gradient(5deg, transparent 5%, gray 5.2%, gray 94.8%, black 95%)"
         style={{ display: "flex", alignItems: "center", minHeight: "60vh" }}
         gridProps={{
           justifyContent: "center",
           alignItems: "stretch",
-          paddingTop: 15,
-          paddingBottom: 15,
         }}>
         <Text
           md={6}
@@ -36,7 +35,7 @@ export default function Home(props) {
         />
       </Block>
       <Block
-        background="transparent"
+        // background="transparent"
         style={{ display: "flex", alignItems: "center" }}
         gridProps={{
           justifyContent: "space-between",

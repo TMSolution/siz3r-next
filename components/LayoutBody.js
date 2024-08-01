@@ -19,9 +19,10 @@ export default function LayoutBody({ children, dictionary, pathname, lang }) {
       component="body"
       className={inter.className}
       sx={{
-        background: "black",
-        margin: { xs: "0 24px 0 24px", md: "0 10% 0 10%" },
-        width: { xs: "calc(100% - 48px)", md: "80%" },
+        background: theme.palette.background.default,
+        margin: "0px",
+        // margin: { xs: "0 24px 0 24px", md: "0 10% 0 10%" },
+        // width: { xs: "calc(100% - 48px)", md: "80%" },
       }}>
       <AppRouterCacheProvider options={{ enableCssLayer: true }}>
         <SystemContextProvider theme={theme} pathname={pathname}>
@@ -31,7 +32,7 @@ export default function LayoutBody({ children, dictionary, pathname, lang }) {
               reCaptchaKey={process.env.CAPTCHA_KEY}
               container={{
                 // optional to render inside custom element
-                
+
                 parameters: {
                   // badge: "[inline|bottomright|bottomleft]", // optional, default undefined
                   theme: "dark", // optional, default undefined

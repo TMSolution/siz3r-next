@@ -60,12 +60,12 @@ export default function Footer({ isMobile }) {
         alignItems: "flex-start",
 
         position: "relative",
-        left: { xs: "-24px", md: "-10vw" },
-        width: {
-          xs: "calc(100vw - 48px)",
-          md: "calc(100vw - (20% + 36px + 36px))",
-        },
-        padding: { xs: "24px", md: "24px calc(10% + 36px)" },
+        //left: { xs: "-24px", md: "-10vw" },
+        // width: {
+        //   xs: "calc(100vw - 48px)",
+        //   md: "calc(100vw - (20% + 36px + 36px))",
+        // },
+       // padding: { xs: "24px", md: "24px calc(10% + 36px)" },
       }}
       gridProps={{ spacing: 2 }}>
       <Grid

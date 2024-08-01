@@ -10,11 +10,14 @@ export default function Block(props) {
     <Paper
       className={clsx(classes.heroPanel, props.className && props.className)}
       sx={{
-        backgroundColor: props.background || theme.palette.background.paper,
+        background: props.background || theme.palette.background.paper,
+
         borderRadius: 0,
-        backgroundImage: "unset",
-       // border:"1px solid gray",
-        // color: props.color || theme.palette.primary.contrastText,
+
+        padding: { xs: "24px", md: "24px 10%" },
+        //width: { xs: "calc(100% - 48px)", md: "80%" },
+        color: props.color,
+        width: { xs: "calc(100vw - 48px)", md: "calc(100vw - 20%)" },
         ...(props.style || {}),
       }}>
       <Grid

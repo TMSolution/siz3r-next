@@ -8,6 +8,7 @@ import Text from "../Layout/Text";
 import SystemContext from "@/context/SystemContext";
 import { Android, PhoneAndroid } from "@mui/icons-material";
 import { Play } from "lucide-react";
+import { Box } from "@mui/material";
 
 export default function Hero({ dictionary }) {
   const { isMobile, theme } = useContext(SystemContext);
@@ -19,39 +20,57 @@ export default function Hero({ dictionary }) {
         justifyContent: { xs: "center", md: "space-between" },
         alignItems: "stretch",
         sx: {
-          paddingTop: { xs: "50px", md: undefined },
-          minHeight: "80vh",
+          paddingTop: { xs: "50px", md: 0 },
+          minHeight: "100vh",
         },
       }}>
       <HexagonBackground isMobile={isMobile} />
       <Component
-        md={4}
+        md={6}
         xs={12}
         gridProps={{ justifyContent: "space-between", alignItems: "stretch" }}
         gridStyle={{ alignSelf: "center" }}
+        customTop={
+          <Box
+            component={"img"}
+            src={"/logo.png"}
+            height={{ md: "95px", xs: "70px" }}
+            sx={{
+              marginRight: "auto",
+              marginLeft: { md: "0px", xs: "auto" },
+            }}
+          />
+        }
         customBottom={
-          <div style={{ display: "flex", gap: 16, width: "100%" }}>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 2,
+              width: { md: "100%" },
+              alignSelf: { md: "center", xs: "center" },
+            }}>
             <Button
               size={1.3}
               variant="contained"
-              style={{ whiteSpace: "unset" }}>
+              style={{ whiteSpace: "nowrap" }}>
               {dictionary.hero.button}
             </Button>
             <Button
               size={1.3}
               color="secondary"
               variant="outlined"
-              style={{ whiteSpace: "unset" }}>
+              style={{ whiteSpace: "nowrap" }}>
               {dictionary.hero.button2}
             </Button>
-          </div>
+          </Box>
         }>
         <Text
-          title={dictionary.hero.title}
+          //title={dictionary.hero.title}
           text={dictionary.hero.description}
+          color="white"
           titleSize={{ xs: 50, md: 70 }}
           textSize={23}
-          md={12}
+          gridProps={{ lg: 8, md: 12, sm: 12 }}
           gridStyle={{ paddingTop: "48px", paddingBottom: "48px" }}
           textAlign="left"
           textAlignTitle="left"
@@ -73,11 +92,15 @@ export default function Hero({ dictionary }) {
             justifyContent: "center",
             display: "flex",
             height: "70vh",
-            padding: "48px",
-            filter: "drop-shadow(1px 1px 60px rgba(255,255,255,0.5))",
+            padding: { xs: "48px", md: "0px" },
+            filter: {
+              xs: "drop-shadow(1px 1px 50px rgba(255,255,255,0.5))",
+              md: "drop-shadow(1px 1px 60px rgba(255,255,255,0.5))",
+            },
+            maxWidth: "100%",
           }}
           // height="80vh"
-          //maxWidth="100%"
+          maxWidth="100%"
           //width={300}
           md={12}
           xs={0}

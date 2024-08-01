@@ -17,6 +17,7 @@ export default function Text({
   textAlignTitle = "center",
   gridProps = {},
   gridStyle = {},
+  color = "#BDBDBC",
 }) {
   const classes = useStyles();
   const { isMobile } = useContext(SystemContext);
@@ -25,6 +26,7 @@ export default function Text({
       item
       className={classes.gridPanel}
       style={{
+        color: "inherit",
         alignItems: (!icon || isMobile) && "center",
         alignSelf: "start",
         flexDirection: (!icon || isMobile) && "column",
@@ -68,7 +70,7 @@ export default function Text({
                 fontSize: textSize,
                 whiteSpace: "pre-line",
                 //width: "100%",
-                color: "#BDBDBC",
+                color: color,
               }}>
               {textItem}
             </Typography>
@@ -80,7 +82,7 @@ export default function Text({
               textAlign: textAlign,
               fontSize: textSize,
               whiteSpace: "pre-line",
-              color: "#BDBDBC",
+              color: color,
             }}>
             {text}
           </Typography>
