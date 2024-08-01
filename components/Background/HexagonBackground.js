@@ -38,7 +38,7 @@ export default function HexagonBackground({ isMobile }) {
           left: 0,
           height: "110vh",
           width: "100vw",
-          opacity: 1,
+          opacity: 0.1,
           background:
             "linear-gradient(#3C1992 1%, transparent, transparent, black 99%)",
           zIndex: 1,
@@ -89,11 +89,11 @@ export default function HexagonBackground({ isMobile }) {
           height: "110vh",
           width: "100vw",
           overflow: "hidden",
-          opacity: 1,
+          opacity: 0.3,
           //filter: "blur(10px)",
         }}
       />
-      {/* <div
+      <div
         style={{
           position: "relative",
           overflow: "visible",
@@ -119,7 +119,7 @@ export default function HexagonBackground({ isMobile }) {
             ))}
           </div>
         ))}
-      </div> */}
+      </div>
     </Paper>
   );
 }
