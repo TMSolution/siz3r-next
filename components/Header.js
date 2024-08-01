@@ -7,10 +7,11 @@ import {
   ListItemButton,
   ListItemText,
   Paper,
+  Slide,
   Toolbar,
 } from "@mui/material";
 import Button from "./Interface/Button";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import SystemContext from "@/context/SystemContext";
 import { Menu } from "lucide-react";
 import TranslationContext from "@/context/TranslationContext";
@@ -21,7 +22,7 @@ export default function Header() {
   const path = usePathname();
 
   const { dictionary } = useContext(TranslationContext);
-
+  const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
   const paths = [
     { path: "/", name: dictionary.header.home },
@@ -34,6 +35,15 @@ export default function Header() {
       color: "primary",
     },
   ];
+  useEffect(() => {
+    document.addEventListener("scroll", (e) => {
+      if (window.scrollY > 0) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    });
+  }, []);
   return (
     <>
       <AppBar
@@ -41,8 +51,13 @@ export default function Header() {
           background: "linear-gradient(black,black,transparent)",
           width: "100vw",
           boxShadow: "none",
+          flexDirection: "row",
         }}>
-        <Toolbar sx={{ padding: { md: "0 10% 0 10%", xs: "0 12px 0 12px" } }}>
+        <Toolbar
+          sx={{
+            padding: { md: "0 10% 0 10%", xs: "0 12px 0 12px" },
+            width: "100%",
+          }}>
           <IconButton
             onClick={() => setOpen(true)}
             size="large"
@@ -53,18 +68,22 @@ export default function Header() {
             }}>
             <Menu />
           </IconButton>
-
+          <Slide direction="down" in={visible}>
+            <Box
+              component={"img"}
+              src={"/logo.png"}
+              height={24}
+              sx={{
+                marginRight: "auto",
+                marginLeft: { md: "0px", xs: "auto" },
+              }}
+            />
+          </Slide>
           <Box
-            component={"img"}
-            src={"/logo.png"}
-            height={24}
             sx={{
-              marginRight: "auto",
-              marginLeft: { md: "0px", xs: "auto" },
-            }}
-          />
-
-          <Box sx={{ display: { xs: "none", md: "flex", gap: 8 } }}>
+              display: { xs: "none", md: "flex", gap: 8 },
+              marginLeft: "auto",
+            }}>
             {paths.map((item, index) => (
               <Link
                 prefetch={false}
