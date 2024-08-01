@@ -65,13 +65,14 @@ export default function Home(props) {
         <Component
           xs={12}
           md={12}
+          gridProps={{ spacing: 4 }}
           gridStyle={{
             display: "flex",
             alignItems: "center",
             justifyContent: "start",
             flexDirection: "row",
           }}>
-          <Component xs={12} md={3.5} gridStyle={{ alignSelf: "center" }}>
+          <Component xs={12} md={5} gridStyle={{ alignSelf: "center" }}>
             <Text
               titleSize={30}
               textSize={20}
@@ -85,13 +86,9 @@ export default function Home(props) {
           </Component>
           <Image
             xs={12}
-            md={8.5}
-            src={
-              isMobile
-                ? "https://picsum.photos/400"
-                : "https://picsum.photos/1600/600"
-            }
-            height={"40vh"}
+            md={7}
+            src={"https://picsum.photos/1600/600"}
+            width="100%"
             gridStyle={{
               alignItems: "end",
               justifyContent: "center",
@@ -102,28 +99,14 @@ export default function Home(props) {
         <Component
           xs={12}
           md={12}
+          gridProps={{ spacing: 4 }}
           gridStyle={{
             display: "flex",
             alignItems: "center",
             justifyContent: "start",
-            flexDirection: "row",
+            flexDirection: "row-reverse",
           }}>
-          <Image
-            xs={12}
-            md={8.5}
-            src={
-              isMobile
-                ? "https://picsum.photos/400"
-                : "https://picsum.photos/1600/600"
-            }
-            height={"40vh"}
-            gridStyle={{
-              alignItems: "end",
-              justifyContent: "center",
-              display: "flex",
-            }}
-          />
-          <Component xs={12} md={3.5} gridStyle={{ alignSelf: "center" }}>
+          <Component xs={12} md={5} gridStyle={{ alignSelf: "center" }}>
             <Text
               titleSize={30}
               textSize={20}
@@ -135,17 +118,29 @@ export default function Home(props) {
               xs={12}
             />
           </Component>
+          <Image
+            xs={12}
+            md={7}
+            src={"https://picsum.photos/1600/600"}
+            width="100%"
+            gridStyle={{
+              alignItems: "end",
+              justifyContent: "center",
+              display: "flex",
+            }}
+          />
         </Component>
         <Component
           xs={12}
           md={12}
+          gridProps={{ spacing: 4 }}
           gridStyle={{
             display: "flex",
             alignItems: "center",
             justifyContent: "start",
             flexDirection: "row",
           }}>
-          <Component xs={12} md={3.5} gridStyle={{ alignSelf: "center" }}>
+          <Component xs={12} md={5} gridStyle={{ alignSelf: "center" }}>
             <Text
               titleSize={30}
               textSize={20}
@@ -159,13 +154,9 @@ export default function Home(props) {
           </Component>
           <Image
             xs={12}
-            md={8.5}
-            src={
-              isMobile
-                ? "https://picsum.photos/400"
-                : "https://picsum.photos/1600/600"
-            }
-            height={"40vh"}
+            md={7}
+            src={"https://picsum.photos/1600/600"}
+            width="100%"
             gridStyle={{
               alignItems: "end",
               justifyContent: "center",
