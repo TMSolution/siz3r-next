@@ -10,6 +10,7 @@ import SystemContext from "@/context/SystemContext";
 import Hero from "@/components/Home/Hero";
 
 import TranslationContext from "@/context/TranslationContext";
+import { Directions } from "@mui/icons-material";
 
 export default function Home(props) {
   const { dictionary, lang } = useContext(TranslationContext);
@@ -18,7 +19,7 @@ export default function Home(props) {
   return (
     <main style={{ display: "flex", flexDirection: "column" }}>
       <Hero dictionary={dictionary} />
-      <Block
+      {/* <Block
         //color="black"
        // background="linear-gradient(5deg, transparent 5%, gray 5.2%, gray 94.8%, black 95%)"
         style={{ display: "flex", alignItems: "center", minHeight: "60vh" }}
@@ -33,41 +34,8 @@ export default function Home(props) {
           title={dictionary.block1.title}
           text={dictionary.block1.description}
         />
-      </Block>
-      <Block
-        // background="transparent"
-        style={{ display: "flex", alignItems: "center" }}
-        gridProps={{
-          justifyContent: "space-between",
-          alignItems: "stretch",
-          paddingTop: 15,
-          paddingBottom: 15,
-        }}>
-        <Text
-          titleSize={30}
-          textSize={20}
-          textAlign="left"
-          textAlignTitle="left"
-          title={dictionary.block2.title}
-          text={dictionary.block2.description}
-          md={3}
-        />
-        <Image
-          md={8.5}
-          src={
-            isMobile
-              ? "https://picsum.photos/400"
-              : "https://picsum.photos/1600/600"
-          }
-          // height={"40vh"}
-          width={"100%"}
-          gridStyle={{
-            alignItems: "center",
-            justifyContent: "center",
-            display: "flex",
-          }}
-        />
-      </Block>
+      </Block> */}
+
       <Block
         background="transparent"
         style={{ display: "flex", alignItems: "center" }}
@@ -80,81 +48,133 @@ export default function Home(props) {
           paddingBottom: 15,
         }}>
         <Text
-          titleSize={30}
+          titleSize={70}
           textSize={20}
           textAlign="center"
           textAlignTitle="center"
-          title={dictionary.block3.title}
-          text={dictionary.block3.description}
-          md={9}
+          title={
+            <>
+              In{" "}
+              <span style={{ color: theme.palette.secondary.main }}>Your</span>{" "}
+              size
+            </>
+          }
+          text={dictionary.block1.description}
+          md={12}
         />
-        <Component md={4}>
+        <Component
+          xs={12}
+          md={12}
+          gridStyle={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "start",
+            flexDirection: "row",
+          }}>
+          <Component xs={12} md={3.5} gridStyle={{ alignSelf: "center" }}>
+            <Text
+              titleSize={30}
+              textSize={20}
+              textAlign={{ xs: "justify", md: "left" }}
+              textAlignTitle={{ xs: "center", md: "left" }}
+              title={dictionary.block1.image1.title}
+              text={dictionary.block1.image1.description}
+              md={12}
+              xs={12}
+            />
+          </Component>
           <Image
-            md={12}
-            src={"https://picsum.photos/500/300"}
-            // height={"40vh"}
-            width={"100%"}
+            xs={12}
+            md={8.5}
+            src={
+              isMobile
+                ? "https://picsum.photos/400"
+                : "https://picsum.photos/1600/600"
+            }
+            height={"40vh"}
             gridStyle={{
-              alignItems: "center",
+              alignItems: "end",
               justifyContent: "center",
               display: "flex",
-              width: "100%",
             }}
-          />
-          <Text
-            textSize={20}
-            textAlign="left"
-            textAlignSubtitle="left"
-            subtitle={dictionary.block3.image1.title}
-            text={dictionary.block3.image1.description}
-            md={12}
           />
         </Component>
-        <Component md={4}>
+        <Component
+          xs={12}
+          md={12}
+          gridStyle={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "start",
+            flexDirection: "row",
+          }}>
+          <Component xs={12} md={3.5} gridStyle={{ alignSelf: "center" }}>
+            <Text
+              titleSize={30}
+              textSize={20}
+              textAlign={{ xs: "justify", md: "left" }}
+              textAlignTitle={{ xs: "center", md: "left" }}
+              title={dictionary.block1.image2.title}
+              text={dictionary.block1.image2.description}
+              md={12}
+              xs={12}
+            />
+          </Component>
           <Image
-            md={12}
-            src={"https://picsum.photos/500/300"}
-            // height={"40vh"}
-            width={"100%"}
+            xs={12}
+            md={8.5}
+            src={
+              isMobile
+                ? "https://picsum.photos/400"
+                : "https://picsum.photos/1600/600"
+            }
+            height={"40vh"}
             gridStyle={{
-              alignItems: "center",
+              alignItems: "end",
               justifyContent: "center",
               display: "flex",
-              width: "100%",
             }}
-          />
-          <Text
-            textSize={20}
-            textAlign="left"
-            textAlignSubtitle="left"
-            subtitle={dictionary.block3.image2.title}
-            text={dictionary.block3.image2.description}
-            md={12}
           />
         </Component>
-        <Component md={4}>
+        <Component
+          xs={12}
+          md={12}
+          gridStyle={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "start",
+            flexDirection: "row",
+          }}>
+          <Component xs={12} md={3.5} gridStyle={{ alignSelf: "center" }}>
+            <Text
+              titleSize={30}
+              textSize={20}
+              textAlign={{ xs: "justify", md: "left" }}
+              textAlignTitle={{ xs: "center", md: "left" }}
+              title={dictionary.block1.image3.title}
+              text={dictionary.block1.image3.description}
+              md={12}
+              xs={12}
+            />
+          </Component>
           <Image
-            md={12}
-            src={"https://picsum.photos/500/300"}
-            // height={"40vh"}
-            width={"100%"}
+            xs={12}
+            md={8.5}
+            src={
+              isMobile
+                ? "https://picsum.photos/400"
+                : "https://picsum.photos/1600/600"
+            }
+            height={"40vh"}
             gridStyle={{
-              alignItems: "center",
+              alignItems: "end",
               justifyContent: "center",
               display: "flex",
-              width: "100%",
             }}
-          />
-          <Text
-            textSize={20}
-            textAlign="left"
-            textAlignSubtitle="left"
-            subtitle={dictionary.block3.image3.title}
-            text={dictionary.block3.image3.description}
-            md={12}
           />
         </Component>
       </Block>
+
       <Block
         background="transparent"
         style={{ display: "flex", alignItems: "center" }}

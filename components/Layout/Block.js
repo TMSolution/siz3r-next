@@ -18,6 +18,7 @@ export default function Block(props) {
         //width: { xs: "calc(100% - 48px)", md: "80%" },
         color: props.color,
         width: { xs: "calc(100vw - 48px)", md: "calc(100vw - 20%)" },
+        boxShadow: "none",
         ...(props.style || {}),
       }}>
       <Grid

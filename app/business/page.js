@@ -12,24 +12,23 @@ export default function Business(props) {
   return (
     <main style={{ display: "flex", flexDirection: "column" }}>
       <Block
-        background="transparent"
+        //color="black"
+        // background="linear-gradient(5deg, transparent 5%, gray 5.2%, gray 94.8%, black 95%)"
         style={{ display: "flex", alignItems: "center", minHeight: "60vh" }}
         gridProps={{
           justifyContent: "center",
           alignItems: "stretch",
-          paddingTop: 15,
-          paddingBottom: 15,
         }}>
         <Text
           md={6}
           titleSize={{ xs: 45, md: 60 }}
           textSize={23}
-          title={dictionary.block1business.title}
-          text={dictionary.block1business.description}
+          title={dictionary.block1.title}
+          text={dictionary.block1.description}
         />
       </Block>
       <Block
-        background="transparent"
+        // background="transparent"
         style={{ display: "flex", alignItems: "center" }}
         gridProps={{
           justifyContent: "space-between",
@@ -42,8 +41,8 @@ export default function Business(props) {
           textSize={20}
           textAlign="left"
           textAlignTitle="left"
-          title={dictionary.block2business.title}
-          text={dictionary.block2business.description}
+          title={dictionary.block2.title}
+          text={dictionary.block2.description}
           md={3}
         />
         <Image
@@ -78,8 +77,8 @@ export default function Business(props) {
           textSize={20}
           textAlign="center"
           textAlignTitle="center"
-          title={dictionary.block3business.title}
-          text={dictionary.block3business.description}
+          title={dictionary.block3.title}
+          text={dictionary.block3.description}
           md={9}
         />
         <Component md={4}>
@@ -99,8 +98,8 @@ export default function Business(props) {
             textSize={20}
             textAlign="left"
             textAlignSubtitle="left"
-            subtitle={dictionary.block3business.image1.title}
-            text={dictionary.block3business.image1.description}
+            subtitle={dictionary.block3.image1.title}
+            text={dictionary.block3.image1.description}
             md={12}
           />
         </Component>
@@ -121,8 +120,8 @@ export default function Business(props) {
             textSize={20}
             textAlign="left"
             textAlignSubtitle="left"
-            subtitle={dictionary.block3business.image2.title}
-            text={dictionary.block3business.image2.description}
+            subtitle={dictionary.block3.image2.title}
+            text={dictionary.block3.image2.description}
             md={12}
           />
         </Component>
@@ -143,8 +142,8 @@ export default function Business(props) {
             textSize={20}
             textAlign="left"
             textAlignSubtitle="left"
-            subtitle={dictionary.block3business.image3.title}
-            text={dictionary.block3business.image3.description}
+            subtitle={dictionary.block3.image3.title}
+            text={dictionary.block3.image3.description}
             md={12}
           />
         </Component>
@@ -165,8 +164,8 @@ export default function Business(props) {
           textSize={20}
           textAlign="center"
           textAlignTitle="center"
-          title={dictionary.block4business.title}
-          text={dictionary.block4business.description}
+          title={dictionary.block4.title}
+          text={dictionary.block4.description}
           md={9}
         />
         <Component md={6}>
@@ -186,8 +185,8 @@ export default function Business(props) {
             textSize={20}
             textAlign="left"
             textAlignSubtitle="left"
-            subtitle={dictionary.block4business.image1.title}
-            text={dictionary.block4business.image1.description}
+            subtitle={dictionary.block4.image1.title}
+            text={dictionary.block4.image1.description}
             md={12}
           />
         </Component>
@@ -208,8 +207,8 @@ export default function Business(props) {
             textSize={20}
             textAlign="left"
             textAlignSubtitle="left"
-            subtitle={dictionary.block4business.image2.title}
-            text={dictionary.block4business.image2.description}
+            subtitle={dictionary.block4.image2.title}
+            text={dictionary.block4.image2.description}
             md={12}
           />
         </Component>
@@ -230,8 +229,8 @@ export default function Business(props) {
             textSize={20}
             textAlign="left"
             textAlignSubtitle="left"
-            subtitle={dictionary.block4business.image3.title}
-            text={dictionary.block4business.image3.description}
+            subtitle={dictionary.block4.image3.title}
+            text={dictionary.block4.image3.description}
             md={12}
           />
         </Component>
@@ -252,8 +251,8 @@ export default function Business(props) {
             textSize={20}
             textAlign="left"
             textAlignSubtitle="left"
-            subtitle={dictionary.block4business.image4.title}
-            text={dictionary.block4business.image4.description}
+            subtitle={dictionary.block4.image4.title}
+            text={dictionary.block4.image4.description}
             md={12}
           />
         </Component>

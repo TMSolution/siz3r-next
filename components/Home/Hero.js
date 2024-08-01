@@ -48,6 +48,7 @@ export default function Hero({ dictionary }) {
               gap: 2,
               width: { md: "100%" },
               alignSelf: { md: "center", xs: "center" },
+              flexDirection: { md: "row", xs: "column" },
             }}>
             <Button
               size={1.3}
@@ -72,8 +73,8 @@ export default function Hero({ dictionary }) {
           textSize={23}
           gridProps={{ lg: 8, md: 12, sm: 12 }}
           gridStyle={{ paddingTop: "48px", paddingBottom: "48px" }}
-          textAlign="left"
-          textAlignTitle="left"
+          textAlign={{ xs: "center", md: "left" }}
+          textAlignTitle={{ xs: "center", md: "left" }}
         />
       </Component>
       <Component
