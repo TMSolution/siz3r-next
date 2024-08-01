@@ -108,18 +108,6 @@ export default function Home(props) {
             justifyContent: "start",
             flexDirection: "row",
           }}>
-          <Component xs={12} md={3.5} gridStyle={{ alignSelf: "center" }}>
-            <Text
-              titleSize={30}
-              textSize={20}
-              textAlign={{ xs: "justify", md: "left" }}
-              textAlignTitle={{ xs: "center", md: "left" }}
-              title={dictionary.block1.image2.title}
-              text={dictionary.block1.image2.description}
-              md={12}
-              xs={12}
-            />
-          </Component>
           <Image
             xs={12}
             md={8.5}
@@ -135,6 +123,18 @@ export default function Home(props) {
               display: "flex",
             }}
           />
+          <Component xs={12} md={3.5} gridStyle={{ alignSelf: "center" }}>
+            <Text
+              titleSize={30}
+              textSize={20}
+              textAlign={{ xs: "justify", md: "right" }}
+              textAlignTitle={{ xs: "center", md: "right" }}
+              title={dictionary.block1.image2.title}
+              text={dictionary.block1.image2.description}
+              md={12}
+              xs={12}
+            />
+          </Component>
         </Component>
         <Component
           xs={12}
