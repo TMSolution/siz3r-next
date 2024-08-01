@@ -8,7 +8,7 @@ export default function HexagonBackground({ isMobile }) {
   const size = 100;
   const sizeMobile = 50;
   const height = parseInt(2000 / size);
-  const width = parseInt( 1920 / size);
+  const width = parseInt(1920 / size);
   const margin = 0.03;
   const color = "#000000";
   const fillColor = "#74368C";
