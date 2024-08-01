@@ -1,13 +1,25 @@
 {
   "hero": {
     "title": "In your size",
-    "description": "Siz3r is an innovative technological platform supporting clothing purchases on e-commerce platforms.",
+    "description": "Transfer your figure to a virtual space and try on clothes without leaving home",
     "button": "Download app",
     "button2": "Learn more"
   },
   "block1": {
-    "title": "Industries and applications",
-    "description": "Siz3r is used in various industries, such as e-commerce, traditional stores, fitness, dietetics and entertainment. Our solutions help increase competitiveness, reduce costs and reduce the number of product returns."
+    "title": "In your size",
+    "description": "Download the app. Take a photo. Try on and buy.",
+    "image1": {
+      "title": "Download app",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "image2": {
+      "title": "Take a photo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "image3": {
+      "title": "Try on and buy",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
   },
   "block2": {
     "title": "Innovative solutions",

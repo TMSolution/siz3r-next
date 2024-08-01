@@ -12,6 +12,15 @@ import Hero from "@/components/Home/Hero";
 import TranslationContext from "@/context/TranslationContext";
 import { Directions } from "@mui/icons-material";
 
+function colorText(text) {
+  let array = text
+    .split(" ")
+    .map((word, index) => (
+      <span style={{ color: index % 2 === 0 && "#00D278" }}>{word} </span>
+    ));
+  return array;
+}
+
 export default function Home(props) {
   const { dictionary, lang } = useContext(TranslationContext);
 
@@ -78,7 +87,7 @@ export default function Home(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "left" }}
               textAlignTitle={{ xs: "center", md: "left" }}
-              title={dictionary.block1.image1.title}
+              title={colorText(dictionary.block1.image1.title)}
               text={dictionary.block1.image1.description}
               md={12}
               xs={12}
@@ -112,7 +121,7 @@ export default function Home(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "right" }}
               textAlignTitle={{ xs: "center", md: "right" }}
-              title={dictionary.block1.image2.title}
+              title={colorText(dictionary.block1.image2.title)}
               text={dictionary.block1.image2.description}
               md={12}
               xs={12}
@@ -146,7 +155,7 @@ export default function Home(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "left" }}
               textAlignTitle={{ xs: "center", md: "left" }}
-              title={dictionary.block1.image3.title}
+              title={colorText(dictionary.block1.image3.title)}
               text={dictionary.block1.image3.description}
               md={12}
               xs={12}
