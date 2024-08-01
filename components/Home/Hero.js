@@ -29,7 +29,7 @@ export default function Hero({ dictionary }) {
         md={6}
         xs={12}
         gridProps={{ justifyContent: "space-between", alignItems: "stretch" }}
-        gridStyle={{ alignSelf: "center" }}
+        gridStyle={{ alignSelf: "center", paddingBottom: "24px" }}
         customTop={
           <Box
             component={"img"}
@@ -54,6 +54,11 @@ export default function Hero({ dictionary }) {
               size={1.3}
               variant="contained"
               style={{ whiteSpace: "nowrap" }}>
+              <img
+                src="/google-play.png"
+                height={36}
+                style={{ marginRight: 4 }}
+              />
               {dictionary.hero.button}
             </Button>
             <Button

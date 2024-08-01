@@ -17,7 +17,7 @@ export default function Text({
   textAlignTitle = "center",
   gridProps = {},
   gridStyle = {},
-  color = "#BDBDBC",
+  color = "white",
 }) {
   const classes = useStyles();
   const { isMobile } = useContext(SystemContext);

@@ -3,6 +3,9 @@ import { createTheme } from "@mui/material/styles";
 
 let theme = createTheme({
   typography: {
+    button: {
+      fontFamily: "Nunito",
+    },
     fontFamily: [
       "Work Sans",
       "Roboto",

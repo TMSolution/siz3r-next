@@ -48,7 +48,7 @@ export default function Header() {
     <>
       <AppBar
         style={{
-          background: "linear-gradient(black,black,transparent)",
+          background: "linear-gradient(#3C1992,#3C1992,transparent)",
           width: "100vw",
           boxShadow: "none",
           flexDirection: "row",

@@ -40,7 +40,7 @@ export default function HexagonBackground({ isMobile }) {
           width: "100vw",
           opacity: 1,
           background:
-            "linear-gradient(black 1%, transparent, transparent, black 99%)",
+            "linear-gradient(#3C1992 1%, transparent, transparent, black 99%)",
           zIndex: 1,
         }}
       />
