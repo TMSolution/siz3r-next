@@ -79,14 +79,14 @@ export default function Home(props) {
             display: "flex",
             alignItems: "center",
             justifyContent: "start",
-            flexDirection: "row",
+            flexDirection: "row-reverse",
           }}>
           <Component xs={12} md={5} gridStyle={{ alignSelf: "center" }}>
             <Text
               titleSize={30}
               textSize={20}
-              textAlign={{ xs: "justify", md: "left" }}
-              textAlignTitle={{ xs: "center", md: "left" }}
+              textAlign={{ xs: "justify", md: "right" }}
+              textAlignTitle={{ xs: "center", md: "right" }}
               title={colorText(dictionary.block1.image1.title)}
               text={dictionary.block1.image1.description}
               md={12}
@@ -96,7 +96,7 @@ export default function Home(props) {
           <Image
             xs={12}
             md={7}
-            src={"/photos/download.png"}
+            src={"/photos/download2.png"}
             width="100%"
             gridStyle={{
               alignItems: "end",
@@ -113,14 +113,14 @@ export default function Home(props) {
             display: "flex",
             alignItems: "center",
             justifyContent: "start",
-            flexDirection: "row-reverse",
+            flexDirection: "row",
           }}>
           <Component xs={12} md={5} gridStyle={{ alignSelf: "center" }}>
             <Text
               titleSize={30}
               textSize={20}
-              textAlign={{ xs: "justify", md: "right" }}
-              textAlignTitle={{ xs: "center", md: "right" }}
+              textAlign={{ xs: "justify", md: "left" }}
+              textAlignTitle={{ xs: "center", md: "left" }}
               title={colorText(dictionary.block1.image2.title)}
               text={dictionary.block1.image2.description}
               md={12}
@@ -147,14 +147,14 @@ export default function Home(props) {
             display: "flex",
             alignItems: "center",
             justifyContent: "start",
-            flexDirection: "row",
+            flexDirection: "row-reverse",
           }}>
           <Component xs={12} md={5} gridStyle={{ alignSelf: "center" }}>
             <Text
               titleSize={30}
               textSize={20}
-              textAlign={{ xs: "justify", md: "left" }}
-              textAlignTitle={{ xs: "center", md: "left" }}
+              textAlign={{ xs: "justify", md: "right" }}
+              textAlignTitle={{ xs: "center", md: "right" }}
               title={colorText(dictionary.block1.image3.title)}
               text={dictionary.block1.image3.description}
               md={12}
