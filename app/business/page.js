@@ -6,11 +6,13 @@ import Component from "@/components/Layout/Component";
 import { useContext } from "react";
 import SystemContext from "@/context/SystemContext";
 import TranslationContext from "@/context/TranslationContext";
+import Hero from "@/components/Business/Hero";
 export default function Business(props) {
   const { dictionary, lang } = useContext(TranslationContext);
   const { isMobile, theme } = useContext(SystemContext);
   return (
     <main style={{ display: "flex", flexDirection: "column" }}>
+      {/* <Hero /> */}
       <Block
         //color="black"
         // background="linear-gradient(5deg, transparent 5%, gray 5.2%, gray 94.8%, black 95%)"

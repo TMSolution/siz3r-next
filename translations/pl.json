@@ -7,7 +7,7 @@
   },
   "block1": {
     "title": "In your size",
-    "description": "Pobierz aplikację. Zrób zdjęcie. Przymierz i kupuj.",
+    "description": "Pobierz aplikację. Zrób zdjęcie. Przymierzaj i kupuj.",
     "image1": {
       "title": "Pobierz aplikację",
       "description": "Pobranie aplikacji i usyskanie dostępu do wszystkich funkcji zajmie ci tylko chwilę!"
@@ -26,7 +26,7 @@
     "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. \n\nNasza platforma umożliwia również wizualizację klienta w wybranych strojach w formie trójwymiarowych modeli, co pomaga w dokonaniu trafnego wyboru",
     "image1": {
       "title": "Skanowanie 3D",
-      "description": "Przekształcanie zdjęć w wirtualne sylwetki 3D"
+      "description": "Przekształć swoje zdjęcia w dokładne sylwetki 3D"
     },
     "image2": {
       "title": "Wirtualna Przymierzalnia",
@@ -39,19 +39,19 @@
   },
   "block3": {
     "title": "Produkty Siz3r i główne możliwości produktu",
-    "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców.",
+    "description": "Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców dzięki precyzyjnym modelom 3D Twojej sylwetki.",
 
     "image1": {
       "title": "Zbieranie wymiarów",
-      "description": "Przekształcanie zdjęć w wirtualne sylwetki 3D."
+      "description": "Przekształć swoje zdjęcia w dokładne sylwetki 3D."
     },
     "image2": {
       "title": "Ubieranie modeli",
-      "description": "Wirtualna przymierzalnia umożliwiająca wizualizację klienta w różnych strojach."
+      "description": "Korzystaj z wirtualnej przymierzalni, aby zobaczyć, jak pasują Ci różne stroje."
     },
     "image3": {
       "title": "Skanowanie ubrań",
-      "description": "Dodawanie odzieży do systemu i prezentacja na modelach 3D."
+      "description": "Dodawaj ubrania do systemu i prezentuj je na modelach 3D."
     }
   },
   "block4": {
