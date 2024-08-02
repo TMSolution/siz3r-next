@@ -29,7 +29,7 @@ export default function Hero({ dictionary }) {
         md={6}
         xs={12}
         gridProps={{ justifyContent: "space-between", alignItems: "stretch" }}
-        gridStyle={{ alignSelf: "center", paddingBottom: "24px" }}
+        gridStyle={{ alignSelf: "center", paddingBottom: "24px", zIndex: 100 }}
         customTop={
           <Box
             component={"img"}

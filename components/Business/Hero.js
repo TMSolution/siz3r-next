@@ -9,109 +9,40 @@ import SystemContext from "@/context/SystemContext";
 import { Android, PhoneAndroid } from "@mui/icons-material";
 import { Play } from "lucide-react";
 import { Box } from "@mui/material";
+import zIndex from "@mui/material/styles/zIndex";
 
 export default function Hero({ dictionary }) {
   const { isMobile, theme } = useContext(SystemContext);
   return (
     <Block
+      //color="black"
       background="transparent"
-      style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        minHeight: "100vh",
+      }}
       gridProps={{
-        justifyContent: { xs: "center", md: "space-between" },
+        justifyContent: "center",
         alignItems: "stretch",
-        sx: {
-          paddingTop: { xs: "50px", md: 0 },
-          minHeight: "100vh",
-        },
       }}>
-      <HexagonBackground isMobile={isMobile} />
-      <Component
+      <Text
         md={6}
-        xs={12}
-        gridProps={{ justifyContent: "space-between", alignItems: "stretch" }}
-        gridStyle={{ alignSelf: "center", paddingBottom: "24px" }}
-        customTop={
-          <Box
-            component={"img"}
-            src={"/logo.png"}
-            height={{ md: "95px", xs: "70px" }}
-            sx={{
-              marginRight: "auto",
-              marginLeft: { md: "0px", xs: "auto" },
-            }}
-          />
-        }
-        customBottom={
-          <Box
-            sx={{
-              display: "flex",
-              gap: 2,
-              width: { md: "100%" },
-              alignSelf: { md: "center", xs: "center" },
-              flexDirection: { md: "row", xs: "column" },
-            }}>
-            <Button
-              size={1.3}
-              variant="contained"
-              style={{ whiteSpace: "nowrap", paddingLeft: 16 }}>
-              <img
-                src="/google-play.png"
-                height={36}
-                style={{ marginRight: 8 }}
-              />
-              {dictionary.hero.button}
-            </Button>
-            <Button
-              size={1.3}
-              color="secondary"
-              variant="outlined"
-              style={{ whiteSpace: "nowrap" }}>
-              {dictionary.hero.button2}
-            </Button>
-          </Box>
-        }>
-        <Text
-          //title={dictionary.hero.title}
-          text={dictionary.hero.description}
-          color="white"
-          titleSize={{ xs: 50, md: 70 }}
-          textSize={25}
-          gridProps={{ lg: 8, md: 12, sm: 12 }}
-          gridStyle={{ paddingTop: "48px", paddingBottom: "48px" }}
-          textAlign={{ xs: "center", md: "left" }}
-          textAlignTitle={{ xs: "center", md: "left" }}
-        />
-      </Component>
-      <Component
-        md={6}
-        xs={0}
-        gridStyle={{
-          //height: "40vh",
-          alignSelf: "center",
-          height: "80vh",
-        }}>
-        <Image
-          src="/phone.png"
-          alt=""
-          gridStyle={{
-            alignSelf: { xs: "center", md: "end" },
-            justifyContent: "center",
-            display: "flex",
-            height: "70vh",
-            padding: { xs: "48px", md: "0px" },
-            filter: {
-              xs: "drop-shadow(1px 1px 50px rgba(255,255,255,0.5))",
-              md: "drop-shadow(1px 1px 60px rgba(255,255,255,0.5))",
-            },
-            maxWidth: "100%",
-          }}
-          // height="80vh"
-          maxWidth="100%"
-          //width={300}
-          md={12}
-          xs={0}
-        />
-      </Component>
+        titleSize={{ xs: 45, md: 70 }}
+        textSize={25}
+        title={dictionary.businessHero.title}
+        text={dictionary.businessHero.description}
+        gridStyle={{ zIndex: 100, paddingBottom: 48 }}
+      />
+      <HexagonBackground
+        isMobile={isMobile}
+        position={{
+          xs: "linear-gradient(green, black, black)",
+          md: `radial-gradient(circle at center, green, black, black)`,
+        }}
+        lightPos="0%"
+        maskHeight={"100vh"}
+      />
     </Block>
   );
 }

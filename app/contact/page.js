@@ -10,7 +10,13 @@ import { GoogleReCaptcha } from "react-google-recaptcha-v3";
 export default function Contact() {
   const [reCaptchaToken, setRecaptchaToken] = useState(null);
   return (
-    <>
+    <main
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        background: "linear-gradient(-45deg, #3C1992, #3C1992,#00D278,)",
+        marginTop: 15,
+      }}>
       <Block
         background="transparent"
         style={{
@@ -18,7 +24,7 @@ export default function Contact() {
           paddingTop: 15,
           paddingBottom: 5,
         }}
-        gridProps={{ spacing: 3 }}>
+        gridProps={{ spacing: 3, paddingTop: 15,paddingBottom:15 }}>
         <Text
           title={"Skontaktuj się z nami"}
           text={
@@ -50,7 +56,7 @@ export default function Contact() {
             />
             <Text title={"Formularz kontaktowy"} md={12} />
             <FormComponent
-              // light={true}
+               light={true}
               validate={(values) => {
                 let errors = {};
                 function validateEmail(email) {
@@ -163,6 +169,6 @@ export default function Contact() {
           </div>
         </Component>
       </Block>
-    </>
+    </main>
   );
 }

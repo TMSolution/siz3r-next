@@ -28,7 +28,11 @@ export default async function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <LayoutBody dictionary={dictionary} lang={lang.value} pathname={path}>
+      <LayoutBody
+        background={"linear-gradient(45deg,#00D278, #3C1992, #00D278)"}
+        dictionary={dictionary}
+        lang={lang.value}
+        pathname={path}>
         {children}
       </LayoutBody>
     </html>

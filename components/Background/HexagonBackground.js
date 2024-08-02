@@ -4,7 +4,15 @@ import Hexagon from "./Hexagon";
 function hexToHexa(hex, alpha = 255) {
   return hex + alpha.toString(16);
 }
-export default function HexagonBackground({ isMobile }) {
+export default function HexagonBackground({
+  isMobile,
+  position = {
+    xs: "linear-gradient(green, black, black)",
+    md: `linear-gradient(to left, green, black, black)`,
+  },
+  lightPos = "25%",
+  maskHeight = "110vh",
+}) {
   const size = 100;
   const sizeMobile = 50;
   const height = parseInt(2000 / size);
@@ -12,14 +20,14 @@ export default function HexagonBackground({ isMobile }) {
   const margin = 0.03;
   const color = "#000000";
   const fillColor = "#74368C";
-  const lightPos = "25%";
+
   return (
     <Paper
       sx={{
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "110vh",
+        height: maskHeight,
         width: "100vw",
         backgroundColor: color,
         //transition: "all 1s ease-in-out 0s",
@@ -28,7 +36,7 @@ export default function HexagonBackground({ isMobile }) {
         position: "absolute",
         top: 0,
         left: 0,
-        zIndex: -1,
+        //  zIndex: -1,
         maskImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0) 95%)`,
       }}>
       <Box
@@ -36,7 +44,7 @@ export default function HexagonBackground({ isMobile }) {
           position: "absolute",
           top: 0,
           left: 0,
-          height: "110vh",
+          height: maskHeight,
           width: "100vw",
           opacity: 0.1,
           background:
@@ -53,7 +61,7 @@ export default function HexagonBackground({ isMobile }) {
             fillColor,
             255
           )}, black)`,
-          height: "110vh",
+          height: maskHeight,
           width: "100vw",
           overflow: "hidden",
           opacity: 1,
@@ -65,14 +73,11 @@ export default function HexagonBackground({ isMobile }) {
           position: "absolute",
           top: 0,
           left: 0,
-          height: "110vh",
+          height: maskHeight,
           width: "100vw",
           opacity: 1,
 
-          background: {
-            xs: "linear-gradient(to top, green, black, black)",
-            md: "linear-gradient(to left, green, black, black)",
-          },
+          background: position,
         }}
       />
       <Box
@@ -86,7 +91,7 @@ export default function HexagonBackground({ isMobile }) {
             fillColor,
             64
           )}, black, black, black)`,
-          height: "110vh",
+          height: maskHeight,
           width: "100vw",
           overflow: "hidden",
           opacity: 0.3,
@@ -97,7 +102,7 @@ export default function HexagonBackground({ isMobile }) {
         style={{
           position: "relative",
           overflow: "visible",
-          height: "110vh",
+          height: maskHeight,
           width: "100vw",
           justifyContent: "center",
           alignItems: "center",
