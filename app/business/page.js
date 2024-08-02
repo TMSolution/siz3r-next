@@ -33,8 +33,8 @@ export default function Business(props) {
           textSize={20}
           textAlign="left"
           textAlignTitle="left"
-          title={dictionary.block2.title}
-          text={dictionary.block2.description}
+          title={dictionary.block1business.title}
+          text={dictionary.block1business.description}
           md={3}
         />
         <Image
