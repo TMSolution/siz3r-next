@@ -27,7 +27,7 @@ export default function Contact() {
           md: `radial-gradient(circle at center, green, black, black)`,
         }}
         lightPos="0%"
-        maskHeight={"170vh"}
+        maskHeight={"100vh"}
       />
       <Block
         background="transparent"
