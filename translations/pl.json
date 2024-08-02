@@ -29,83 +29,37 @@
   },
   "block2": {
     "title": "Funkcjonalności",
-    "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. \n\nNasza platforma umożliwia również wizualizację klienta w wybranych strojach w formie trójwymiarowych modeli, co pomaga w dokonaniu trafnego wyboru",
+    "description": "Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców dzięki precyzyjnym modelom 3D Twojej sylwetki.",
     "image1": {
       "title": "Skanowanie 3D",
       "description": "Przekształć swoje zdjęcia w dokładne sylwetki 3D"
     },
     "image2": {
       "title": "Wirtualna Przymierzalnia",
-      "description": "Ubieranie modeli w różne stroje."
-    },
-    "image3": {
-      "title": "Skanowanie Ubrań",
-      "description": "Dodawanie odzieży do systemu i prezentacja na modelach 3D"
-    }
-  },
-  "block3": {
-    "title": "Produkty Siz3r i główne możliwości produktu",
-    "description": "Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców dzięki precyzyjnym modelom 3D Twojej sylwetki.",
-
-    "image1": {
-      "title": "Zbieranie wymiarów",
-      "description": "Przekształć swoje zdjęcia w dokładne sylwetki 3D."
-    },
-    "image2": {
-      "title": "Ubieranie modeli",
       "description": "Korzystaj z wirtualnej przymierzalni, aby zobaczyć, jak pasują Ci różne stroje."
     },
     "image3": {
-      "title": "Skanowanie ubrań",
+      "title": "Skanowanie Ubrań",
       "description": "Dodawaj ubrania do systemu i prezentuj je na modelach 3D."
     }
   },
-  "block4": {
-    "title": "Branże i zastosowania",
-    "description": "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów.",
-    "image1": {
-      "title": "E-commerce",
-      "description": "Lepsze dopasowanie ubrań, zmniejszenie liczby zwrotów."
-    },
-    "image2": {
-      "title": "Sklepy tradycyjne",
-      "description": "Umożliwienie klientom przymierzania ubrań bez konieczności fizycznego kontaktu."
-    },
-    "image3": {
-      "title": "Fitness i dietetyka",
-      "description": "Monitorowanie zmian sylwetki w czasie."
-    },
-    "image4": {
-      "title": "Rozrywka",
-      "description": "Personalizacja awatarów w grach i wirtualnych światach."
-    }
+  "contact": {
+    "title": "Skontaktuj się z nami!",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus efficitur, dignissim nunc vel, bibendum sem.\n\nNulla condimentum efficitur vehicula. Nullam ac felis fringilla, ultrices purus vel, porta nisl. Mauris ut rutrum tellus, ut placerat turpis. Proin et metus ex. Sed pellentesque finibus pulvinar. Curabitur vitae ex ut velit commodo consectetur.\n\nSuspendisse ut vestibulum velit. Donec ligula nisl, faucibus vel pharetra eu, ornare in elit. Cras tristique aliquet sagittis. Phasellus eu nisl maximus, cursus lectus quis, consequat ex.",
+    "contactForm": "Formularz kontaktowy",
+    "send": "Wyślij",
+    "name": "Nazwa",
+    "email": "Adres e-mail",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "fieldRequired": "Pole wymagane",
+    "invalidEmail": "Nieprawidłowy Email"
   },
   "block1business": {
-    "title": "Branże i zastosowania",
-    "description": "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów."
-  },
-  "block2business": {
-    "title": "Innowacyjne rozwiązania",
+    "title": "Funkcjonalności",
     "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. \n\nNasza platforma umożliwia również wizualizację klienta w wybranych strojach w formie trójwymiarowych modeli, co pomaga w dokonaniu trafnego wyboru"
   },
-  "block3business": {
-    "title": "Produkty Siz3r i główne możliwości produktu",
-    "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców.",
-
-    "image1": {
-      "title": "Zbieranie wymiarów",
-      "description": "Przekształcanie zdjęć w wirtualne sylwetki 3D."
-    },
-    "image2": {
-      "title": "Ubieranie modeli",
-      "description": "Wirtualna przymierzalnia umożliwiająca wizualizację klienta w różnych strojach."
-    },
-    "image3": {
-      "title": "Skanowanie ubrań",
-      "description": "Dodawanie odzieży do systemu i prezentacja na modelach 3D."
-    }
-  },
-  "block4business": {
+  "block2business": {
     "title": "Branże i zastosowania",
     "description": "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów.",
     "image1": {
@@ -114,15 +68,15 @@
     },
     "image2": {
       "title": "Sklepy tradycyjne",
-      "description": "Umożliwienie klientom przymierzania ubrań bez konieczności fizycznego kontaktu."
+      "description": "Przymierzaj ubrania bez fizycznego kontaktu."
     },
     "image3": {
       "title": "Fitness i dietetyka",
-      "description": "Monitorowanie zmian sylwetki w czasie."
+      "description": "Monitoruj zmiany swojej sylwetki."
     },
     "image4": {
       "title": "Rozrywka",
-      "description": "Personalizacja awatarów w grach i wirtualnych światach."
+      "description": "Personalizuj awatary w grach i wirtualnych światach."
     }
   },
   "footer": {

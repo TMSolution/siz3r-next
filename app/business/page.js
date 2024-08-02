@@ -66,8 +66,8 @@ export default function Business(props) {
           textSize={20}
           textAlign="center"
           textAlignTitle="center"
-          title={dictionary.block4.title}
-          text={dictionary.block4.description}
+          title={dictionary.block2business.title}
+          text={dictionary.block2business.description}
           md={9}
         />
         <Component md={6}>
@@ -81,14 +81,15 @@ export default function Business(props) {
               justifyContent: "center",
               display: "flex",
               width: "100%",
+              marginBottom: 3,
             }}
           />
           <Text
             textSize={20}
             textAlign="center"
             textAlignSubtitle="center"
-            subtitle={dictionary.block4.image1.title}
-            text={dictionary.block4.image1.description}
+            subtitle={dictionary.block2business.image1.title}
+            text={dictionary.block2business.image1.description}
             md={12}
             gridStyle={{ width: "100%" }}
           />
@@ -104,14 +105,15 @@ export default function Business(props) {
               justifyContent: "center",
               display: "flex",
               width: "100%",
+              marginBottom: 3,
             }}
           />
           <Text
             textSize={20}
             textAlign="center"
             textAlignSubtitle="center"
-            subtitle={dictionary.block4.image2.title}
-            text={dictionary.block4.image2.description}
+            subtitle={dictionary.block2business.image2.title}
+            text={dictionary.block2business.image2.description}
             md={12}
             gridStyle={{ width: "100%" }}
           />
@@ -127,14 +129,15 @@ export default function Business(props) {
               justifyContent: "center",
               display: "flex",
               width: "100%",
+              marginBottom: 3,
             }}
           />
           <Text
             textSize={20}
             textAlign="center"
             textAlignSubtitle="center"
-            subtitle={dictionary.block4.image3.title}
-            text={dictionary.block4.image3.description}
+            subtitle={dictionary.block2business.image3.title}
+            text={dictionary.block2business.image3.description}
             md={12}
             gridStyle={{ width: "100%" }}
           />
@@ -150,14 +153,15 @@ export default function Business(props) {
               justifyContent: "center",
               display: "flex",
               width: "100%",
+              marginBottom: 3,
             }}
           />
           <Text
             textSize={20}
             textAlign="center"
             textAlignSubtitle="center"
-            subtitle={dictionary.block4.image4.title}
-            text={dictionary.block4.image4.description}
+            subtitle={dictionary.block2business.image4.title}
+            text={dictionary.block2business.image4.description}
             md={12}
             gridStyle={{ width: "100%" }}
           />

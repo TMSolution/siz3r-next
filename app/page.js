@@ -177,7 +177,7 @@ export default function Home(props) {
           textAlign="center"
           textAlignTitle="center"
           title={dictionary.block2.title}
-          text={dictionary.block3.description}
+          text={dictionary.block2.description}
           md={9}
         />
         <Component md={4}>
@@ -199,8 +199,8 @@ export default function Home(props) {
             subtitleSize={25}
             textAlign="center"
             textAlignSubtitle="center"
-            subtitle={dictionary.block3.image1.title}
-            text={dictionary.block3.image1.description}
+            subtitle={dictionary.block2.image1.title}
+            text={dictionary.block2.image1.description}
             md={12}
           />
         </Component>
@@ -223,8 +223,8 @@ export default function Home(props) {
             subtitleSize={25}
             textAlign="center"
             textAlignSubtitle="center"
-            subtitle={dictionary.block3.image2.title}
-            text={dictionary.block3.image2.description}
+            subtitle={dictionary.block2.image2.title}
+            text={dictionary.block2.image2.description}
             md={12}
           />
         </Component>
@@ -255,11 +255,11 @@ export default function Home(props) {
             textAlignSubtitle="center"
             subtitle={
               <>
-                {dictionary.block3.image3.title}{" "}
+                {dictionary.block2.image3.title}{" "}
                 {/* <Chip color="primary" label={<b>Wkrótce</b>} /> */}
               </>
             }
-            text={dictionary.block3.image3.description}
+            text={dictionary.block2.image3.description}
             md={12}
           />
         </Component>

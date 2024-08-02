@@ -206,7 +206,7 @@ const FormComponent = (props) => {
                 type="submit"
                 variant="contained"
                 size={"large"}
-                color="primary"
+                color="secondary"
                 style={{
                   backgroundColor: success
                     ? "#4caf50"

@@ -5,12 +5,14 @@ import Block from "@/components/Layout/Block";
 import Component from "@/components/Layout/Component";
 import Image from "@/components/Layout/Image";
 import Text from "@/components/Layout/Text";
+import TranslationContext from "@/context/TranslationContext";
 import zIndex from "@mui/material/styles/zIndex";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { GoogleReCaptcha } from "react-google-recaptcha-v3";
 
 export default function Contact() {
   const [reCaptchaToken, setRecaptchaToken] = useState(null);
+  const { dictionary, lang } = useContext(TranslationContext);
   return (
     <main
       style={{
@@ -37,10 +39,8 @@ export default function Contact() {
         }}
         gridProps={{ spacing: 3, paddingTop: 15, paddingBottom: 15 }}>
         <Text
-          title={"Skontaktuj się z nami"}
-          text={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus efficitur, dignissim nunc vel, bibendum sem.\n\nNulla condimentum efficitur vehicula. Nullam ac felis fringilla, ultrices purus vel, porta nisl. Mauris ut rutrum tellus, ut placerat turpis. Proin et metus ex. Sed pellentesque finibus pulvinar. Curabitur vitae ex ut velit commodo consectetur.\n\n Suspendisse ut vestibulum velit. Donec ligula nisl, faucibus vel pharetra eu, ornare in elit. Cras tristique aliquet sagittis. Phasellus eu nisl maximus, cursus lectus quis, consequat ex. "
-          }
+          title={dictionary.contact.title}
+          text={dictionary.contact.description}
           textAlign="left"
           textAlignTitle="left"
           md={5.5}
@@ -70,7 +70,7 @@ export default function Contact() {
             <GoogleReCaptcha
               onVerify={(token) => !reCaptchaToken && setRecaptchaToken(token)}
             />
-            <Text title={"Formularz kontaktowy"} md={12} />
+            <Text title={dictionary.contact.contactForm} md={12} />
             <FormComponent
               light={true}
               validate={(values) => {
@@ -79,13 +79,13 @@ export default function Contact() {
                   var re = /\S+@\S+\.\S+/;
                   return re.test(email);
                 }
-                if (!values.name.trim()) errors.name = "Pole wymagane.";
-                if (!values.email.trim()) errors.email = "Pole wymagane.";
+                if (!values.name.trim()) errors.name = dictionary.contact.fieldRequired;
+                if (!values.email.trim()) errors.email = dictionary.contact.fieldRequired;
                 if (!validateEmail(values.email.trim()))
-                  errors.email = "Nieprawidłowy Email";
-                if (!values.phone.trim()) errors.phone = "Pole wymagane.";
+                  errors.email = dictionary.contact.invalidEmail;
+                if (!values.phone.trim()) errors.phone = dictionary.contact.fieldRequired;
                 if (!values.multiline.trim())
-                  errors.multiline = "Pole wymagane.";
+                  errors.multiline = dictionary.contact.fieldRequired;
                 return errors;
               }}
               fields={{
@@ -95,7 +95,7 @@ export default function Contact() {
                   value: "",
                   customFieldsTop: (
                     <span style={{ marginBottom: 4, marginLeft: 8 }}>
-                      <b>Nazwa</b>
+                      <b>{dictionary.contact.name}</b>
                     </span>
                   ),
                   props: {
@@ -108,7 +108,7 @@ export default function Contact() {
                   value: "",
                   customFieldsTop: (
                     <span style={{ marginBottom: 4, marginLeft: 8 }}>
-                      <b>Adres e-mail</b>
+                      <b>{dictionary.contact.email}</b>
                     </span>
                   ),
                   props: {
@@ -121,7 +121,7 @@ export default function Contact() {
                   value: "",
                   customFieldsTop: (
                     <span style={{ marginBottom: 4, marginLeft: 8 }}>
-                      <b>Telefon</b>
+                      <b>{dictionary.contact.phone}</b>
                     </span>
                   ),
                   props: {
@@ -139,12 +139,12 @@ export default function Contact() {
                   },
                   customFieldsTop: (
                     <span style={{ marginBottom: 4, marginLeft: 8 }}>
-                      <b>Wiadomość</b>
+                      <b>{dictionary.contact.message}</b>
                     </span>
                   ),
                 },
               }}
-              buttonName="Wyślij"
+              buttonName={dictionary.contact.send}
               //  buttonProps={{}}
               callback={async (
                 values,
