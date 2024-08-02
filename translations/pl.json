@@ -10,19 +10,19 @@
     "description": "Pobierz aplikację. Zrób zdjęcie. Przymierz i kupuj.",
     "image1": {
       "title": "Pobierz aplikację",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Pobranie aplikacji i usyskanie dostępu do wszystkich funkcji zajmie ci tylko chwilę!"
     },
     "image2": {
       "title": "Zrób zdjęcie",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "To proste! Na podstawie tylko jednego zdjęcia będziemy w stanie zebrać twoje wymiary i umożliwić ci przymierzanie ubrań bez wychodzenia z domu!"
     },
     "image3": {
       "title": "Przymierz i kupuj",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Gratulacje! Teraz świetnie dopasowane ubrania możesz kupić bez wizyty w sklepie!"
     }
   },
   "block2": {
-    "title": "Funkcje",
+    "title": "Funkcjonalności",
     "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. \n\nNasza platforma umożliwia również wizualizację klienta w wybranych strojach w formie trójwymiarowych modeli, co pomaga w dokonaniu trafnego wyboru",
     "image1": {
       "title": "Skanowanie 3D",
