@@ -53,11 +53,11 @@ export default function Hero({ dictionary }) {
             <Button
               size={1.3}
               variant="contained"
-              style={{ whiteSpace: "nowrap" }}>
+              style={{ whiteSpace: "nowrap", paddingLeft: 16 }}>
               <img
                 src="/google-play.png"
                 height={36}
-                style={{ marginRight: 4 }}
+                style={{ marginRight: 8 }}
               />
               {dictionary.hero.button}
             </Button>
@@ -75,7 +75,7 @@ export default function Hero({ dictionary }) {
           text={dictionary.hero.description}
           color="white"
           titleSize={{ xs: 50, md: 70 }}
-          textSize={23}
+          textSize={25}
           gridProps={{ lg: 8, md: 12, sm: 12 }}
           gridStyle={{ paddingTop: "48px", paddingBottom: "48px" }}
           textAlign={{ xs: "center", md: "left" }}

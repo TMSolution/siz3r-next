@@ -54,6 +54,11 @@ export default function Text({
           sx={{
             textAlign: textAlignSubtitle,
             fontSize: subtitleSize,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            gap:1
           }}>
           {subtitle}
         </Typography>

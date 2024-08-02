@@ -22,8 +22,20 @@
     }
   },
   "block2": {
-    "title": "Innowacyjne rozwiązania",
-    "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. \n\nNasza platforma umożliwia również wizualizację klienta w wybranych strojach w formie trójwymiarowych modeli, co pomaga w dokonaniu trafnego wyboru"
+    "title": "Funkcje",
+    "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. \n\nNasza platforma umożliwia również wizualizację klienta w wybranych strojach w formie trójwymiarowych modeli, co pomaga w dokonaniu trafnego wyboru",
+    "image1": {
+      "title": "Skanowanie 3D",
+      "description": "Przekształcanie zdjęć w wirtualne sylwetki 3D"
+    },
+    "image2": {
+      "title": "Wirtualna Przymierzalnia",
+      "description": "Ubieranie modeli w różne stroje."
+    },
+    "image3": {
+      "title": "Skanowanie Ubrań",
+      "description": "Dodawanie odzieży do systemu i prezentacja na modelach 3D"
+    }
   },
   "block3": {
     "title": "Produkty Siz3r i główne możliwości produktu",
