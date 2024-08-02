@@ -230,8 +230,8 @@ export default function Home(props) {
         </Component>
         <Component md={4}>
           <Badge
-            sx={{ ".MuiBadge-badge": { height: 30 } }}
-            badgeContent={<b style={{ fontSize: 16,color:"white" }}>Soon</b>}
+            sx={{ ".MuiBadge-badge": { height: 30, right: 12 } }}
+            badgeContent={<b style={{ fontSize: 16, color: "white" }}>Soon</b>}
             color="secondary">
             <Image
               md={12}
