@@ -1,9 +1,11 @@
 "use client";
+import HexagonBackground from "@/components/Background/HexagonBackground";
 import FormComponent from "@/components/Form";
 import Block from "@/components/Layout/Block";
 import Component from "@/components/Layout/Component";
 import Image from "@/components/Layout/Image";
 import Text from "@/components/Layout/Text";
+import zIndex from "@mui/material/styles/zIndex";
 import { useState } from "react";
 import { GoogleReCaptcha } from "react-google-recaptcha-v3";
 
@@ -17,14 +19,23 @@ export default function Contact() {
         background: "linear-gradient(-45deg, #3C1992, #3C1992,#00D278,)",
         marginTop: 15,
       }}>
+      <HexagonBackground
+        position={{
+          xs: "linear-gradient(green, black, black)",
+          md: `radial-gradient(circle at center, green, black, black)`,
+        }}
+        lightPos="0%"
+        maskHeight={"170vh"}
+      />
       <Block
         background="transparent"
         style={{
           minHeight: "40vh",
           paddingTop: 15,
           paddingBottom: 5,
+          zIndex: 100,
         }}
-        gridProps={{ spacing: 3, paddingTop: 15,paddingBottom:15 }}>
+        gridProps={{ spacing: 3, paddingTop: 15, paddingBottom: 15 }}>
         <Text
           title={"Skontaktuj się z nami"}
           text={
@@ -48,7 +59,12 @@ export default function Contact() {
       </Block>
       <Block
         background="transparent"
-        style={{ minHeight: "80vh", paddingTop: 0, overflow: "hidden" }}>
+        style={{
+          minHeight: "80vh",
+          paddingTop: 0,
+          overflow: "hidden",
+          zIndex: 100,
+        }}>
         <Component md={8}>
           <div id="contactForm" style={{ width: "100%" }}>
             <GoogleReCaptcha
@@ -56,7 +72,7 @@ export default function Contact() {
             />
             <Text title={"Formularz kontaktowy"} md={12} />
             <FormComponent
-               light={true}
+              light={true}
               validate={(values) => {
                 let errors = {};
                 function validateEmail(email) {
