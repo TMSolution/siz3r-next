@@ -96,7 +96,7 @@ export default function Home(props) {
           <Image
             xs={12}
             md={7}
-            src={"https://picsum.photos/1600/600"}
+            src={"/photos/download.png"}
             width="100%"
             gridStyle={{
               alignItems: "end",
@@ -130,7 +130,7 @@ export default function Home(props) {
           <Image
             xs={12}
             md={7}
-            src={"https://picsum.photos/1600/600"}
+            src={"/photos/photo.png"}
             width="100%"
             gridStyle={{
               alignItems: "end",
@@ -164,7 +164,7 @@ export default function Home(props) {
           <Image
             xs={12}
             md={7}
-            src={"https://picsum.photos/1600/600"}
+            src={"/photos/shopping.png"}
             width="100%"
             gridStyle={{
               alignItems: "end",
