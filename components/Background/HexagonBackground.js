@@ -7,7 +7,7 @@ function hexToHexa(hex, alpha = 255) {
 export default function HexagonBackground({
   isMobile,
   position = {
-    xs: "linear-gradient(green, black, black)",
+    xs: "linear-gradient(to top ,green, black, black)",
     md: `linear-gradient(to left, green, black, black)`,
   },
   lightPos = "25%",
