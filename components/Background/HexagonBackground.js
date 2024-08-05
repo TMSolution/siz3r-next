@@ -98,7 +98,7 @@ export default function HexagonBackground({
           //filter: "blur(10px)",
         }}
       />
-      <div
+      {/* <div
         style={{
           position: "relative",
           overflow: "visible",
@@ -124,7 +124,7 @@ export default function HexagonBackground({
             ))}
           </div>
         ))}
-      </div>
+      </div> */}
     </Paper>
   );
 }

@@ -9,7 +9,7 @@ import TranslationContext from "@/context/TranslationContext";
 import zIndex from "@mui/material/styles/zIndex";
 import { useContext, useState } from "react";
 import { GoogleReCaptcha } from "react-google-recaptcha-v3";
-
+import { sendEmail } from "@/app/actions";
 export default function Contact() {
   const [reCaptchaToken, setRecaptchaToken] = useState(null);
   const { dictionary, lang } = useContext(TranslationContext);
@@ -79,11 +79,14 @@ export default function Contact() {
                   var re = /\S+@\S+\.\S+/;
                   return re.test(email);
                 }
-                if (!values.name.trim()) errors.name = dictionary.contact.fieldRequired;
-                if (!values.email.trim()) errors.email = dictionary.contact.fieldRequired;
+                if (!values.name.trim())
+                  errors.name = dictionary.contact.fieldRequired;
+                if (!values.email.trim())
+                  errors.email = dictionary.contact.fieldRequired;
                 if (!validateEmail(values.email.trim()))
                   errors.email = dictionary.contact.invalidEmail;
-                if (!values.phone.trim()) errors.phone = dictionary.contact.fieldRequired;
+                if (!values.phone.trim())
+                  errors.phone = dictionary.contact.fieldRequired;
                 if (!values.multiline.trim())
                   errors.multiline = dictionary.contact.fieldRequired;
                 return errors;
@@ -151,12 +154,25 @@ export default function Contact() {
                 setSubmitting,
                 setErrors,
                 setValues,
-
                 setSuccess
               ) => {
                 if (reCaptchaToken) {
                   setSubmitting(true);
                   alert("submit");
+                  await sendEmail(
+                    values.name,
+                    values.email,
+                    values.phone,
+                    values.multiline
+                  )
+                    .then(() => {
+                      setSubmitting(false);
+                      setSuccess(true);
+                    })
+                    .catch((err) => {
+                      setSubmitting(false);
+                      alert("Błąd podczas wysyłania, spróbuj ponownie");
+                    });
                   // await axios
                   //   .post(window.location.origin + "/api/email", {
                   //     userEmailProps: {
