@@ -46,6 +46,7 @@ export default function Home(props) {
           textSize={25}
           textAlign="center"
           textAlignTitle="center"
+          gutter={true}
           title={
             <>
               In{" "}
@@ -53,7 +54,7 @@ export default function Home(props) {
               size
             </>
           }
-         // text={dictionary.block1.description}
+          // text={dictionary.block1.description}
           md={12}
         />
         <Component
@@ -159,8 +160,6 @@ export default function Home(props) {
           />
         </Component>
       </Block>
-
-      
     </main>
   );
 }

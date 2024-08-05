@@ -18,6 +18,7 @@ export default function Text({
   gridProps = {},
   gridStyle = {},
   color = "white",
+  gutter = true,
 }) {
   const classes = useStyles();
   const { isMobile } = useContext(SystemContext);
@@ -37,7 +38,7 @@ export default function Text({
       {...gridProps}>
       {title && (
         <Typography
-         // gutterBottom
+          gutterBottom={gutter}
           className={classes.textPanelTitle}
           sx={{
             textAlign: textAlignTitle,
@@ -58,7 +59,7 @@ export default function Text({
             alignItems: "center",
             justifyContent: "center",
             flexWrap: "wrap",
-            gap:1
+            gap: 1,
           }}>
           {subtitle}
         </Typography>
