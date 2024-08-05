@@ -51,6 +51,24 @@ export default function Hero({ dictionary }) {
               flexDirection: { md: "row", xs: "column" },
             }}>
             <Button
+              variant="contained"
+              style={{
+                whiteSpace: "nowrap",
+                padding: 0,
+              }}>
+              <img height={58} src="/google-play-badge.png" />
+              {/* Pobierz z google store */}
+            </Button>
+            <Button
+              variant="contained"
+              style={{
+                whiteSpace: "nowrap",
+                padding: 0,
+              }}>
+              <img height={58} src="/apple-store-badge.svg" />
+              {/* Pobierz z google store */}
+            </Button>
+            {/* <Button
               size={1.3}
               variant="contained"
               style={{ whiteSpace: "nowrap", paddingLeft: 16 }}>
@@ -60,14 +78,8 @@ export default function Hero({ dictionary }) {
                 style={{ marginRight: 8 }}
               />
               {dictionary.hero.button}
-            </Button>
-            <Button
-              size={1.3}
-              color="secondary"
-              variant="outlined"
-              style={{ whiteSpace: "nowrap" }}>
-              {dictionary.hero.button2}
-            </Button>
+            </Button> */}
+           
           </Box>
         }>
         <Text
@@ -88,7 +100,7 @@ export default function Hero({ dictionary }) {
         gridStyle={{
           //height: "40vh",
           alignSelf: "center",
-          height: "80vh",
+          height: { xs: undefined, md: "80vh" },
         }}>
         <Image
           src="/phone.png"

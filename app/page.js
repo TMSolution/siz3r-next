@@ -37,8 +37,8 @@ export default function Home(props) {
           justifyContent: "center",
           alignItems: "stretch",
 
-          spacing: 12,
-          paddingTop: 5,
+          spacing: 6,
+          //paddingTop: 5,
           paddingBottom: 15,
         }}>
         <Text

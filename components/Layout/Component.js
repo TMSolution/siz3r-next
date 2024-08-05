@@ -18,7 +18,7 @@ export default function Component({
       
       container item
       className={classes.gridPanel}
-      style={{
+      sx={{
         display: "flex",
         alignItems: "center",
         alignSelf: "start",

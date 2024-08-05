@@ -90,7 +90,7 @@ export default function Footer({ isMobile }) {
           text={dictionary.footer.description}
           xs={12}
           md={10}
-          textAlign={{ xs: "justify", md: "left" }}
+          textAlign={{ xs: "center", md: "left" }}
         />
 
         <Grid

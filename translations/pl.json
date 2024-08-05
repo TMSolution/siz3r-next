@@ -61,13 +61,13 @@
   },
   "block2business": {
     "title": "Branże i zastosowania",
-    "description": "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy tradycyjne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów.",
+    "description": "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy stacjonarne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów.",
     "image1": {
       "title": "E-commerce",
       "description": "Lepsze dopasowanie ubrań, zmniejszenie liczby zwrotów."
     },
     "image2": {
-      "title": "Sklepy tradycyjne",
+      "title": "Sklepy stacjonarne",
       "description": "Przymierzaj ubrania bez fizycznego kontaktu."
     },
     "image3": {
