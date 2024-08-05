@@ -16,7 +16,7 @@
     "description": "Pobierz aplikację. Zrób zdjęcie. Przymierzaj i kupuj.",
     "image1": {
       "title": "Pobierz aplikację",
-      "description": "Pobranie aplikacji i usyskanie dostępu do wszystkich funkcji zajmie ci tylko chwilę!"
+      "description": "Pobranie aplikacji i uzyskanie dostępu do wszystkich funkcji zajmie ci tylko chwilę!"
     },
     "image2": {
       "title": "Zrób zdjęcie",
@@ -56,7 +56,7 @@
     "invalidEmail": "Nieprawidłowy Email"
   },
   "block1business": {
-    "title": "Funkcjonalności",
+    "title": "Co robimy",
     "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. \n\nNasza platforma umożliwia również wizualizację klienta w wybranych strojach w formie trójwymiarowych modeli, co pomaga w dokonaniu trafnego wyboru."
   },
   "block2business": {

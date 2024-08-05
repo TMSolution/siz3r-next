@@ -1,97 +1,97 @@
 {
   "hero": {
-  "title": "In your size",
-  "description": "Transfer your figure to a virtual space and try on clothes without leaving home",
-  "button": "Download app",
-  "button2": "Learn more"
+    "title": "In your size",
+    "description": "Transfer your figure to a virtual space and try on clothes without leaving home",
+    "button": "Download app",
+    "button2": "Learn more"
   },
   "businessHero": {
-  "title": "Business",
-  "description": "Siz3r is an innovative platform supporting online clothing shopping.",
-  "button": "Download app",
-  "button2": "Learn more"
+    "title": "Business",
+    "description": "Siz3r is an innovative platform supporting online clothing shopping.",
+    "button": "Download app",
+    "button2": "Learn more"
   },
   "block1": {
-  "title": "In your size",
-  "description": "Download the app. Take a photo. Try on and buy.",
-  "image1": {
-  "title": "Download app",
-  "description": "It only takes a moment to download the app and access all its features!"
-  },
-  "image2": {
-  "title": "Take a photo",
-  "description": "It's simple! Based on just one photo, we will be able to collect your measurements and allow you to try on clothes without leaving your home!"
-  },
-  "image3": {
-  "title": "Try on and buy",
-  "description": "Congratulations! Now you can buy perfectly fitting clothes without visiting the store!"
-  }
+    "title": "In your size",
+    "description": "Download the app. Take a photo. Try on and buy.",
+    "image1": {
+      "title": "Download app",
+      "description": "It only takes a moment to download the app and access all its features!"
+    },
+    "image2": {
+      "title": "Take a photo",
+      "description": "It's simple! Based on just one photo, we will be able to collect your measurements and allow you to try on clothes without leaving your home!"
+    },
+    "image3": {
+      "title": "Try on and buy",
+      "description": "Congratulations! Now you can buy perfectly fitting clothes without visiting the store!"
+    }
   },
   "block2": {
-  "title": "Functionalities",
-  "description": "Siz3r recommends the best-fitting clothes from sellers thanks to precise 3D models of your figure.",
-  "image1": {
-  "title": "3D Scanning",
-  "description": "Transform your photos into accurate 3D silhouettes"
-  },
-  "image2": {
-  "title": "Virtual Fitting Room",
-  "description": "Use the virtual fitting room to see how different outfits fit you."
-  },
-  "image3": {
-  "title": "Clothes Scanning",
-  "description": "Add clothes to the system and present them on 3D models."
-  }
+    "title": "Functionalities",
+    "description": "Siz3r recommends the best-fitting clothes from sellers thanks to precise 3D models of your figure.",
+    "image1": {
+      "title": "3D Scanning",
+      "description": "Transform your photos into accurate 3D silhouettes"
+    },
+    "image2": {
+      "title": "Virtual Fitting Room",
+      "description": "Use the virtual fitting room to see how different outfits fit you."
+    },
+    "image3": {
+      "title": "Clothes Scanning",
+      "description": "Add clothes to the system and present them on 3D models."
+    }
   },
   "contact": {
-  "title": "Contact us!",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus efficitur, dignissim nunc vel, bibendum sem.\n\nNulla condimentum efficitur vehicula. Nullam ac felis fringilla, ultrices purus vel, porta nisl. Mauris ut rutrum tellus, ut placerat turpis. Proin et metus ex. Sed pellentesque finibus pulvinar. Cras tristique aliquet sagittis.\n\nSuspendisse ut vestibulum velit. Phasellus eu nisl maximus, cursus lectus quis, consequat ex.",
-  "contactForm": "Contact Form",
-  "send": "Send",
-  "name": "Name",
-  "email": "Email address",
-  "phone": "Phone",
-  "message": "Message",
-  "fieldRequired": "Required field",
-  "invalidEmail": "Invalid Email"
+    "title": "Contact us!",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus efficitur, dignissim nunc vel, bibendum sem.\n\nNulla condimentum efficitur vehicula. Nullam ac felis fringilla, ultrices purus vel, porta nisl. Mauris ut rutrum tellus, ut placerat turpis. Proin et metus ex. Sed pellentesque finibus pulvinar. Cras tristique aliquet sagittis.\n\nSuspendisse ut vestibulum velit. Phasellus eu nisl maximus, cursus lectus quis, consequat ex.",
+    "contactForm": "Contact Form",
+    "send": "Send",
+    "name": "Name",
+    "email": "Email address",
+    "phone": "Phone",
+    "message": "Message",
+    "fieldRequired": "Required field",
+    "invalidEmail": "Invalid Email"
   },
   "block1business": {
-  "title": "Functionalities",
-  "description": "By creating a dimensioned 3D model of the customer's body, Siz3r recommends the best-fitting clothes from the sellers' offer.\n\nOur platform also allows you to visualize the customer in selected outfits in the form of three-dimensional models, which helps you make the right choice."
+    "title": "What do we do",
+    "description": "By creating a dimensioned 3D model of the customer's body, Siz3r recommends the best-fitting clothes from the sellers' offer.\n\nOur platform also allows you to visualize the customer in selected outfits in the form of three-dimensional models, which helps you make the right choice."
   },
   "block2business": {
-  "title": "Industries and applications",
-  "description": "Siz3r is used in various industries, such as e-commerce, traditional stores, fitness, dietetics and entertainment. Our solutions help increase competitiveness, reduce costs and reduce the number of product returns.",
-  "image1": {
-  "title": "E-commerce",
-  "description": "Better fit of clothes, reduce returns."
-  },
-  "image2": {
-  "title": "Traditional stores",
-  "description": "Try on clothes without physical contact."
-  },
-  "image3": {
-  "title": "Fitness and dietetics",
-  "description": "Monitor your body shape changes."
-  },
-  "image4": {
-  "title": "Entertainment",
-  "description": "Personalize avatars in games and virtual worlds."
-  }
+    "title": "Industries and applications",
+    "description": "Siz3r is used in various industries, such as e-commerce, traditional stores, fitness, dietetics and entertainment. Our solutions help increase competitiveness, reduce costs and reduce the number of product returns.",
+    "image1": {
+      "title": "E-commerce",
+      "description": "Better fit of clothes, reduce returns."
+    },
+    "image2": {
+      "title": "Traditional stores",
+      "description": "Try on clothes without physical contact."
+    },
+    "image3": {
+      "title": "Fitness and dietetics",
+      "description": "Monitor your body shape changes."
+    },
+    "image4": {
+      "title": "Entertainment",
+      "description": "Personalize avatars in games and virtual worlds."
+    }
   },
   "footer": {
-  "description": "Siz3r is an innovative technological platform supporting clothing purchases on e-commerce platforms.",
-  "technology": "Technology",
-  "business": "Business",
-  "products": "Products",
-  "terms": "Terms and Conditions",
-  "privacyPolicy": "Privacy Policy",
-  "googleButton": ""
+    "description": "Siz3r is an innovative technological platform supporting clothing purchases on e-commerce platforms.",
+    "technology": "Technology",
+    "business": "Business",
+    "products": "Products",
+    "terms": "Terms and Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "googleButton": ""
   },
   "header": {
-  "home": "Home",
-  "business": "For business",
-  "contact": "Contact",
-  "downloadApp": "Download App"
+    "home": "Home",
+    "business": "For business",
+    "contact": "Contact",
+    "downloadApp": "Download App"
   }
- }
+}
