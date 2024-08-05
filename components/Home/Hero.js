@@ -48,6 +48,7 @@ export default function Hero({ dictionary }) {
               gap: 2,
               width: { md: "100%" },
               alignSelf: { md: "center", xs: "center" },
+              alignItems: { md: "center", xs: "center" },
               flexDirection: { md: "row", xs: "column" },
             }}>
             <Button
@@ -64,6 +65,7 @@ export default function Hero({ dictionary }) {
               style={{
                 whiteSpace: "nowrap",
                 padding: 0,
+                width:"max-content"
               }}>
               <img height={58} src="/apple-store-badge.svg" />
               {/* Pobierz z google store */}
