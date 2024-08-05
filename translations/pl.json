@@ -13,10 +13,10 @@
   },
   "block1": {
     "title": "In your size",
-    "description": "Pobierz aplikację. Zrób zdjęcie. Przymierzaj i kupuj.",
+    "description": "Zupełnie za",
     "image1": {
       "title": "Pobierz aplikację",
-      "description": "Pobranie aplikacji i uzyskanie dostępu do wszystkich funkcji zajmie ci tylko chwilę!"
+      "description": "Pobranie darmowej aplikacji i uzyskanie dostępu do wszystkich funkcji zajmie ci tylko chwilę!"
     },
     "image2": {
       "title": "Zrób zdjęcie",
@@ -92,6 +92,6 @@
     "home": "Home",
     "business": "Dla biznesu",
     "contact": "Kontakt",
-    "downloadApp": "Pobierz aplikację"
+    "downloadApp": "Pobierz za darmo"
   }
 }

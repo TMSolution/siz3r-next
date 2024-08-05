@@ -32,7 +32,7 @@ export default function Header() {
       path: "https://play.google.com/store",
       name: dictionary.header.downloadApp,
       variant: "contained",
-      color: "secondary",
+      color: "primary",
     },
   ];
   useEffect(() => {
@@ -55,21 +55,21 @@ export default function Header() {
           boxShadow: "none",
           flexDirection: "row",
         }}>
+        <IconButton
+          onClick={() => setOpen(true)}
+          size="large"
+          sx={{
+            position: "fixed",
+            left: 16,top:7,
+            display: { md: "none", xs: "flex" },
+          }}>
+          <Menu />
+        </IconButton>
         <Toolbar
           sx={{
             padding: { md: "0 calc(10% + 17px)", xs: "0 12px 0 12px" },
             width: "100%",
           }}>
-          <IconButton
-            onClick={() => setOpen(true)}
-            size="large"
-            sx={{
-              position: "absolute",
-              left: 24,
-              display: { md: "none", xs: "flex" },
-            }}>
-            <Menu />
-          </IconButton>
           <Slide direction="down" in={visible}>
             <Box
               component={"img"}
