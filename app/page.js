@@ -12,6 +12,7 @@ import Hero from "@/components/Home/Hero";
 import TranslationContext from "@/context/TranslationContext";
 import { Directions } from "@mui/icons-material";
 import { Badge, Chip } from "@mui/material";
+import ContactPage from "@/components/Contact/page";
 
 function colorText(text) {
   let array = text
@@ -167,6 +168,7 @@ export default function Home(props) {
           />
         </Component>
       </Block>
+      <ContactPage />
     </main>
   );
 }
