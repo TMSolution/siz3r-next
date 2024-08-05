@@ -7,7 +7,7 @@
   },
   "businessHero": {
     "title": "Business",
-    "description": "Siz3r to innowacyjna platforma wspierająca zakupy odzieżowe online.",
+    "description": "Siz3r to innowacyjna platforma wspierająca zakupy odzieżowe online",
     "button": "Pobierz aplikację",
     "button2": "Dowiedz się więcej"
   },
@@ -56,12 +56,12 @@
     "invalidEmail": "Nieprawidłowy Email"
   },
   "block1business": {
-    "title": "Co robimy",
-    "description": "Dzięki tworzeniu zwymiarowanego modelu 3D ciała klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców. \n\nNasza platforma umożliwia również wizualizację klienta w wybranych strojach w formie trójwymiarowych modeli, co pomaga w dokonaniu trafnego wyboru."
+    "title": "Co oferujemy",
+    "description": "Dzięki tworzeniu wymiarowanego modelu sylwetki klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców.\n\nNasza platforma umożliwia także wizualizację klienta w wybranych strojach, co pomaga w dokonaniu trafnego wyboru."
   },
   "block2business": {
-    "title": "Branże i zastosowania",
-    "description": "Siz3r znajduje zastosowanie w różnych branżach, takich jak e-commerce, sklepy stacjonarne, fitness, dietetyka oraz rozrywka. Nasze rozwiązania pomagają zwiększyć konkurencyjność, zredukować koszty i zmniejszyć ilość zwrotów towarów.",
+    "title": "Zastosowania",
+    "description": "Siz3r znajduje zastosowanie w e-commerce, sklepach stacjonarnych, fitnessie, dietetyce oraz rozrywce. Nasze rozwiązania zwiększają konkurencyjność, redukują koszty i zmniejszają ilość zwrotów towarów.",
     "image1": {
       "title": "E-commerce",
       "description": "Lepsze dopasowanie ubrań, zmniejszenie liczby zwrotów."
