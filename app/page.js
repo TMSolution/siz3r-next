@@ -46,7 +46,7 @@ export default function Home(props) {
           textSize={25}
           textAlign="center"
           textAlignTitle="center"
-          gutter={true}
+          gutter={false}
           title={
             <>
               In{" "}
