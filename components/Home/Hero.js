@@ -68,18 +68,6 @@ export default function Hero({ dictionary }) {
               <img height={58} src="/apple-store-badge.svg" />
               {/* Pobierz z google store */}
             </Button>
-            {/* <Button
-              size={1.3}
-              variant="contained"
-              style={{ whiteSpace: "nowrap", paddingLeft: 16 }}>
-              <img
-                src="/google-play.png"
-                height={36}
-                style={{ marginRight: 8 }}
-              />
-              {dictionary.hero.button}
-            </Button> */}
-           
           </Box>
         }>
         <Text

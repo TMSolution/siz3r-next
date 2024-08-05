@@ -178,7 +178,7 @@ export default function Footer({ isMobile }) {
       </Grid>
 
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.footer.technology}>
+        <LinkList title={dictionary.footer.home}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link
@@ -210,7 +210,7 @@ export default function Footer({ isMobile }) {
         </LinkList>
       </Grid>
       <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.footer.products}>
+        <LinkList title={dictionary.footer.contact}>
           {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
             <Grid item key={item}>
               <Link

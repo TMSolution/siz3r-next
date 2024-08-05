@@ -28,7 +28,7 @@
     }
   },
   "block2": {
-    "title": "Funkcjonalności",
+    "title": "Funkcje",
     "description": "Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców dzięki precyzyjnym modelom 3D Twojej sylwetki.",
     "image1": {
       "title": "Skanowanie 3D",
@@ -81,9 +81,9 @@
   },
   "footer": {
     "description": "Siz3r to innowacyjna platforma technologiczna wspierająca zakupy odzieżowe na platformach e-commerce.",
-    "technology": "Technologia",
-    "business": "Biznes",
-    "products": "Produkty",
+    "home": "Home",
+    "business": "Dla biznesu",
+    "contact": "Kontakt",
     "terms": "Regulamin",
     "privacyPolicy": "Polityka prywatności",
     "googleButton": ""
