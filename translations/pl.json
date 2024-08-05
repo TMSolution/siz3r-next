@@ -31,16 +31,16 @@
     "title": "Funkcje",
     "description": "Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców dzięki precyzyjnym modelom 3D Twojej sylwetki.",
     "image1": {
-      "title": "Skanowanie 3D",
-      "description": "Przekształć swoje zdjęcia w dokładne sylwetki 3D"
+      "title": "Wymiarowanie sylwetki",
+      "description": "Przekształć swoje zdjęcia w dokładne sylwetki"
     },
     "image2": {
       "title": "Wirtualna Przymierzalnia",
-      "description": "Korzystaj z wirtualnej przymierzalni, aby zobaczyć, jak pasują Ci różne stroje."
+      "description": "Korzystaj z wirtualnej przymierzalni, aby zobaczyć, jak pasują Ci różne stroje"
     },
     "image3": {
-      "title": "Skanowanie Ubrań",
-      "description": "Dodawaj ubrania do systemu i prezentuj je na modelach 3D."
+      "title": "Dodawaj ubrania",
+      "description": "Dodawaj ubrania do systemu i prezentuj je na modelach"
     }
   },
   "contact": {
