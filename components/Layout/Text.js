@@ -37,7 +37,7 @@ export default function Text({
       {...gridProps}>
       {title && (
         <Typography
-          gutterBottom
+         // gutterBottom
           className={classes.textPanelTitle}
           sx={{
             textAlign: textAlignTitle,

@@ -37,7 +37,7 @@ export default function Home(props) {
           justifyContent: "center",
           alignItems: "stretch",
 
-          spacing: 6,
+          spacing: 10,
           //paddingTop: 5,
           paddingBottom: 15,
         }}>
@@ -53,7 +53,7 @@ export default function Home(props) {
               size
             </>
           }
-          text={dictionary.block1.description}
+         // text={dictionary.block1.description}
           md={12}
         />
         <Component
