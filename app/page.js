@@ -13,7 +13,14 @@ import TranslationContext from "@/context/TranslationContext";
 import { Directions } from "@mui/icons-material";
 import { Badge, Chip } from "@mui/material";
 import ContactPage from "@/components/Contact/page";
-import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
+import {
+  Bar,
+  BarChart,
+  Cell,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 function colorText(text) {
   let array = text
@@ -26,7 +33,10 @@ function colorText(text) {
 
 export default function Home(props) {
   const { dictionary, lang } = useContext(TranslationContext);
-
+  const charts = [
+    { name: "Zakup z siz3r", value: 7, color: "#00D278" },
+    { name: "Zakup i zwrot", value: 20, color: "grey" },
+  ];
   const { isMobile, theme } = useContext(SystemContext);
   return (
     <main style={{ display: "flex", flexDirection: "column" }}>
@@ -190,10 +200,7 @@ export default function Home(props) {
           <ResponsiveContainer width={"100%"} height={300}>
             <BarChart
               layout="vertical"
-              data={[
-                { name: "Zakup z siz3r", "value": 7 },
-                { name: "Zakup i zwrot", "value":17 },
-              ]}
+              data={charts}
               margin={{
                 top: 20,
                 right: 20,
@@ -202,7 +209,11 @@ export default function Home(props) {
               }}>
               <XAxis type="number" />
               <YAxis dataKey="name" type="category" />
-              <Bar dataKey="value" fill="#00D278" />
+              <Bar dataKey="value" fill="#00D278">
+                {charts.map((entry, index) => (
+                  <Cell fill={entry.color} key={`cell-${index}`} />
+                ))}
+              </Bar>
               {/* <Bar dataKey="value-return" fill="#413ea0" /> */}
             </BarChart>
           </ResponsiveContainer>
