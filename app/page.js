@@ -13,6 +13,7 @@ import TranslationContext from "@/context/TranslationContext";
 import { Directions } from "@mui/icons-material";
 import { Badge, Chip } from "@mui/material";
 import ContactPage from "@/components/Contact/page";
+import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
 
 function colorText(text) {
   let array = text
@@ -58,9 +59,7 @@ export default function Home(props) {
           text={
             <>
               {dictionary.block1.description}{" "}
-              <span style={{ color: theme.palette.secondary.main }}>
-                free
-              </span>!
+              <span style={{ color: theme.palette.secondary.main }}>free</span>!
             </>
           }
           md={12}
@@ -167,6 +166,58 @@ export default function Home(props) {
             }}
           />
         </Component>
+      </Block>
+      <Block
+        // background="transparent"
+        style={{ display: "flex", alignItems: "center" }}
+        gridProps={{
+          justifyContent: "space-between",
+          alignItems: "center",
+          paddingTop: 15,
+          paddingBottom: 15,
+        }}>
+        <Text
+          titleSize={30}
+          textSize={20}
+          textAlign="left"
+          textAlignTitle="left"
+          title={dictionary.block3.title}
+          text={dictionary.block3.description}
+          md={3}
+          gridStyle={{ alignSelf: "center" }}
+        />
+        <Component md={8.5} gridStyle={{ paddingTop: 5 }}>
+          <ResponsiveContainer width={"100%"} height={300}>
+            <BarChart
+              layout="vertical"
+              data={[
+                { name: "Zakup z siz3r", "value": 7 },
+                { name: "Zakup i zwrot", "value":17 },
+              ]}
+              margin={{
+                top: 20,
+                right: 20,
+                bottom: 20,
+                left: 20,
+              }}>
+              <XAxis type="number" />
+              <YAxis dataKey="name" type="category" />
+              <Bar dataKey="value" fill="#00D278" />
+              {/* <Bar dataKey="value-return" fill="#413ea0" /> */}
+            </BarChart>
+          </ResponsiveContainer>
+        </Component>
+        {/* <Image
+          md={8.5}
+          src={"https://picsum.photos/1600/600"}
+          // height={"40vh"}
+          width={"100%"}
+          gridStyle={{
+            alignItems: "center",
+            justifyContent: "center",
+            display: "flex",
+          }}
+        /> */}
       </Block>
       <ContactPage />
     </main>
