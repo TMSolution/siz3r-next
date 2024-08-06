@@ -17,6 +17,7 @@ import {
   Bar,
   BarChart,
   Cell,
+  Label,
   ResponsiveContainer,
   XAxis,
   YAxis,
@@ -207,7 +208,9 @@ export default function Home(props) {
                 bottom: 20,
                 left: 20,
               }}>
-              <XAxis type="number" />
+              <XAxis type="number">
+              <Label value="CO2 (kg.)" offset={-5} position="insideBottom" />
+              </XAxis>
               <YAxis dataKey="name" type="category" />
               <Bar dataKey="value" fill="#00D278">
                 {charts.map((entry, index) => (
