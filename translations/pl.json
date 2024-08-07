@@ -64,23 +64,43 @@
     "description": "Dzięki tworzeniu wymiarowanego modelu sylwetki klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców.\n\nNasza platforma umożliwia także wizualizację klienta w wybranych strojach, co pomaga w dokonaniu trafnego wyboru."
   },
   "block2business": {
+    "title": "Funkcje",
+    "description": "",
+    "image1": {
+      "title": "Twórz dokładne modele sylwetek",
+      "description": "Przekształć zdjęcia klientów w precyzyjne modele 3D"
+    },
+    "image2": {
+      "title": "Umożliwiaj wirtualne przymierzanie",
+      "description": "Pozwól klientom na wirtualne przymierzanie strojów z Twojej oferty."
+    },
+    "image3": {
+      "title": "Przenieś swoje ubrania online",
+      "description": "Twórz wirtualne wersje ubrań, dodawaj je do systemu i prezentuj na modelach klientów."
+    },
+    "image4": {
+      "title": "Twórz awatary",
+      "description": "Stwórz realistyczne awatary klientów na podstawie ich wymiarów."
+    }
+  },
+  "block3business": {
     "title": "Zastosowania",
-    "description": "Siz3r znajduje zastosowanie w e-commerce, sklepach stacjonarnych, fitnessie, dietetyce oraz rozrywce. Nasze rozwiązania zwiększają konkurencyjność, redukują koszty i zmniejszają ilość zwrotów towarów.",
+    "description": "Wykorzystaj Siz3r w swojej branży! Nasze innowacyjne rozwiązania pomogą Ci zwiększyć konkurencyjność, zredukować koszty oraz zmniejszyć ilość zwrotów towarów",
     "image1": {
       "title": "E-commerce",
-      "description": "Lepsze dopasowanie ubrań, zmniejszenie liczby zwrotów."
+      "description": "Zwiększ dopasowanie ubrań i zmniejsz liczbę zwrotów."
     },
     "image2": {
       "title": "Sklepy stacjonarne",
-      "description": "Przymierzaj ubrania bez fizycznego kontaktu."
+      "description": "Umożliwiaj klientom przymierzanie ubrań bez fizycznego kontaktu."
     },
     "image3": {
       "title": "Fitness i dietetyka",
-      "description": "Monitoruj zmiany swojej sylwetki."
+      "description": "Monitoruj zmiany sylwetki klientów."
     },
     "image4": {
       "title": "Rozrywka",
-      "description": "Personalizuj awatary w grach i wirtualnych światach."
+      "description": "Wykorzystaj  postacie klientów w grach i wirtualnych światach"
     }
   },
   "footer": {
