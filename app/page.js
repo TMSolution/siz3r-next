@@ -67,12 +67,12 @@ export default function Home(props) {
               size
             </>
           }
-          text={
-            <>
-              {dictionary.block1.description}{" "}
-              <span style={{ color: theme.palette.secondary.main }}>free</span>!
-            </>
-          }
+          // text={
+          //   <>
+          //     {dictionary.block1.description}{" "}
+          //     <span style={{ color: theme.palette.secondary.main }}>free</span>!
+          //   </>
+          // }
           md={12}
         />
         <Component
