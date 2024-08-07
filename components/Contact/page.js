@@ -71,8 +71,6 @@ export default function ContactPage() {
                   errors.email = dictionary.contact.fieldRequired;
                 if (!validateEmail(values.email.trim()))
                   errors.email = dictionary.contact.invalidEmail;
-                if (!values.phone.trim())
-                  errors.phone = dictionary.contact.fieldRequired;
                 if (!values.multiline.trim())
                   errors.multiline = dictionary.contact.fieldRequired;
                 return errors;
@@ -104,19 +102,7 @@ export default function ContactPage() {
                     style: { margin: 0, marginBottom: 16 },
                   },
                 },
-                phone: {
-                  //name: "Telefon",
-                  type: "tel",
-                  value: "",
-                  customFieldsTop: (
-                    <span style={{ marginBottom: 4, marginLeft: 8 }}>
-                      <b>{dictionary.contact.phone}</b>
-                    </span>
-                  ),
-                  props: {
-                    style: { margin: 0, marginBottom: 16 },
-                  },
-                },
+
                 multiline: {
                   //name: "Wiadomość",
                   variant: "string",
@@ -148,7 +134,7 @@ export default function ContactPage() {
                   await sendEmail(
                     values.name,
                     values.email,
-                    values.phone,
+
                     values.multiline
                   )
                     .then(() => {

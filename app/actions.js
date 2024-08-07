@@ -17,7 +17,7 @@ export async function changeLanguage(lang) {
     resolve();
   });
 }
-export async function sendEmail(name, email, phone, message) {
+export async function sendEmail(name, email, message) {
   return new Promise(async (resolve) => {
     const transporter = nodemailer.createTransport({
       host: "s14.ehost.pl",
@@ -32,12 +32,9 @@ export async function sendEmail(name, email, phone, message) {
       from: "noreply@siz3r.com", // sender address
       to: "biuro@siz3r.com", // list of receivers
       subject: "Formularz kontaktowy siz3r", // Subject line
-      text: `Nazwa: ${name}\nE-Mail: ${email || "brak"}\nTelefon: ${
-        phone || "brak"
-      }\Wiadomość: ${message}`, // plain text body
+      text: `Nazwa: ${name}\nE-Mail: ${email || "brak"}\nWiadomość: ${message}`, // plain text body
       html: `<b>Nazwa</b>: {name}\n
   <b>E-Mail</b>: {email || "brak"}\n
-  <b>Telefon</b>: {phone || "brak"}\n
   <b>Wiadomość</b>: {message}`, // html body
     });
 
