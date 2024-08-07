@@ -62,8 +62,8 @@ export default function Business(props) {
           paddingBottom: 15,
         }}>
         <Text
-          titleSize={30}
-          textSize={20}
+          titleSize={70}
+          textSize={25}
           textAlign="center"
           textAlignTitle="center"
           gutter={false}
