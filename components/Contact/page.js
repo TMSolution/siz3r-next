@@ -56,7 +56,11 @@ export default function ContactPage() {
             <GoogleReCaptcha
               onVerify={(token) => !reCaptchaToken && setRecaptchaToken(token)}
             />
-            <Text title={dictionary.contact.contactForm} md={12} />
+            <Text
+              titleSize={70}
+              title={dictionary.contact.contactForm}
+              md={12}
+            />
             <FormComponent
               light={true}
               validate={(values) => {

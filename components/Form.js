@@ -212,7 +212,7 @@ const FormComponent = (props) => {
                     : props.buttonColor && props.buttonColor,
                   color: props.light && "white",
                   padding: "6px 24px",
-                  fontSize: 14,
+                  fontSize: 21,
                   fontWeight: 500,
                   //marginTop: 12,
                 }}>
