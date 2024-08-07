@@ -180,7 +180,7 @@ export default function Home(props) {
       </Block>
       <Block
         background="linear-gradient(10deg, rgba(0, 210, 120,0.6), rgba(0, 210, 120,0.3))"
-        style={{ display: "flex", alignItems: "center", overflow: "hidden" }}
+        style={{ display: "flex", alignItems: "center", overflow: "visible",height:"40vh" }}
         gridProps={{
           justifyContent: "space-between",
           alignItems: "center",
@@ -209,7 +209,7 @@ export default function Home(props) {
             justifyContent: "center",
             display: "flex",
 
-            height: "40vh",
+            height: "50vh",
             //overflow:"hidden"
           }}
           style={{ rotate: "-30deg",filter:"brightness(0) invert(1)" }}
