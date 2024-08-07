@@ -20,7 +20,7 @@ export default function Business(props) {
       }}>
       <Hero dictionary={dictionary} />
 
-      <Block
+      {/* <Block
         // background="transparent"
         style={{ display: "flex", alignItems: "center" }}
         gridProps={{
@@ -49,7 +49,7 @@ export default function Business(props) {
             display: "flex",
           }}
         />
-      </Block>
+      </Block> */}
       <Block
         background="transparent"
         style={{ display: "flex", alignItems: "center" }}
