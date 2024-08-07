@@ -117,10 +117,9 @@ const FormComponent = (props) => {
                     }}
                     InputProps={{
                       style: {
-                        //padding:0,
                         backgroundColor: props.light && "rgba(255,255,255,0.8)",
                         color: props.light && "black",
-                        padding: props.light && 0,
+                        padding: props.light && 8,
                       },
                       autoComplete: value.preventAutofill && "new-password",
                       endAdornment: value.type === "password" && (

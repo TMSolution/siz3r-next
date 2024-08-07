@@ -15,7 +15,7 @@ export default function ContactPage() {
   const { dictionary, lang } = useContext(TranslationContext);
   return (
     <>
-      <Block
+      {/* <Block
         background="transparent"
         style={{
           minHeight: "40vh",
@@ -42,7 +42,7 @@ export default function ContactPage() {
             display: "flex",
           }}
         />
-      </Block>
+      </Block> */}
       <Block
         background="transparent"
         style={{
