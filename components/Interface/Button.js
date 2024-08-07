@@ -13,7 +13,7 @@ export default function Button(props) {
         fontSize: props?.size ? props.size * 8 * 1.6 : undefined,
         borderRadius: 2,
         whiteSpace: "nowrap",
-        //boxShadow:"none"
+        boxShadow:"none",
         ...(props?.style || {}),
       }}>
       {props?.children}
