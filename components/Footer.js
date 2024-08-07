@@ -65,7 +65,7 @@ export default function Footer({ isMobile }) {
         //   xs: "calc(100vw - 48px)",
         //   md: "calc(100vw - (20% + 36px + 36px))",
         // },
-       // padding: { xs: "24px", md: "24px calc(10% + 36px)" },
+        // padding: { xs: "24px", md: "24px calc(10% + 36px)" },
       }}
       gridProps={{ spacing: 2 }}>
       <Grid
@@ -83,7 +83,10 @@ export default function Footer({ isMobile }) {
           gridStyle={{
             display: { xs: "flex", md: undefined },
           }}
-          style={{ alignSelf: { xs: undefined, md: "baseline" } }}
+          style={{
+            alignSelf: { xs: undefined, md: "baseline" },
+            borderRadius: 0,
+          }}
         />
 
         <Text
