@@ -7,7 +7,7 @@
   },
   "businessHero": {
     "title": "Business",
-    "description": "Siz3r to innowacyjna platforma wspierająca zakupy odzieżowe online",
+    "description": "Zwiększ swoją sprzedaż online! Obniż koszty dzięki naszym nowoczesnym narzędziom cyfrowym. Dzięki Siz3r Twoi klienci mogą korzystać z wirtualnej przymierzalni i dostarczać Ci swoje wymiary. Przenoś kolekcje do trójwymiaru i minimalizuj ilość zwrotów. Odkryj nową jakość sprzedaży, która pozwoli Ci zaoszczędzić czas i pieniądze!",
     "button": "Pobierz aplikację",
     "button2": "Dowiedz się więcej"
   },
@@ -44,13 +44,13 @@
     }
   },
   "block3": {
-    "title": "Ekologia",
+    "title": "Z Siz3r jesteś eko!",
     "description": "Przymierzając online zmniejszasz ryzyko zwrotu ubrań. Zmniejsz swój ślad węglowy! Obniż emisję CO2 dzięki ograniczonej ilości przesyłek! Bądź eko z Siz3r!"
   },
   "contact": {
-    "title": "Skontaktuj się z nami!",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus efficitur, dignissim nunc vel, bibendum sem.\n\nNulla condimentum efficitur vehicula. Nullam ac felis fringilla, ultrices purus vel, porta nisl. Mauris ut rutrum tellus, ut placerat turpis. Proin et metus ex. Sed pellentesque finibus pulvinar. Curabitur vitae ex ut velit commodo consectetur.\n\nSuspendisse ut vestibulum velit. Donec ligula nisl, faucibus vel pharetra eu, ornare in elit. Cras tristique aliquet sagittis. Phasellus eu nisl maximus, cursus lectus quis, consequat ex.",
-    "contactForm": "Formularz kontaktowy",
+    "title": "Skontaktuj się",
+    "description": "",
+    "contactForm": "Napisz do nas",
     "send": "Wyślij",
     "name": "Nazwa",
     "email": "Adres e-mail",

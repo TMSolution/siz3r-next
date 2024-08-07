@@ -62,6 +62,7 @@ export default function Header() {
             position: "fixed",
             left: 16,top:7,
             display: { md: "none", xs: "flex" },
+            zIndex: 1000,
           }}>
           <Menu />
         </IconButton>

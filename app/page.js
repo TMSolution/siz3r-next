@@ -179,13 +179,13 @@ export default function Home(props) {
         </Component>
       </Block>
       <Block
-        // background="transparent"
-        style={{ display: "flex", alignItems: "center" }}
+        background="linear-gradient(10deg, rgba(0, 210, 120,0.6), rgba(0, 210, 120,0.3))"
+        style={{ display: "flex", alignItems: "center", overflow: "hidden" }}
         gridProps={{
           justifyContent: "space-between",
           alignItems: "center",
-          paddingTop: 15,
-          paddingBottom: 15,
+          paddingTop: 5,
+          paddingBottom: 5,
         }}>
         <Text
           titleSize={30}
@@ -197,30 +197,23 @@ export default function Home(props) {
           md={3}
           gridStyle={{ alignSelf: "center" }}
         />
-        <Component md={8.5} gridStyle={{ paddingTop: 5 }}>
-          <ResponsiveContainer width={"100%"} height={300}>
-            <BarChart
-              layout="vertical"
-              data={charts}
-              margin={{
-                top: 20,
-                right: 20,
-                bottom: 20,
-                left: 20,
-              }}>
-              <XAxis type="number">
-              <Label value="CO2 (kg.)" offset={-5} position="insideBottom" />
-              </XAxis>
-              <YAxis dataKey="name" type="category" />
-              <Bar dataKey="value" fill="#00D278">
-                {charts.map((entry, index) => (
-                  <Cell fill={entry.color} key={`cell-${index}`} />
-                ))}
-              </Bar>
-              {/* <Bar dataKey="value-return" fill="#413ea0" /> */}
-            </BarChart>
-          </ResponsiveContainer>
-        </Component>
+        <Image
+          md={8.5}
+          src={"/photos/s.png"}
+          height={"90vh"}
+          maxHeight="unset"
+          // width={"100%"}
+          gridStyle={{
+            maxHeight: "unset",
+            alignItems: "center",
+            justifyContent: "center",
+            display: "flex",
+
+            height: "40vh",
+            //overflow:"hidden"
+          }}
+          style={{ rotate: "-30deg",filter:"brightness(0) invert(1)" }}
+        />
         {/* <Image
           md={8.5}
           src={"https://picsum.photos/1600/600"}
