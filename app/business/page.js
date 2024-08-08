@@ -221,7 +221,7 @@ export default function Business(props) {
             subtitle={dictionary.block2business.image1.title}
             text={dictionary.block2business.image1.description}
             md={12}
-            gridStyle={{ alignSelf: "center" }}
+            gridStyle={{ alignSelf: "center", marginTop: 16 }}
           />
         </Component>
         <Component md={4}>
@@ -244,7 +244,7 @@ export default function Business(props) {
             subtitle={dictionary.block2business.image2.title}
             text={dictionary.block2business.image2.description}
             md={12}
-            gridStyle={{ alignSelf: "center" }}
+            gridStyle={{ alignSelf: "center", marginTop: 16 }}
           />
         </Component>
         <Component md={4}>
@@ -267,7 +267,7 @@ export default function Business(props) {
             subtitle={dictionary.block2business.image3.title}
             text={dictionary.block2business.image3.description}
             md={12}
-            gridStyle={{ alignSelf: "center" }}
+            gridStyle={{ alignSelf: "center", marginTop: 16 }}
           />
         </Component>
       </Block>

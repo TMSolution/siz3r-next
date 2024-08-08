@@ -49,7 +49,7 @@ export default function Hero({ dictionary }) {
                 fontSize: 21,
                 width: "max-content",
               }}>
-              Zarejestruj się już teraz!
+              {dictionary.businessHero.button}
               {/* Pobierz z google store */}
             </Button>
           </Box>

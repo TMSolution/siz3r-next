@@ -14,6 +14,7 @@ import { Directions } from "@mui/icons-material";
 import { Badge, Chip } from "@mui/material";
 import ContactPage from "@/components/Contact/page";
 import { colorText } from "@/components/functions";
+import SFan from "@/components/SFan";
 
 export default function Home(props) {
   const { dictionary, lang } = useContext(TranslationContext);
@@ -184,7 +185,10 @@ export default function Home(props) {
           md={3}
           gridStyle={{ alignSelf: "center" }}
         />
-        <Image
+        <Component md={8.5} xs={0} gridStyle={{ alignSelf: "center" }}>
+          <SFan />
+        </Component>
+        {/* <Image
           md={8.5}
           xs={0}
           src={"/photos/s.png"}
@@ -201,7 +205,7 @@ export default function Home(props) {
             //overflow:"hidden"
           }}
           style={{ rotate: "-30deg", filter: "brightness(0) invert(1)" }}
-        />
+        /> */}
         {/* <Image
           md={8.5}
           src={"https://picsum.photos/1600/600"}
