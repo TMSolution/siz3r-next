@@ -13,24 +13,9 @@ import TranslationContext from "@/context/TranslationContext";
 import { Directions } from "@mui/icons-material";
 import { Badge, Chip } from "@mui/material";
 import ContactPage from "@/components/Contact/page";
-import {
-  Bar,
-  BarChart,
-  Cell,
-  Label,
-  ResponsiveContainer,
-  XAxis,
-  YAxis,
-} from "recharts";
+import { colorText } from "@/components/functions";
 
-function colorText(text) {
-  let array = text
-    .split(" ")
-    .map((word, index) => (
-      <span style={{ color: index % 2 === 0 && "#00D278" }}>{word} </span>
-    ));
-  return array;
-}
+
 
 export default function Home(props) {
   const { dictionary, lang } = useContext(TranslationContext);
@@ -60,13 +45,7 @@ export default function Home(props) {
           textAlign="center"
           textAlignTitle="center"
           gutter={false}
-          title={
-            <>
-              In{" "}
-              <span style={{ color: theme.palette.secondary.main }}>Your</span>{" "}
-              size
-            </>
-          }
+          title={colorText(dictionary.block1.title)}
           // text={
           //   <>
           //     {dictionary.block1.description}{" "}
@@ -202,7 +181,7 @@ export default function Home(props) {
           textSize={20}
           textAlign="left"
           textAlignTitle="left"
-          title={dictionary.block3.title}
+          title={colorText(dictionary.block3.title)}
           text={dictionary.block3.description}
           md={3}
           gridStyle={{ alignSelf: "center" }}
@@ -218,7 +197,6 @@ export default function Home(props) {
             maxHeight: "unset",
             alignItems: "center",
             justifyContent: "center",
-            
 
             height: "50vh",
             display: { xs: "none", md: "flex" },

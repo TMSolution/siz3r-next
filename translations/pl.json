@@ -6,18 +6,18 @@
     "button2": "Dowiedz się więcej"
   },
   "block1": {
-    "title": "In your size",
+    "title": "In >Your size",
     "description": "Zupełnie za",
     "image1": {
-      "title": "Pobierz aplikację",
+      "title": ">Pobierz aplikację",
       "description": "Pobranie darmowej aplikacji i uzyskanie dostępu do wszystkich funkcji zajmie ci tylko chwilę!"
     },
     "image2": {
-      "title": "Zrób zdjęcie",
+      "title": "Zrób >zdjęcie",
       "description": "To proste! Na podstawie tylko jednego zdjęcia będziemy w stanie zebrać twoje wymiary i umożliwić ci przymierzanie ubrań bez wychodzenia z domu!"
     },
     "image3": {
-      "title": "Przymierz i kupuj",
+      "title": ">Przymierz i >kupuj",
       "description": "Gratulacje! Teraz świetnie dopasowane ubrania możesz kupić bez wizyty w sklepie!"
     }
   },
@@ -38,7 +38,7 @@
     }
   },
   "block3": {
-    "title": "Z Siz3r jesteś eko!",
+    "title": "Z >Siz3r jesteś >eko!",
     "description": "Przymierzając online zmniejszasz ryzyko zwrotu ubrań. Zmniejsz swój ślad węglowy! Obniż emisję CO2 dzięki ograniczonej ilości przesyłek! Bądź eko z Siz3r!"
   },
   "businessHero": {
@@ -52,19 +52,19 @@
     "title": "Funkcje",
     "description": "",
     "image1": {
-      "title": "Precyzyjnie dopasuj ofertę do klienta",
+      "title": ">Precyzyjnie dopasuj ofertę do >klienta",
       "description": "Dzięki tworzeniu wymiarowanego modelu sylwetki klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców."
     },
     "image2": {
-      "title": "Udostępnij wirtualną przymierzalnię",
+      "title": ">Udostępnij wirtualną >przymierzalnię",
       "description": "Nasza platforma umożliwia także wizualizację klienta w wybranych strojach, co pomaga w dokonaniu trafnego wyboru."
     },
     "image3": {
-      "title": "Prezentuj swoje kolekcje ubrań w trójwymiarze",
+      "title": ">Prezentuj swoje kolekcje ubrań w >trójwymiarze",
       "description": "Twórz wirtualne wersje ubrań, dodawaj je do systemu i prezentuj na modelach klientów."
     },
     "image4": {
-      "title": "Gromadź dane statystyczne w celu zwiększenia sprzedaży swoich produktów",
+      "title": ">Gromadź dane statystyczne w celu >zwiększenia >sprzedaży swoich produktów",
       "description": "Stwórz realistyczne awatary klientów na podstawie ich wymiarów."
     }
   },
@@ -107,7 +107,7 @@
   "contact": {
     "title": "Skontaktuj się",
     "description": "",
-    "contactForm": "Napisz do nas",
+    "contactForm": ">Napisz do nas",
     "send": "Wyślij",
     "name": "Nazwa",
     "email": "Adres e-mail",

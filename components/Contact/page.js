@@ -10,6 +10,7 @@ import zIndex from "@mui/material/styles/zIndex";
 import { useContext, useState } from "react";
 import { GoogleReCaptcha } from "react-google-recaptcha-v3";
 import { sendEmail } from "@/app/actions";
+import { colorText } from "../functions";
 export default function ContactPage() {
   const [reCaptchaToken, setRecaptchaToken] = useState(null);
   const { dictionary, lang } = useContext(TranslationContext);
@@ -58,7 +59,7 @@ export default function ContactPage() {
             />
             <Text
               titleSize={70}
-              title={dictionary.contact.contactForm}
+              title={colorText(dictionary.contact.contactForm)}
               md={12}
             />
             <FormComponent

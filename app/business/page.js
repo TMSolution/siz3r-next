@@ -8,6 +8,7 @@ import SystemContext from "@/context/SystemContext";
 import TranslationContext from "@/context/TranslationContext";
 import Hero from "@/components/Business/Hero";
 import { Badge } from "@mui/material";
+import { colorText } from "@/components/functions";
 export default function Business(props) {
   const { dictionary, lang } = useContext(TranslationContext);
   const { isMobile, theme } = useContext(SystemContext);
@@ -16,7 +17,7 @@ export default function Business(props) {
       style={{
         display: "flex",
         flexDirection: "column",
-        background: "linear-gradient(-45deg, #3C1992, #00D278, #3C1992)",
+        background: "linear-gradient(-45deg, #00D278, #3C1992, #00D278)",
       }}>
       <Hero dictionary={dictionary} />
 
@@ -57,7 +58,7 @@ export default function Business(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "right" }}
               textAlignTitle={{ xs: "center", md: "right" }}
-              title={dictionary.block1business.image1.title}
+              title={colorText(dictionary.block1business.image1.title)}
               text={dictionary.block1business.image1.description}
               md={12}
               xs={12}
@@ -91,7 +92,7 @@ export default function Business(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "left" }}
               textAlignTitle={{ xs: "center", md: "left" }}
-              title={dictionary.block1business.image2.title}
+              title={colorText(dictionary.block1business.image2.title)}
               text={dictionary.block1business.image2.description}
               md={12}
               xs={12}
@@ -125,7 +126,7 @@ export default function Business(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "right" }}
               textAlignTitle={{ xs: "center", md: "right" }}
-              title={dictionary.block1business.image3.title}
+              title={colorText(dictionary.block1business.image3.title)}
               text={dictionary.block1business.image3.description}
               md={12}
               xs={12}
@@ -159,7 +160,7 @@ export default function Business(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "left" }}
               textAlignTitle={{ xs: "center", md: "left" }}
-              title={dictionary.block1business.image4.title}
+              title={colorText(dictionary.block1business.image4.title)}
               text={dictionary.block1business.image4.description}
               md={12}
               xs={12}
@@ -180,7 +181,7 @@ export default function Business(props) {
       </Block>
 
       <Block
-        background="linear-gradient(10deg, #3C1992dd, #3C199233)"
+        background="linear-gradient(10deg, rgba(0, 210, 120,0.3), rgba(0, 210, 120,0.6))"
         style={{ display: "flex", alignItems: "center" }}
         gridProps={{
           justifyContent: "center",
