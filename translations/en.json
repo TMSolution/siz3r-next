@@ -52,41 +52,41 @@
     "title": "Functions",
     "description": "",
     "image1": {
-      "title": "Precisely match the offer to the customer",
+      "title": ">Precisely match the offer to the >customer",
       "description": "By creating a dimensioned model of the customer's body, Siz3r recommends the best-fitting clothes from the sellers' offer."
     },
     "image2": {
-      "title": "Share virtual fitting room",
-      "description": "Our platform also allows you to visualize the customer in selected outfits, which helps you make the right choice."
+      "title": ">Share virtual >fitting room",
+      "description": "Enable visualization of the customer in selected outfits, which will help him make the right choice."
     },
     "image3": {
-      "title": "Present your clothing collections in 3D",
+      "title": ">Present your clothing collections in >3D",
       "description": "Create virtual versions of clothes, add them to the system and present them on customer models."
     },
     "image4": {
-      "title": "Collect statistical data to increase sales of your products",
-      "description": "Create realistic customer avatars based on their dimensions."
+      "title": ">Collect statistical data",
+      "description": "Collect valuable information about customer preferences and purchasing behavior."
     }
   },
   "block2business": {
     "title": "Benefits",
-    "description": "Lorem ipsum",
+    "description": "",
     "image1": {
-      "title": "Benefit1",
-      "description": "Lorem ipsum"
+      "title": "Promote the ecological values ​​of your company",
+      "description": "Improve your image as an environmentally conscious company"
     },
     "image2": {
-      "title": "Benefit2",
-      "description": "Lorem ipsum"
+      "title": "Reduce the number of returns",
+      "description": "Reduce the number of returned goods, offer buyers precisely tailored products"
     },
     "image3": {
-      "title": "Benefit3",
-      "description": "Lorem ipsum"
+      "title": "Increase satisfaction with your purchase",
+      "description": "Build loyalty by better adapting your offer to the needs and preferences of your customers"
     }
   },
   "block3business": {
     "title": "Applications",
-    "description": "Use Siz3r in your industry! Our innovative solutions will help you increase your competitiveness, reduce costs and reduce the number of product returns",
+    "description": "",
     "image1": {
       "title": "E-commerce",
       "description": "Improve the fit of clothes and reduce returns."
