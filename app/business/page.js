@@ -33,7 +33,7 @@ export default function Business(props) {
           paddingBottom: 15,
         }}>
         <Text
-          titleSize={70}
+          titleSize={{ md: 70, xs: 50 }}
           textSize={25}
           textAlign="center"
           textAlignTitle="center"
@@ -192,7 +192,7 @@ export default function Business(props) {
           paddingBottom: 5,
         }}>
         <Text
-          titleSize={70}
+          titleSize={{ md: 70, xs: 50 }}
           textSize={25}
           textAlign="center"
           textAlignTitle="center"
@@ -284,7 +284,7 @@ export default function Business(props) {
           paddingBottom: 15,
         }}>
         <Text
-          titleSize={70}
+          titleSize={{ md: 70, xs: 50 }}
           textSize={25}
           textAlign="center"
           textAlignTitle="center"
