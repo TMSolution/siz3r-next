@@ -15,8 +15,6 @@ import { Badge, Chip } from "@mui/material";
 import ContactPage from "@/components/Contact/page";
 import { colorText } from "@/components/functions";
 
-
-
 export default function Home(props) {
   const { dictionary, lang } = useContext(TranslationContext);
   const charts = [
@@ -40,7 +38,7 @@ export default function Home(props) {
           paddingBottom: 15,
         }}>
         <Text
-          titleSize={70}
+          titleSize={{ md: 70, xs: 50 }}
           textSize={25}
           textAlign="center"
           textAlignTitle="center"
@@ -179,8 +177,8 @@ export default function Home(props) {
         <Text
           titleSize={30}
           textSize={20}
-          textAlign="left"
-          textAlignTitle="left"
+          textAlign={{ md: "left", xs: "center" }}
+          textAlignTitle={{ md: "left", xs: "center" }}
           title={colorText(dictionary.block3.title)}
           text={dictionary.block3.description}
           md={3}

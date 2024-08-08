@@ -58,7 +58,7 @@ export default function ContactPage() {
               onVerify={(token) => !reCaptchaToken && setRecaptchaToken(token)}
             />
             <Text
-              titleSize={70}
+              titleSize={{ md: 70, xs: 50 }}
               title={colorText(dictionary.contact.contactForm)}
               md={12}
             />
