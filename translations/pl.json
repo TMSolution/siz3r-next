@@ -5,13 +5,6 @@
     "button": "Pobierz aplikację",
     "button2": "Dowiedz się więcej"
   },
-  "businessHero": {
-    "title": "Business",
-    "description": "Zwiększ swoją sprzedaż online! Dzięki Siz3r Twoi klienci mogą korzystać z wirtualnej przymierzalni i dostarczać Ci swoje wymiary.",
-    "description2": "Zwiększ swoją sprzedaż online! Dzięki Siz3r Twoi klienci mogą korzystać z wirtualnej przymierzalni i dostarczać Ci swoje wymiary. Przenoś kolekcje do trójwymiaru i minimalizuj ilość zwrotów. Odkryj nową jakość sprzedaży!",
-    "button": "Pobierz aplikację",
-    "button2": "Dowiedz się więcej"
-  },
   "block1": {
     "title": "In your size",
     "description": "Zupełnie za",
@@ -48,23 +41,14 @@
     "title": "Z Siz3r jesteś eko!",
     "description": "Przymierzając online zmniejszasz ryzyko zwrotu ubrań. Zmniejsz swój ślad węglowy! Obniż emisję CO2 dzięki ograniczonej ilości przesyłek! Bądź eko z Siz3r!"
   },
-  "contact": {
-    "title": "Skontaktuj się",
-    "description": "",
-    "contactForm": "Napisz do nas",
-    "send": "Wyślij",
-    "name": "Nazwa",
-    "email": "Adres e-mail",
-    "phone": "Telefon",
-    "message": "Wiadomość",
-    "fieldRequired": "Pole wymagane",
-    "invalidEmail": "Nieprawidłowy Email"
+  "businessHero": {
+    "title": "Business",
+    "description": "Zwiększ swoją sprzedaż online! Dzięki Siz3r Twoi klienci mogą korzystać z wirtualnej przymierzalni i dostarczać Ci swoje wymiary.",
+    "description2": "Zwiększ swoją sprzedaż online! Dzięki Siz3r Twoi klienci mogą korzystać z wirtualnej przymierzalni i dostarczać Ci swoje wymiary. Przenoś kolekcje do trójwymiaru i minimalizuj ilość zwrotów. Odkryj nową jakość sprzedaży!",
+    "button": "Pobierz aplikację",
+    "button2": "Dowiedz się więcej"
   },
   "block1business": {
-    "title": "Co oferujemy",
-    "description": "Dzięki tworzeniu wymiarowanego modelu sylwetki klienta, Siz3r rekomenduje najlepiej dopasowane ubrania z oferty sprzedawców.\n\nNasza platforma umożliwia także wizualizację klienta w wybranych strojach, co pomaga w dokonaniu trafnego wyboru."
-  },
-  "block2business": {
     "title": "Funkcje",
     "description": "",
     "image1": {
@@ -82,6 +66,22 @@
     "image4": {
       "title": "Gromadź dane statystyczne w celu zwiększenia sprzedaży swoich produktów",
       "description": "Stwórz realistyczne awatary klientów na podstawie ich wymiarów."
+    }
+  },
+  "block2business": {
+    "title": "Korzyści",
+    "description": "Lorem ipsum",
+    "image1": {
+      "title": "Korzyść1",
+      "description": "Lorem ipsum"
+    },
+    "image2": {
+      "title": "Korzyść2",
+      "description": "Lorem ipsum"
+    },
+    "image3": {
+      "title": "Korzyść3",
+      "description": "Lorem ipsum"
     }
   },
   "block3business": {
@@ -103,6 +103,18 @@
       "title": "Rozrywka",
       "description": "Wykorzystaj  postacie klientów w grach i wirtualnych światach"
     }
+  },
+  "contact": {
+    "title": "Skontaktuj się",
+    "description": "",
+    "contactForm": "Napisz do nas",
+    "send": "Wyślij",
+    "name": "Nazwa",
+    "email": "Adres e-mail",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "fieldRequired": "Pole wymagane",
+    "invalidEmail": "Nieprawidłowy Email"
   },
   "footer": {
     "description": "Siz3r to innowacyjna platforma technologiczna wspierająca zakupy odzieżowe na platformach e-commerce.",

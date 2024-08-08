@@ -9,27 +9,26 @@ import SystemContext from "@/context/SystemContext";
 import { Android, PhoneAndroid } from "@mui/icons-material";
 import { Play } from "lucide-react";
 import { Box } from "@mui/material";
+import zIndex from "@mui/material/styles/zIndex";
+import { fontGrid } from "@mui/material/styles/cssUtils";
 
 export default function Hero({ dictionary }) {
   const { isMobile, theme } = useContext(SystemContext);
   return (
     <Block
+      //color="black"
       background="transparent"
-      style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        minHeight: "100vh",
+      }}
       gridProps={{
-        justifyContent: { xs: "center", md: "space-between" },
+        justifyContent: "center",
         alignItems: "stretch",
-        sx: {
-          paddingTop: { xs: "50px", md: 0 },
-          minHeight: "100vh",
-        },
       }}>
-      <HexagonBackground isMobile={isMobile} />
       <Component
         md={6}
-        xs={12}
-        gridProps={{ justifyContent: "space-between", alignItems: "stretch" }}
-        gridStyle={{ alignSelf: "center", paddingBottom: "24px", zIndex: 100 }}
         customBottom={
           <Box
             sx={{
@@ -39,6 +38,8 @@ export default function Hero({ dictionary }) {
               alignSelf: { md: "center", xs: "center" },
               alignItems: { md: "center", xs: "center" },
               flexDirection: { md: "row", xs: "column" },
+              justifyContent: { md: "center", xs: "center" },
+              zIndex: 100,
             }}>
             <Button
               size={1.3}
@@ -55,47 +56,24 @@ export default function Hero({ dictionary }) {
           </Box>
         }>
         <Text
+          md={12}
+          titleSize={{ xs: 45, md: 70 }}
+          textSize={25}
           title={dictionary.businessHero.title}
           text={dictionary.businessHero.description}
-          color="white"
-          titleSize={{ xs: 50, md: 70 }}
-          textSize={25}
-          gridProps={{ lg: 8, md: 12, sm: 12 }}
-          gridStyle={{ paddingTop: "48px", paddingBottom: "48px" }}
-          textAlign={{ xs: "center", md: "left" }}
-          textAlignTitle={{ xs: "center", md: "left" }}
+          gridStyle={{ zIndex: 100, paddingBottom: 48 }}
         />
       </Component>
-      <Component
-        md={6}
-        xs={0}
-        gridStyle={{
-          //height: "40vh",
-          alignSelf: "center",
-          height: { xs: undefined, md: "80vh" },
-        }}>
-        <Image
-          src="https://picsum.photos/1200/1600"
-          alt=""
-          gridStyle={{
-            alignSelf: { xs: "center", md: "end" },
-            justifyContent: "center",
-            display: "flex",
-            height: "70vh",
-            padding: { xs: "48px", md: "0px" },
-            filter: {
-              xs: "drop-shadow(1px 1px 50px rgba(255,255,255,0.5))",
-              md: "drop-shadow(1px 1px 60px rgba(255,255,255,0.5))",
-            },
-            maxWidth: "100%",
-          }}
-          // height="80vh"
-          maxWidth="100%"
-          //width={300}
-          md={12}
-          xs={0}
-        />
-      </Component>
+
+      <HexagonBackground
+        isMobile={isMobile}
+        position={{
+          xs: "linear-gradient(green, black, black)",
+          md: `radial-gradient(circle at center, green, black, black)`,
+        }}
+        lightPos="0%"
+        maskHeight={"100vh"}
+      />
     </Block>
   );
 }

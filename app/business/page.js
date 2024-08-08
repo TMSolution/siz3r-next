@@ -20,36 +20,6 @@ export default function Business(props) {
       }}>
       <Hero dictionary={dictionary} />
 
-      {/* <Block
-        // background="transparent"
-        style={{ display: "flex", alignItems: "center" }}
-        gridProps={{
-          justifyContent: "space-between",
-          alignItems: "stretch",
-          paddingTop: 15,
-          paddingBottom: 15,
-        }}>
-        <Text
-          titleSize={30}
-          textSize={20}
-          textAlign="left"
-          textAlignTitle="left"
-          title={dictionary.block1business.title}
-          text={dictionary.block1business.description}
-          md={3}
-        />
-        <Image
-          md={8.5}
-          src={"/photos/businessShop.png"}
-          // height={"40vh"}
-          width={"100%"}
-          gridStyle={{
-            alignItems: "center",
-            justifyContent: "center",
-            display: "flex",
-          }}
-        />
-      </Block> */}
       <Block
         background="transparent"
         style={{ display: "flex", alignItems: "center" }}
@@ -67,8 +37,8 @@ export default function Business(props) {
           textAlign="center"
           textAlignTitle="center"
           gutter={false}
-          title={dictionary.block2business.title}
-          text={dictionary.block2business.description}
+          title={dictionary.block1business.title}
+          text={dictionary.block1business.description}
           md={9}
         />
         <Component
@@ -87,8 +57,8 @@ export default function Business(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "right" }}
               textAlignTitle={{ xs: "center", md: "right" }}
-              title={dictionary.block2business.image1.title}
-              text={dictionary.block2business.image1.description}
+              title={dictionary.block1business.image1.title}
+              text={dictionary.block1business.image1.description}
               md={12}
               xs={12}
             />
@@ -121,8 +91,8 @@ export default function Business(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "left" }}
               textAlignTitle={{ xs: "center", md: "left" }}
-              title={dictionary.block2business.image2.title}
-              text={dictionary.block2business.image2.description}
+              title={dictionary.block1business.image2.title}
+              text={dictionary.block1business.image2.description}
               md={12}
               xs={12}
             />
@@ -155,8 +125,8 @@ export default function Business(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "right" }}
               textAlignTitle={{ xs: "center", md: "right" }}
-              title={dictionary.block2business.image3.title}
-              text={dictionary.block2business.image3.description}
+              title={dictionary.block1business.image3.title}
+              text={dictionary.block1business.image3.description}
               md={12}
               xs={12}
             />
@@ -189,8 +159,8 @@ export default function Business(props) {
               textSize={20}
               textAlign={{ xs: "justify", md: "left" }}
               textAlignTitle={{ xs: "center", md: "left" }}
-              title={dictionary.block2business.image4.title}
-              text={dictionary.block2business.image4.description}
+              title={dictionary.block1business.image4.title}
+              text={dictionary.block1business.image4.description}
               md={12}
               xs={12}
             />
@@ -208,6 +178,99 @@ export default function Business(props) {
           />
         </Component>
       </Block>
+
+      <Block
+        background="linear-gradient(10deg, #3C1992dd, #3C199233)"
+        style={{ display: "flex", alignItems: "center" }}
+        gridProps={{
+          justifyContent: "center",
+          alignItems: "stretch",
+
+          spacing: 8,
+          paddingTop: 5,
+          paddingBottom: 5,
+        }}>
+        <Text
+          titleSize={70}
+          textSize={25}
+          textAlign="center"
+          textAlignTitle="center"
+          title={dictionary.block2business.title}
+          text={dictionary.block2business.description}
+          md={9}
+          gutter={false}
+        />
+        <Component md={4}>
+          <Image
+            md={12}
+            src={"https://picsum.photos/500/300"}
+            // height={"40vh"}
+            width={"100%"}
+            gridStyle={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+            }}
+          />
+          <Text
+            textSize={20}
+            textAlign="center"
+            textAlignSubtitle="center"
+            subtitle={dictionary.block2business.image1.title}
+            text={dictionary.block2business.image1.description}
+            md={12}
+            gridStyle={{ alignSelf: "center" }}
+          />
+        </Component>
+        <Component md={4}>
+          <Image
+            md={12}
+            src={"https://picsum.photos/500/300"}
+            // height={"40vh"}
+            width={"100%"}
+            gridStyle={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+            }}
+          />
+          <Text
+            textSize={20}
+            textAlign="center"
+            textAlignSubtitle="center"
+            subtitle={dictionary.block2business.image2.title}
+            text={dictionary.block2business.image2.description}
+            md={12}
+            gridStyle={{ alignSelf: "center" }}
+          />
+        </Component>
+        <Component md={4}>
+          <Image
+            md={12}
+            src={"https://picsum.photos/500/300"}
+            // height={"40vh"}
+            width={"100%"}
+            gridStyle={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+            }}
+          />
+          <Text
+            textSize={20}
+            textAlign="center"
+            textAlignSubtitle="center"
+            subtitle={dictionary.block2business.image3.title}
+            text={dictionary.block2business.image3.description}
+            md={12}
+            gridStyle={{ alignSelf: "center" }}
+          />
+        </Component>
+      </Block>
+
       <Block
         background="transparent"
         style={{ display: "flex", alignItems: "center" }}

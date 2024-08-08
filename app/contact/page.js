@@ -8,7 +8,9 @@ export default function Contact() {
         display: "flex",
         flexDirection: "column",
         background: "linear-gradient(-45deg, #3C1992, #3C1992,#00D278,)",
-        marginTop: 15,
+        minHeight: "100vh",
+        justifyContent: "center",
+        paddingTop: 64,
       }}>
       <HexagonBackground
         position={{
