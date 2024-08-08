@@ -56,6 +56,7 @@ export default function Hero({ dictionary }) {
               style={{
                 whiteSpace: "nowrap",
                 padding: 0,
+                backgroundColor: "transparent",
               }}>
               <img height={58} src="/google-play-badge.png" />
               {/* Pobierz z google store */}
@@ -65,9 +66,15 @@ export default function Hero({ dictionary }) {
               style={{
                 whiteSpace: "nowrap",
                 padding: 0,
-                width:"max-content"
+                width: "max-content",
+                backgroundColor: "transparent",
               }}>
-              <img height={58} src="/apple-store-badge.svg" />
+              <Box
+                component={"img"}
+                src="/apple-store-badge.svg"
+                sx={{ height: { md: 58, xs: 66 } }}
+              />
+
               {/* Pobierz z google store */}
             </Button>
           </Box>

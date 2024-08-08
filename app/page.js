@@ -209,6 +209,7 @@ export default function Home(props) {
         />
         <Image
           md={8.5}
+          xs={0}
           src={"/photos/s.png"}
           height={"90vh"}
           maxHeight="unset"
@@ -217,9 +218,10 @@ export default function Home(props) {
             maxHeight: "unset",
             alignItems: "center",
             justifyContent: "center",
-            display: "flex",
+            
 
             height: "50vh",
+            display: { xs: "none", md: "flex" },
             //overflow:"hidden"
           }}
           style={{ rotate: "-30deg", filter: "brightness(0) invert(1)" }}
