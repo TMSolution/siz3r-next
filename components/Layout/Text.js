@@ -44,7 +44,7 @@ export default function Text({
             textAlign: textAlignTitle,
             fontSize: titleSize,
             fontFamily: "Nunito",
-            fontWeight: "700",
+            fontWeight: "600",
           }}>
           {title}
         </Typography>
