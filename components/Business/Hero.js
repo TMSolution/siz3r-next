@@ -30,6 +30,17 @@ export default function Hero({ dictionary }) {
         xs={12}
         gridProps={{ justifyContent: "space-between", alignItems: "stretch" }}
         gridStyle={{ alignSelf: "center", paddingBottom: "24px", zIndex: 100 }}
+        customTop={
+          <Box
+            component={"img"}
+            src={"/logo.png"}
+            height={{ md: "95px", xs: "70px" }}
+            sx={{
+              marginRight: "auto",
+              marginLeft: { md: "0px", xs: "auto" },
+            }}
+          />
+        }
         customBottom={
           <Box
             sx={{
@@ -55,7 +66,7 @@ export default function Hero({ dictionary }) {
           </Box>
         }>
         <Text
-          title={dictionary.businessHero.title}
+          //title={dictionary.businessHero.title}
           text={dictionary.businessHero.description}
           color="white"
           titleSize={{ xs: 50, md: 70 }}
