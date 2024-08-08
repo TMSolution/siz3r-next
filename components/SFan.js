@@ -4,12 +4,12 @@ export default function SFan() {
   let repetitions = 3;
 
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         position: "relative",
         justifySelf: "center",
         height: "100%",
-        display: "flex",
+        display: {md:"flex",xs:"none"},
       }}>
       {[...Array(repetitions)].map((_, index) => (
         <Box
@@ -28,6 +28,6 @@ export default function SFan() {
           }}
         />
       ))}
-    </div>
+    </Box>
   );
 }

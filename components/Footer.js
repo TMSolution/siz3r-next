@@ -180,52 +180,13 @@ export default function Footer({ isMobile }) {
         </Grid>
       </Grid>
 
-      <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.footer.home}>
-          {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
-            <Grid item key={item}>
-              <Link
-                prefetch={false}
-                style={{
-                  color: "unset",
-                  textDecoration: "none",
-                  opacity: 0.7,
-                }}
-                href={"/"}>
-                {item}
-              </Link>
-            </Grid>
-          ))}
-        </LinkList>
-      </Grid>
-      <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.footer.business}>
-          {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
-            <Grid item key={item}>
-              <Link
-                prefetch={false}
-                style={{ color: "unset", textDecoration: "none", opacity: 0.7 }}
-                href={"/"}>
-                {item}
-              </Link>
-            </Grid>
-          ))}
-        </LinkList>
-      </Grid>
-      <Grid md={3} xs={12} container item direction={"column"} spacing={2}>
-        <LinkList title={dictionary.footer.contact}>
-          {["Lorem", "Ipsum", "Dolor", "Amet"].map((item) => (
-            <Grid item key={item}>
-              <Link
-                prefetch={false}
-                style={{ color: "unset", textDecoration: "none", opacity: 0.7 }}
-                href={"/"}>
-                {item}
-              </Link>
-            </Grid>
-          ))}
-        </LinkList>
-      </Grid>
+      <Image
+        md={9}
+        xs={0}
+        src="https://picsum.photos/1600/400"
+        width={"100%"}
+        gridStyle={{ display: { xs: "none", md: "flex" } }}
+      />
       <Grid xs={12} container item direction={"row"}>
         <Divider style={{ width: "100%" }} />
         <div
