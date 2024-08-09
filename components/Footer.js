@@ -18,7 +18,7 @@ import {
   LinkedIn,
   Language,
 } from "@mui/icons-material";
-import { ArrowDown, ChevronDown, Play } from "lucide-react";
+
 import Link from "next/link";
 import Button from "./Interface/Button";
 import TranslationContext from "@/context/TranslationContext";
@@ -54,7 +54,27 @@ export default function Footer({ isMobile }) {
         style={{ maxWidth: 250, alignSelf: "center", paddingBottom: 1 }}
         gridStyle={{ display: "flex" }}
       />
-
+      <Component
+        md={12}
+        xs={12}
+        gridStyle={{
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 2,
+        }}>
+        {links.map((link, index) => (
+          <Link href={link.href} style={{ color: "inherit" }}>
+            <Button
+              key={index}
+              variant="text"
+              color="inherit"
+              style={{ fontSize: 16, opacity: 0.8 }}>
+              {link.label}
+            </Button>
+          </Link>
+        ))}
+      </Component>
       <Component
         md={12}
         xs={12}
@@ -120,27 +140,7 @@ export default function Footer({ isMobile }) {
           </a>
         ))}
       </Component>
-      <Component
-        md={12}
-        xs={12}
-        gridStyle={{
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 2,
-        }}>
-        {links.map((link, index) => (
-          <Link href={link.href} style={{ color: "inherit" }}>
-            <Button
-              key={index}
-              variant="text"
-              color="inherit"
-              style={{ fontSize: 16, opacity: 0.8 }}>
-              {link.label}
-            </Button>
-          </Link>
-        ))}
-      </Component>
+
       <Component
         xs={12}
         md={12}
