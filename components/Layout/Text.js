@@ -10,7 +10,7 @@ export default function Text({
   text = null,
   icon,
   titleSize = 30,
-  subtitleSize = 24,
+  subtitleSize = 31,
   textSize = 16,
   textAlign = "center",
   textAlignSubtitle = "center",
@@ -51,6 +51,7 @@ export default function Text({
       )}
       {subtitle && (
         <Typography
+          
           className={classes.textPanelSubtitle}
           sx={{
             textAlign: textAlignSubtitle,
@@ -59,7 +60,10 @@ export default function Text({
             alignItems: "center",
             justifyContent: "center",
             flexWrap: "wrap",
+            lineHeight:1.1,
+            fontWeight: "600",
             gap: 1,
+            marginBottom: 1,
           }}>
           {subtitle}
         </Typography>

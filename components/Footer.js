@@ -29,14 +29,14 @@ export default function Footer({ isMobile }) {
   const socials = [
     { icon: Facebook, href: "https://facebook.com" },
     { icon: Instagram, href: "https://instagram.com" },
-    { icon: Twitter, href: "https://twitter.com" },
-    { icon: LinkedIn, href: "https://linkedin.com" },
     { icon: YouTube, href: "https://youtube.com" },
   ];
   const links = [
     { label: dictionary.footer.home, href: "/" },
     { label: dictionary.footer.business, href: "/business" },
     { label: dictionary.footer.contact, href: "/contact" },
+    { label: dictionary.footer.privacyPolicy, href: "/privacy-policy" },
+    { label: dictionary.footer.terms, href: "/terms" },
   ];
   return (
     <Block
@@ -46,12 +46,12 @@ export default function Footer({ isMobile }) {
 
         position: "relative",
       }}
-      gridProps={{ spacing: 3, paddingTop: 3, paddingBottom: 0 }}>
+      gridProps={{ spacing: 1, paddingTop: 3, paddingBottom: 0 }}>
       <Image
         md={12}
         xs={12}
         src="/logo.png"
-        style={{ maxWidth: 250, alignSelf: "center", paddingBottom: 1 }}
+        style={{ maxWidth: 250, alignSelf: "center" }}
         gridStyle={{ display: "flex" }}
       />
       <Component
@@ -62,6 +62,7 @@ export default function Footer({ isMobile }) {
           alignItems: "center",
           justifyContent: "center",
           gap: 2,
+          // paddingBottom: 1,
         }}>
         {links.map((link, index) => (
           <Link href={link.href} style={{ color: "inherit" }}>
@@ -75,6 +76,7 @@ export default function Footer({ isMobile }) {
           </Link>
         ))}
       </Component>
+
       <Component
         md={12}
         xs={12}
@@ -83,6 +85,26 @@ export default function Footer({ isMobile }) {
           alignItems: "center",
           justifyContent: "center",
           gap: 2,
+          paddingBottom: 3,
+        }}>
+        <Divider style={{ width: "100%" }} />
+        {socials.map((social, index) => (
+          <a href={social.href}>
+            <IconButton size="small" key={index}>
+              <social.icon sx={{ fontSize: { xs: 35, md: 45 } }} />
+            </IconButton>
+          </a>
+        ))}
+      </Component>
+      <Component
+        md={12}
+        xs={12}
+        gridStyle={{
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 2,
+          paddingBottom: 3,
         }}>
         <Box
           sx={{
@@ -123,25 +145,7 @@ export default function Footer({ isMobile }) {
         </Box>
       </Component>
 
-      <Component
-        md={12}
-        xs={12}
-        gridStyle={{
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 2,
-        }}>
-        {socials.map((social, index) => (
-          <a href={social.href}>
-            <IconButton size="small" key={index}>
-              <social.icon sx={{ fontSize: { xs: 35, md: 45 } }} />
-            </IconButton>
-          </a>
-        ))}
-      </Component>
-
-      <Component
+      {/* <Component
         xs={12}
         md={12}
         gridStyle={{
@@ -185,9 +189,9 @@ export default function Footer({ isMobile }) {
             </MenuItem>
           ))}
         </Select>
-      </Component>
-      <Grid xs={12} container item direction={"row"}>
-        <Divider style={{ width: "100%" }} />
+      </Component> */}
+      {/* <Grid xs={12} container item direction={"row"}>
+         <Divider style={{ width: "100%" }} /> 
         <div
           style={{
             position: "relative",
@@ -210,7 +214,7 @@ export default function Footer({ isMobile }) {
             {dictionary.footer.privacyPolicy}
           </Link>
         </div>
-      </Grid>
+      </Grid> */}
     </Block>
   );
 }

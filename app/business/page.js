@@ -9,6 +9,7 @@ import TranslationContext from "@/context/TranslationContext";
 import Hero from "@/components/Business/Hero";
 import { Badge } from "@mui/material";
 import { colorText } from "@/components/functions";
+import { alignProperty } from "@mui/material/styles/cssUtils";
 export default function Business(props) {
   const { dictionary, lang } = useContext(TranslationContext);
   const { isMobile, theme } = useContext(SystemContext);
@@ -188,8 +189,8 @@ export default function Business(props) {
           alignItems: "stretch",
 
           spacing: 8,
-          paddingTop: 5,
-          paddingBottom: 5,
+          paddingTop: 8,
+          paddingBottom: 18,
         }}>
         <Text
           titleSize={{ md: 70, xs: 50 }}
@@ -200,8 +201,11 @@ export default function Business(props) {
           text={dictionary.block2business.description}
           md={9}
           gutter={false}
+          gridStyle={{ marginBottom: -12 }}
         />
-        <Component md={4}>
+        <Component
+          md={4}
+          gridStyle={{ alignProperty: "start", display: "flex" }}>
           <Image
             md={12}
             src={"https://picsum.photos/500/300"}
@@ -216,12 +220,12 @@ export default function Business(props) {
           />
           <Text
             textSize={20}
-            textAlign="center"
-            textAlignSubtitle="center"
+            textAlign="left"
+            textAlignSubtitle="left"
             subtitle={dictionary.block2business.image1.title}
             text={dictionary.block2business.image1.description}
             md={12}
-            gridStyle={{ alignSelf: "center", marginTop: 16 }}
+            gridStyle={{ marginTop: 32, display: "flex", alignItems: "start" }}
           />
         </Component>
         <Component md={4}>
@@ -239,12 +243,12 @@ export default function Business(props) {
           />
           <Text
             textSize={20}
-            textAlign="center"
-            textAlignSubtitle="center"
+            textAlign="left"
+            textAlignSubtitle="left"
             subtitle={dictionary.block2business.image2.title}
             text={dictionary.block2business.image2.description}
             md={12}
-            gridStyle={{ alignSelf: "center", marginTop: 16 }}
+            gridStyle={{ marginTop: 32, display: "flex", alignItems: "start" }}
           />
         </Component>
         <Component md={4}>
@@ -262,12 +266,12 @@ export default function Business(props) {
           />
           <Text
             textSize={20}
-            textAlign="center"
-            textAlignSubtitle="center"
+            textAlign="left"
+            textAlignSubtitle="left"
             subtitle={dictionary.block2business.image3.title}
             text={dictionary.block2business.image3.description}
             md={12}
-            gridStyle={{ alignSelf: "center", marginTop: 16 }}
+            gridStyle={{ marginTop: 32, display: "flex", alignItems: "start" }}
           />
         </Component>
       </Block>
