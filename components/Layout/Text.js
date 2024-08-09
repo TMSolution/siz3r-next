@@ -61,7 +61,7 @@ export default function Text({
             justifyContent: "center",
             flexWrap: "wrap",
             lineHeight:1.1,
-            fontWeight: "600",
+            //fontWeight: "600",
             gap: 1,
             marginBottom: 1,
           }}>

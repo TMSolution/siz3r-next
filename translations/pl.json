@@ -10,15 +10,15 @@
     "description": "Zupełnie za",
     "image1": {
       "title": ">Pobierz aplikację",
-      "description": "Pobranie darmowej aplikacji i uzyskanie dostępu do wszystkich funkcji zajmie ci tylko chwilę!"
+      "description": "Pobranie darmowej aplikacji i uzyskanie dostępu do wszystkich funkcji zajmie Ci tylko chwilę!"
     },
     "image2": {
       "title": "Zrób >zdjęcie",
-      "description": "To proste! Na podstawie tylko jednego zdjęcia będziemy w stanie zebrać twoje wymiary i umożliwić ci przymierzanie ubrań bez wychodzenia z domu!"
+      "description": "To proste! Na podstawie tylko jednego zdjęcia zbierzemy Twoje wymiary! Przymierzaj ubrania bez wychodzenia z domu!"
     },
     "image3": {
       "title": ">Przymierz i >kupuj",
-      "description": "Gratulacje! Teraz świetnie dopasowane ubrania możesz kupić bez wizyty w sklepie!"
+      "description": "Gratulacje! Teraz błyskawicznie znajdziesz idealnie dopasowane do Ciebie ubrania!"
     }
   },
   "block2": {
@@ -61,7 +61,7 @@
     },
     "image3": {
       "title": ">Prezentuj swoje kolekcje ubrań w >trójwymiarze",
-      "description": "Konwertuj zdjęcia swoich produktów na modele 3d, tak by klienci mieli do nich dostęp w przymierzalni Siz3r."
+      "description": "Konwertuj zdjęcia swoich produktów na modele 3D, tak by klienci mieli do nich dostęp w przymierzalni Siz3r."
     },
     "image4": {
       "title": ">Gromadź dane statystyczne",
@@ -81,7 +81,7 @@
     },
     "image3": {
       "title": "Zwiększ satysfakcję z zakupu",
-      "description": "Wzmacniaj relacje z klientami poprzez dostosowanie oferty do ich potrzeb i preferencji"
+      "description": "Wzmacniaj relacje z klientem poprzez dostosowanie oferty do jego potrzeb i preferencji"
     }
   },
   "block3business": {
@@ -89,11 +89,11 @@
     "description": "",
     "image1": {
       "title": "E-commerce",
-      "description": "Zwiększ dopasowanie ubrań i zmniejsz liczbę zwrotów."
+      "description": "Udostepnij wirtualne przymierzalnie i zmniejsz liczbę zwrotów towarów."
     },
     "image2": {
       "title": "Sklepy stacjonarne",
-      "description": "Umożliwiaj klientom przymierzanie ubrań bez fizycznego kontaktu."
+      "description": "Umożliwiaj klientom wirtualne przymierzanie ubrań przy użyciu kodu QR."
     },
     "image3": {
       "title": "Fitness i dietetyka",

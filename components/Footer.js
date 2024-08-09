@@ -85,9 +85,9 @@ export default function Footer({ isMobile }) {
           alignItems: "center",
           justifyContent: "center",
           gap: 2,
-          paddingBottom: 3,
+          paddingBottom: 2,
         }}>
-        <Divider style={{ width: "100%" }} />
+        {/* <Divider style={{ width: "100%" }} /> */}
         {socials.map((social, index) => (
           <a href={social.href}>
             <IconButton size="small" key={index}>

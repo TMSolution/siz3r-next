@@ -350,8 +350,8 @@ export default function Business(props) {
             color="primary"
             sx={{
               ".MuiBadge-badge": {
-                padding: 2,
-                fontSize: 17,
+                padding: 3,
+                fontSize: 25,
                 fontWeight: "bold",
                 right: 18,
                 //color:"white"
@@ -387,8 +387,8 @@ export default function Business(props) {
             color="primary"
             sx={{
               ".MuiBadge-badge": {
-                padding: 2,
-                fontSize: 17,
+                padding: 3,
+                fontSize: 25,
                 fontWeight: "bold",
                 right: 18,
                 //color:"white"
