@@ -222,7 +222,7 @@ export default function Business(props) {
           <Text
             titleSize={31}
             textSize={20}
-             textAlign="left"
+            textAlign="left"
             textAlignTitle="left"
             title={colorText(dictionary.block2business.image1.title)}
             text={dictionary.block2business.image1.description}
@@ -268,8 +268,8 @@ export default function Business(props) {
             }}
           />
           <Text
-           titleSize={31}
-           textSize={20}
+            titleSize={31}
+            textSize={20}
             textAlign="left"
             textAlignTitle="left"
             title={colorText(dictionary.block2business.image3.title)}
@@ -317,10 +317,11 @@ export default function Business(props) {
             }}
           />
           <Text
+            titleSize={31}
             textSize={20}
             textAlign="center"
-            textAlignSubtitle="center"
-            subtitle={dictionary.block3business.image1.title}
+            textAlignTitle="center"
+            title={dictionary.block3business.image1.title}
             text={dictionary.block3business.image1.description}
             md={12}
             gridStyle={{ width: "100%" }}
@@ -341,10 +342,11 @@ export default function Business(props) {
             }}
           />
           <Text
+            titleSize={31}
             textSize={20}
             textAlign="center"
-            textAlignSubtitle="center"
-            subtitle={dictionary.block3business.image2.title}
+            textAlignTitle="center"
+            title={dictionary.block3business.image2.title}
             text={dictionary.block3business.image2.description}
             md={12}
             gridStyle={{ width: "100%" }}
@@ -378,10 +380,11 @@ export default function Business(props) {
             />
           </Badge>
           <Text
+            titleSize={31}
             textSize={20}
             textAlign="center"
-            textAlignSubtitle="center"
-            subtitle={dictionary.block3business.image3.title}
+            textAlignTitle="center"
+            title={dictionary.block3business.image3.title}
             text={dictionary.block3business.image3.description}
             md={12}
             gridStyle={{ width: "100%" }}
@@ -415,10 +418,11 @@ export default function Business(props) {
             />
           </Badge>
           <Text
+            titleSize={31}
             textSize={20}
             textAlign="center"
-            textAlignSubtitle="center"
-            subtitle={dictionary.block3business.image4.title}
+            textAlignTitle="center"
+            title={dictionary.block3business.image4.title}
             text={dictionary.block3business.image4.description}
             md={12}
             gridStyle={{ width: "100%" }}
