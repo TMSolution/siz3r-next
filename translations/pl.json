@@ -44,7 +44,7 @@
   "businessHero": {
     "title": "Dla biznesu",
     "description": "Zwiększ swoją sprzedaż online! Dzięki Siz3r Twoi klienci mogą korzystać z wirtualnej przymierzalni i dostarczać Ci swoje wymiary.",
-    "description2": "Zwiększ swoją sprzedaż online! Dzięki Siz3r Twoi klienci mogą korzystać z wirtualnej przymierzalni i dostarczać Ci swoje wymiary. Przenoś kolekcje do trójwymiaru i minimalizuj ilość zwrotów. Odkryj nową jakość sprzedaży!",
+
     "button": "Rozpocznij za darmo",
     "button2": "Dowiedz się więcej"
   },
@@ -72,15 +72,15 @@
     "title": "Korzyści",
     "description": "",
     "image1": {
-      "title": "Promuj ekologiczne wartości",
+      "title": ">Promuj ekologiczne wartości",
       "description": "Wyróżnij się jako biznes dbający o środowisko naturalne"
     },
     "image2": {
-      "title": "Zmniejsz ilość zwracanych towarów",
+      "title": ">Zmniejsz ilość zwracanych >towarów",
       "description": "Oferuj kupującym precyzyjnie dopasowane produkty, zwiększając pewność zakupową"
     },
     "image3": {
-      "title": "Zwiększ satysfakcję z zakupu",
+      "title": "Zwiększ >satysfakcję z zakupu",
       "description": "Wzmacniaj relacje z klientem poprzez dostosowanie oferty do jego potrzeb i preferencji"
     }
   },

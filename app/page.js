@@ -52,6 +52,7 @@ export default function Home(props) {
           //   </>
           // }
           md={12}
+          gridStyle={{ marginBottom: -30}}
         />
         <Component
           xs={12}

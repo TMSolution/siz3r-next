@@ -42,6 +42,7 @@ export default function Business(props) {
           title={dictionary.block1business.title}
           text={dictionary.block1business.description}
           md={9}
+          gridStyle={{ marginBottom: -30 }}
         />
         <Component
           xs={12}
@@ -219,13 +220,14 @@ export default function Business(props) {
             }}
           />
           <Text
+            titleSize={31}
             textSize={20}
-            textAlign="left"
-            textAlignSubtitle="left"
-            subtitle={dictionary.block2business.image1.title}
+             textAlign="left"
+            textAlignTitle="left"
+            title={colorText(dictionary.block2business.image1.title)}
             text={dictionary.block2business.image1.description}
             md={12}
-            gridStyle={{ marginTop: 32, display: "flex", alignItems: "start" }}
+            gridStyle={{ marginTop: 24, display: "flex", alignItems: "start" }}
           />
         </Component>
         <Component md={4}>
@@ -242,13 +244,14 @@ export default function Business(props) {
             }}
           />
           <Text
+            titleSize={31}
             textSize={20}
             textAlign="left"
-            textAlignSubtitle="left"
-            subtitle={dictionary.block2business.image2.title}
+            textAlignTitle="left"
+            title={colorText(dictionary.block2business.image2.title)}
             text={dictionary.block2business.image2.description}
             md={12}
-            gridStyle={{ marginTop: 32, display: "flex", alignItems: "start" }}
+            gridStyle={{ marginTop: 24, display: "flex", alignItems: "start" }}
           />
         </Component>
         <Component md={4}>
@@ -265,13 +268,14 @@ export default function Business(props) {
             }}
           />
           <Text
-            textSize={20}
+           titleSize={31}
+           textSize={20}
             textAlign="left"
-            textAlignSubtitle="left"
-            subtitle={dictionary.block2business.image3.title}
+            textAlignTitle="left"
+            title={colorText(dictionary.block2business.image3.title)}
             text={dictionary.block2business.image3.description}
             md={12}
-            gridStyle={{ marginTop: 32, display: "flex", alignItems: "start" }}
+            gridStyle={{ marginTop: 24, display: "flex", alignItems: "start" }}
           />
         </Component>
       </Block>
@@ -292,9 +296,11 @@ export default function Business(props) {
           textSize={25}
           textAlign="center"
           textAlignTitle="center"
+          gutter={false}
           title={dictionary.block3business.title}
           text={dictionary.block3business.description}
           md={9}
+          gridStyle={{ marginBottom: -48 }}
         />
         <Component md={6}>
           <Image
