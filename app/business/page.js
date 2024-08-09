@@ -341,19 +341,32 @@ export default function Business(props) {
           />
         </Component>
         <Component md={6}>
-          <Image
-            md={12}
-            src={"/photos/fitness.jpg"}
-            // height={"40vh"}
-            width={"100%"}
-            gridStyle={{
-              alignItems: "center",
-              justifyContent: "center",
-              display: "flex",
-              width: "100%",
-              marginBottom: 3,
-            }}
-          />
+          <Badge
+            badgeContent="Soon"
+            color="primary"
+            sx={{
+              ".MuiBadge-badge": {
+                padding: 2,
+                fontSize: 17,
+                fontWeight: "bold",
+                right: 18,
+                //color:"white"
+              },
+            }}>
+            <Image
+              md={12}
+              src={"/photos/fitness.jpg"}
+              // height={"40vh"}
+              width={"100%"}
+              gridStyle={{
+                alignItems: "center",
+                justifyContent: "center",
+                display: "flex",
+                width: "100%",
+                marginBottom: 3,
+              }}
+            />
+          </Badge>
           <Text
             textSize={20}
             textAlign="center"
@@ -365,19 +378,32 @@ export default function Business(props) {
           />
         </Component>
         <Component md={6}>
-          <Image
-            md={12}
-            src={"/photos/gaming.jpg"}
-            // height={"40vh"}
-            width={"100%"}
-            gridStyle={{
-              alignItems: "center",
-              justifyContent: "center",
-              display: "flex",
-              width: "100%",
-              marginBottom: 3,
-            }}
-          />
+          <Badge
+            badgeContent="Soon"
+            color="primary"
+            sx={{
+              ".MuiBadge-badge": {
+                padding: 2,
+                fontSize: 17,
+                fontWeight: "bold",
+                right: 18,
+                //color:"white"
+              },
+            }}>
+            <Image
+              md={12}
+              src={"/photos/gaming.jpg"}
+              // height={"40vh"}
+              width={"100%"}
+              gridStyle={{
+                alignItems: "center",
+                justifyContent: "center",
+                display: "flex",
+                width: "100%",
+                marginBottom: 3,
+              }}
+            />
+          </Badge>
           <Text
             textSize={20}
             textAlign="center"

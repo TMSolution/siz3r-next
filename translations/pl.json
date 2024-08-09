@@ -61,19 +61,19 @@
     },
     "image3": {
       "title": ">Prezentuj swoje kolekcje ubrań w >trójwymiarze",
-      "description": "TZamieniaj zdjęcia swoich produktów na ich modele 3d, tak by klienci przymierzali je na swoich modelach."
+      "description": "Konwertuj zdjęcia swoich produktów na modele 3d, tak by klienci mieli do nich dostęp w przymierzalni Siz3r."
     },
     "image4": {
       "title": ">Gromadź dane statystyczne",
-      "description": "Zbieraj cenne informacje o preferencjach i zachowaniach zakupowych klientów."
+      "description": "Zbieraj cenne informacje o wymiarach, preferencjach i zachowaniach zakupowych klientów."
     }
   },
   "block2business": {
     "title": "Korzyści",
     "description": "",
     "image1": {
-      "title": "Promuj ekologiczne wartości swojej firmy",
-      "description": "Promuj swój wizerunek firmy dbającej o środowisko naturalne"
+      "title": "Promuj ekologiczne wartości",
+      "description": "Wyróżnij się jako biznes dbający o środowisko naturalne"
     },
     "image2": {
       "title": "Zmniejsz ilość zwracanych towarów",
