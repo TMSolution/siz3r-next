@@ -118,16 +118,16 @@
   },
   "footer": {
     "description": "Siz3r is an innovative technological platform supporting clothing purchases on e-commerce platforms.",
-    "technology": "Technology",
+    "home": "Home",
     "business": "Business",
-    "products": "Products",
+    "contact": "Contact",
     "terms": "Terms and Conditions",
     "privacyPolicy": "Privacy Policy",
     "googleButton": ""
   },
   "header": {
     "home": "Home",
-    "business": "For business",
+    "business": "Business",
     "contact": "Contact",
     "downloadApp": "Download App"
   }
