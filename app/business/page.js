@@ -69,7 +69,7 @@ export default function Business(props) {
           <Image
             xs={12}
             md={7}
-            src={"/photos/download2.png"}
+            src={"/functions/f1.jpg"}
             width="100%"
             gridStyle={{
               alignItems: "end",
@@ -103,7 +103,7 @@ export default function Business(props) {
           <Image
             xs={12}
             md={7}
-            src={"/photos/photo.png"}
+            src={"/functions/f2.jpg"}
             width="100%"
             gridStyle={{
               alignItems: "end",
@@ -137,7 +137,7 @@ export default function Business(props) {
           <Image
             xs={12}
             md={7}
-            src={"/photos/shopping.png"}
+            src={"/functions/f3.jpg"}
             width="100%"
             gridStyle={{
               alignItems: "end",
@@ -171,7 +171,7 @@ export default function Business(props) {
           <Image
             xs={12}
             md={7}
-            src={"/photos/photo.png"}
+            src={"/functions/f4.jpg"}
             width="100%"
             gridStyle={{
               alignItems: "end",
@@ -209,7 +209,7 @@ export default function Business(props) {
           gridStyle={{ alignProperty: "start", display: "flex" }}>
           <Image
             md={12}
-            src={"https://picsum.photos/500/300"}
+            src={"/benefits/k1.jpg"}
             // height={"40vh"}
             width={"100%"}
             gridStyle={{
@@ -233,7 +233,7 @@ export default function Business(props) {
         <Component md={4}>
           <Image
             md={12}
-            src={"https://picsum.photos/500/300"}
+            src={"/benefits/k2.jpg"}
             // height={"40vh"}
             width={"100%"}
             gridStyle={{
@@ -257,7 +257,7 @@ export default function Business(props) {
         <Component md={4}>
           <Image
             md={12}
-            src={"https://picsum.photos/500/300"}
+            src={"/benefits/k3.jpg"}
             // height={"40vh"}
             width={"100%"}
             gridStyle={{
@@ -305,7 +305,7 @@ export default function Business(props) {
         <Component md={6}>
           <Image
             md={12}
-            src={"/photos/returns.jpg"}
+            src={"/app/a1.jpg"}
             // height={"40vh"}
             width={"100%"}
             gridStyle={{
@@ -330,7 +330,7 @@ export default function Business(props) {
         <Component md={6}>
           <Image
             md={12}
-            src={"/photos/shops.jpg"}
+            src={"/app/a2.jpg"}
             // height={"40vh"}
             width={"100%"}
             gridStyle={{
@@ -367,7 +367,7 @@ export default function Business(props) {
             }}>
             <Image
               md={12}
-              src={"/photos/fitness.jpg"}
+              src={"/app/a3.jpg"}
               // height={"40vh"}
               width={"100%"}
               gridStyle={{
@@ -405,7 +405,7 @@ export default function Business(props) {
             }}>
             <Image
               md={12}
-              src={"/photos/gaming.jpg"}
+              src={"/app/a4.jpg"}
               // height={"40vh"}
               width={"100%"}
               gridStyle={{
