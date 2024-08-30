@@ -171,7 +171,7 @@ export default function Business(props) {
           <Image
             xs={12}
             md={7}
-            src={"/functions/f4.jpg"}
+            src={"/functions/f4.png"}
             width="100%"
             gridStyle={{
               alignItems: "end",
