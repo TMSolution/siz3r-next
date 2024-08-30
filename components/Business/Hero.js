@@ -86,7 +86,7 @@ export default function Hero({ dictionary }) {
           height: { xs: undefined, md: "80vh" },
         }}>
         <Image
-          src="https://picsum.photos/1200/1600"
+           src="/photos/business.png"
           alt=""
           gridStyle={{
             alignSelf: { xs: "center", md: "end" },

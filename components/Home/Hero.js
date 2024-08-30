@@ -100,7 +100,7 @@ export default function Hero({ dictionary }) {
           height: { xs: undefined, md: "80vh" },
         }}>
         <Image
-          src="/phone.png"
+          src="/phone2.png"
           alt=""
           gridStyle={{
             alignSelf: { xs: "center", md: "end" },
