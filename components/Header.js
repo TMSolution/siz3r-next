@@ -18,6 +18,7 @@ import TranslationContext from "@/context/TranslationContext";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import LanguageSelector from "./LanguageSelector";
+import { ArrowLeft, ChevronLeft } from "@mui/icons-material";
 
 export default function Header() {
   const path = usePathname();
@@ -117,8 +118,11 @@ export default function Header() {
             alignItems: "center",
             justifyContent: "center",
           }}>
+          <IconButton onClick={() => setOpen(false)} style={{ position: "absolute", left: 8 }} >
+            <ChevronLeft fontSize="large" />
+          </IconButton>
           <img src={"/logo.png"} height={24} />
-          <LanguageSelector style={{ marginLeft: 2 }} />
+          <LanguageSelector style={{ position: "absolute", right: 8 }} />
         </Paper>
         <List style={{ minWidth: 250, maxWidth: "100vw" }}>
           {paths.map((item, index) => (
