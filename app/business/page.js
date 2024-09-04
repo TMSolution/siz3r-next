@@ -258,7 +258,7 @@ export default function Business(props) {
         <Component md={4}>
           <Image
             md={12}
-            src={"/benefits/k3.jpg"}
+            src={"/benefits/k3.png"}
             // height={"40vh"}
             width={"100%"}
             gridStyle={{
