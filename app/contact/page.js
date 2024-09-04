@@ -11,6 +11,7 @@ export default function Contact() {
         minHeight: "100vh",
         justifyContent: "center",
         paddingTop: 64,
+        overflow: "hidden",
       }}>
       <HexagonBackground
         position={{

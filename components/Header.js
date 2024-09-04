@@ -17,6 +17,7 @@ import { Menu } from "lucide-react";
 import TranslationContext from "@/context/TranslationContext";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import LanguageSelector from "./LanguageSelector";
 
 export default function Header() {
   const path = usePathname();
@@ -60,7 +61,8 @@ export default function Header() {
           size="large"
           sx={{
             position: "fixed",
-            left: 16,top:7,
+            left: 16,
+            top: 7,
             display: { md: "none", xs: "flex" },
             zIndex: 1000,
           }}>
@@ -87,6 +89,7 @@ export default function Header() {
               display: { xs: "none", md: "flex", gap: 8 },
               marginLeft: "auto",
             }}>
+            <LanguageSelector style={{ marginRight: 2 }} />
             {paths.map((item, index) => (
               <Link
                 prefetch={false}
@@ -115,6 +118,7 @@ export default function Header() {
             justifyContent: "center",
           }}>
           <img src={"/logo.png"} height={24} />
+          <LanguageSelector style={{ marginLeft: 2 }} />
         </Paper>
         <List style={{ minWidth: 250, maxWidth: "100vw" }}>
           {paths.map((item, index) => (

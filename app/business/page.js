@@ -19,6 +19,7 @@ export default function Business(props) {
         display: "flex",
         flexDirection: "column",
         background: "linear-gradient(-45deg, #00D278, #3C1992, #00D278)",
+        overflow: "hidden",
       }}>
       <Hero dictionary={dictionary} />
 
@@ -330,7 +331,7 @@ export default function Business(props) {
         <Component md={6}>
           <Image
             md={12}
-            src={"/app/a2.jpg"}
+            src={"/app/a2.png"}
             // height={"40vh"}
             width={"100%"}
             gridStyle={{

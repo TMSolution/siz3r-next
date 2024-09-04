@@ -24,7 +24,8 @@ export default function Home(props) {
   ];
   const { isMobile, theme } = useContext(SystemContext);
   return (
-    <main style={{ display: "flex", flexDirection: "column" }}>
+    <main
+      style={{ display: "flex", flexDirection: "column", overflow: "hidden" }}>
       <Hero dictionary={dictionary} />
 
       <Block
@@ -52,7 +53,7 @@ export default function Home(props) {
           //   </>
           // }
           md={12}
-          gridStyle={{ marginBottom: -30}}
+          gridStyle={{ marginBottom: -30 }}
         />
         <Component
           xs={12}

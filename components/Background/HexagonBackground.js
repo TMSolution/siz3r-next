@@ -37,6 +37,7 @@ export default function HexagonBackground({
         top: 0,
         left: 0,
         //  zIndex: -1,
+        borderRadius: 0,
         maskImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0) 95%)`,
       }}>
       <Box
