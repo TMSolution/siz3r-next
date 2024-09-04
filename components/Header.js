@@ -90,7 +90,7 @@ export default function Header() {
               display: { xs: "none", md: "flex", gap: 8 },
               marginLeft: "auto",
             }}>
-            <LanguageSelector style={{ marginRight: 2 }} />
+            {/* <LanguageSelector style={{ marginRight: 2 }} /> */}
             {paths.map((item, index) => (
               <Link
                 prefetch={false}
@@ -122,7 +122,7 @@ export default function Header() {
             <ChevronLeft fontSize="large" />
           </IconButton>
           <img src={"/logo.png"} height={24} />
-          <LanguageSelector style={{ position: "absolute", right: 8 }} />
+          {/* <LanguageSelector style={{ position: "absolute", right: 8 }} /> */}
         </Paper>
         <List style={{ minWidth: 250, maxWidth: "100vw" }}>
           {paths.map((item, index) => (

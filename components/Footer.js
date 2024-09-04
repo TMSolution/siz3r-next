@@ -23,7 +23,7 @@ import Link from "next/link";
 import Button from "./Interface/Button";
 import TranslationContext from "@/context/TranslationContext";
 import { useContext } from "react";
-
+const languages = { pl: "Polski", en: "English" };
 export default function Footer({ isMobile }) {
   const { dictionary, lang, changeLanguage } = useContext(TranslationContext);
   const socials = [
@@ -75,6 +75,53 @@ export default function Footer({ isMobile }) {
             </Button>
           </Link>
         ))}
+      </Component>
+      <Component
+        xs={12}
+        md={12}
+        gridStyle={{
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          display: "flex",
+          marginTop: -1,
+          paddingBottom: 2,
+        }}>
+        <Select
+          onChange={(e) => {
+            console.log(e.target.value);
+            changeLanguage(e.target.value).then(() => {
+              window.location.replace(window.location.href);
+            });
+          }}
+          value={lang}
+          size="small"
+          sx={{
+            width: { xs: "100%", md: "unset" },
+            ".MuiSelect-select": {
+              paddingLeft: { xs: undefined, md: 1 },
+              paddingRight: { xs: undefined, md: 1 },
+            },
+          }}
+          renderValue={(value) => (
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+              <Language />
+              <Typography style={{ paddingLeft: 8, paddingRight: 4 }}>
+                {languages[value]}
+              </Typography>
+            </div>
+          )}>
+          {Object.entries(languages).map((item) => (
+            <MenuItem key={item[0]} value={item[0]}>
+              {item[1]}
+            </MenuItem>
+          ))}
+        </Select>
       </Component>
 
       <Component
@@ -145,7 +192,6 @@ export default function Footer({ isMobile }) {
         </Box>
       </Component>
 
-      
       {/* <Grid xs={12} container item direction={"row"}>
          <Divider style={{ width: "100%" }} /> 
         <div
