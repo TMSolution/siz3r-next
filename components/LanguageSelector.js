@@ -40,7 +40,8 @@ export default function LanguageSelector({ style = {} }) {
             onClick={() => {
               console.log(item[0]);
               changeLanguage(item[0]).then(() => {
-                window.location.replace(window.location.href);
+                //TODO: UNCOMMENT THIS ON PRODUCTION (AS NETLIFY BREAKS COOKIES)
+                //window.location.replace(window.location.href);
               });
             }}>
             <img
